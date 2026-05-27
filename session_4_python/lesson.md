@@ -229,12 +229,12 @@ def rate_season(goals, assists):
 
 ### 📖 Books
 
-| Title | Author | Level | Covers |
-|-------|--------|-------|--------|
-| *Python Crash Course* | Eric Matthes | Easy | Best beginner Python book; projects include data visualisation with matplotlib — directly mirrors this session's labs |
-| *Automate the Boring Stuff with Python* | Al Sweigart | Easy | Free online; shows Python as a practical tool for everyday tasks — great for building coding habits after this session |
-| *Python Data Science Handbook* | Jake VanderPlas | Medium | Free online; covers NumPy, Pandas, matplotlib, and machine learning — the natural continuation after Session 4 |
-| *Learning Python* | Mark Lutz | Medium–Hard | Comprehensive 1,600-page reference; use it to look up anything rather than read cover to cover |
+| Title | Author | Level | Covers | Free |
+|-------|--------|-------|--------|------|
+| *Python Crash Course* | Eric Matthes | Easy | Best beginner Python book; projects include data visualisation with matplotlib — directly mirrors this session's labs | — |
+| *Automate the Boring Stuff with Python* | Al Sweigart | Easy | Free online; shows Python as a practical tool for everyday tasks — great for building coding habits after this session | [Free →](https://automatetheboringstuff.com) |
+| *Python Data Science Handbook* | Jake VanderPlas | Medium | Free online; covers NumPy, Pandas, matplotlib, and machine learning — the natural continuation after Session 4 | [Free →](https://jakevdp.github.io/PythonDataScienceHandbook/) |
+| *Learning Python* | Mark Lutz | Medium–Hard | Comprehensive 1,600-page reference; use it to look up anything rather than read cover to cover | [Open Library](https://openlibrary.org) |
 
 ### 🌐 Articles & Interactive Resources
 

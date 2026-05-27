@@ -302,13 +302,13 @@ Then: *"Let's build one. Not 19 billion. Just three."*
 
 ### 📖 Books
 
-| Title | Author | Level | Covers |
-|-------|--------|-------|--------|
-| *But How Do It Know?* | J. Clark Scott | Easy | How a simple computer is built from scratch — transistors to CPU, written for complete beginners |
-| *Code: The Hidden Language of Computer Hardware and Software* | Charles Petzold | Easy–Medium | The gold-standard accessible book on how computers work; builds from Morse code to a working CPU |
-| *The Elements of Computing Systems* (Nand to Tetris) | Nisan & Schocken | Medium | Hands-on: you build a working computer from NAND gates up; the companion to the free online course |
-| *In the Plex* | Steven Levy | Easy | Inside Google's computing infrastructure; excellent context for why hardware choices matter at scale |
-| *The Innovators* | Walter Isaacson | Easy | Narrative history of computing from Ada Lovelace through the internet; brings Gordon Moore, Jack Kilby, and others to life |
+| Title | Author | Level | Covers | Free |
+|-------|--------|-------|--------|------|
+| *But How Do It Know?* | J. Clark Scott | Easy | How a simple computer is built from scratch — transistors to CPU, written for complete beginners | — |
+| *Code: The Hidden Language of Computer Hardware and Software* | Charles Petzold | Easy–Medium | The gold-standard accessible book on how computers work; builds from Morse code to a working CPU | [Free →](https://openlibrary.org) |
+| *The Elements of Computing Systems* (Nand to Tetris) | Nisan & Schocken | Medium | Hands-on: you build a working computer from NAND gates up; the companion to the free online course | [Free →](https://www.nand2tetris.org) |
+| *In the Plex* | Steven Levy | Easy | Inside Google's computing infrastructure; excellent context for why hardware choices matter at scale | — |
+| *The Innovators* | Walter Isaacson | Easy | Narrative history of computing from Ada Lovelace through the internet; brings Gordon Moore, Jack Kilby, and others to life | [Free →](https://openlibrary.org) |
 
 ### 🌐 Articles & Interactive Resources
 

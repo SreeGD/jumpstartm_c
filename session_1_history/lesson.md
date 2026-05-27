@@ -187,14 +187,14 @@ Then say: *"Ada Lovelace wrote the first algorithm in 1843. This is where it end
 
 ### 📖 Books (one-sitting reads or gifts for the curious)
 
-| Book | Author | Level | What it covers |
-|------|--------|-------|---------------|
-| **The Innovators** | Walter Isaacson | Easy | The full story from Babbage to the internet — narrative, not technical |
-| **Alan Turing: The Enigma** | Andrew Hodges | Medium | The definitive Turing biography (the film is based on this) |
-| **Moneyball** | Michael Lewis | Easy | The Oakland A's story in full — reads like a thriller |
-| **The Signal and the Noise** | Nate Silver | Medium | Statistics, prediction, and sports — connects Sessions 1, 2, and 5 |
-| **The Code Book** | Simon Singh | Easy | History of cryptography from Caesar ciphers to RSA — connects to Session 2 |
-| **Zero to One** | Peter Thiel | Easy | Building new things — philosophy of technology and startups |
+| Book | Author | Level | What it covers | Free |
+|------|--------|-------|---------------|------|
+| **The Innovators** | Walter Isaacson | Easy | The full story from Babbage to the internet — narrative, not technical | [Free →](https://openlibrary.org) |
+| **Alan Turing: The Enigma** | Andrew Hodges | Medium | The definitive Turing biography (the film is based on this) | [Free →](https://openlibrary.org) |
+| **Moneyball** | Michael Lewis | Easy | The Oakland A's story in full — reads like a thriller | — |
+| **The Signal and the Noise** | Nate Silver | Medium | Statistics, prediction, and sports — connects Sessions 1, 2, and 5 | — |
+| **The Code Book** | Simon Singh | Easy | History of cryptography from Caesar ciphers to RSA — connects to Session 2 | [Free →](https://openlibrary.org) |
+| **Zero to One** | Peter Thiel | Easy | Building new things — philosophy of technology and startups | [Free →](https://openlibrary.org) |
 
 > 💡 **Start here:** *The Innovators* by Isaacson. It reads like a novel and covers every figure in this session in depth.
 

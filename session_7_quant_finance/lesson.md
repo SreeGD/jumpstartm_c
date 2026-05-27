@@ -228,13 +228,13 @@ The data came from Yahoo Finance — the `yfinance` Python library pulls directl
 
 ### 📖 Books
 
-| Title | Author | Level | What it covers |
-|---|---|---|---|
-| *The Man Who Solved the Market* | Gregory Zuckerman | Easy | Narrative biography of Jim Simons and the founding of Renaissance Technologies; no maths required |
-| *Beat the Dealer* | Edward O. Thorp | Easy | Thorp's original card-counting system and how it became the foundation of quantitative trading |
-| *A Random Walk Down Wall Street* | Burton Malkiel | Easy | Classic argument that markets are efficient; great counterpoint to algorithmic trading approaches |
-| *Options, Futures, and Other Derivatives* | John C. Hull | Hard | The standard university textbook for derivatives pricing including Black-Scholes; used in every finance programme |
-| *Quantitative Finance for Dummies* | Steve Bell | Medium | Covers returns, volatility, portfolio theory, and options without requiring a maths degree |
+| Title | Author | Level | What it covers | Free |
+|---|---|---|---|---|
+| *The Man Who Solved the Market* | Gregory Zuckerman | Easy | Narrative biography of Jim Simons and the founding of Renaissance Technologies; no maths required | — |
+| *Beat the Dealer* | Edward O. Thorp | Easy | Thorp's original card-counting system and how it became the foundation of quantitative trading | — |
+| *A Random Walk Down Wall Street* | Burton Malkiel | Easy | Classic argument that markets are efficient; great counterpoint to algorithmic trading approaches | [Open Library](https://openlibrary.org) |
+| *Options, Futures, and Other Derivatives* | John C. Hull | Hard | The standard university textbook for derivatives pricing including Black-Scholes; used in every finance programme | [Open Library](https://openlibrary.org) |
+| *Quantitative Finance for Dummies* | Steve Bell | Medium | Covers returns, volatility, portfolio theory, and options without requiring a maths degree | — |
 
 ### 🌐 Articles & Interactive Resources
 

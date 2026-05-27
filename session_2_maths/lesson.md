@@ -234,13 +234,13 @@ Show Dijkstra's algorithm finding a route on Google Maps — then reveal the alg
 
 ### 📖 Books
 
-| Title | Author | Level | Covers |
-|-------|--------|-------|--------|
-| *Grokking Algorithms* | Aditya Bhargava | Easy | Illustrated introduction to algorithms and Big-O; binary search, sorting, graphs — all covered with hand-drawn visuals |
-| *The Man from the Future: The Visionary Life of John von Neumann* | Ananyo Bhattacharya | Easy–Medium | Biography weaving together Boolean logic, computing theory, and the mathematical foundations of the digital world |
-| *Introduction to Graph Theory* | Richard Trudeau | Easy–Medium | Gentle introduction to graph theory starting from Euler's bridges; no advanced maths required |
-| *The Art of Problem Solving* (Vol. 1) | Lehoczky & Rusczyk | Medium | Competition mathematics including number theory and combinatorics — sharpens the mathematical reasoning behind Big-O thinking |
-| *Networks, Crowds, and Markets* | Easley & Kleinberg | Medium–Hard | How graph theory explains social networks, markets, and the internet; free PDF available from Cornell |
+| Title | Author | Level | Covers | Free |
+|-------|--------|-------|--------|------|
+| *Grokking Algorithms* | Aditya Bhargava | Easy | Illustrated introduction to algorithms and Big-O; binary search, sorting, graphs — all covered with hand-drawn visuals | — |
+| *The Man from the Future: The Visionary Life of John von Neumann* | Ananyo Bhattacharya | Easy–Medium | Biography weaving together Boolean logic, computing theory, and the mathematical foundations of the digital world | — |
+| *Introduction to Graph Theory* | Richard Trudeau | Easy–Medium | Gentle introduction to graph theory starting from Euler's bridges; no advanced maths required | [Free →](https://openlibrary.org) |
+| *The Art of Problem Solving* (Vol. 1) | Lehoczky & Rusczyk | Medium | Competition mathematics including number theory and combinatorics — sharpens the mathematical reasoning behind Big-O thinking | — |
+| *Networks, Crowds, and Markets* | Easley & Kleinberg | Medium–Hard | How graph theory explains social networks, markets, and the internet; free PDF available from Cornell | [Free →](https://www.cs.cornell.edu/home/kleinber/networks-book/) |
 
 ### 🌐 Articles & Interactive Resources
 

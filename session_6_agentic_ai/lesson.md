@@ -240,13 +240,13 @@ Then: *"You're going to build this in 15 minutes."*
 
 ### 📖 Books
 
-| Title | Author | Level | What it covers |
-|---|---|---|---|
-| *The Alignment Problem* | Brian Christian | Easy | How AI systems learn human values (and fail to) — readable narrative for non-specialists |
-| *Human Compatible* | Stuart Russell | Medium | Berkeley AI professor argues the current approach to AI is dangerous and proposes a new paradigm |
-| *Attention Is All You Need* (paper) | Vaswani et al. | Medium | The original 2017 transformer paper — surprisingly readable; the foundation of every modern LLM |
-| *Deep Learning* | Goodfellow, Bengio & Courville | Hard | The standard graduate-level textbook; free online at deeplearningbook.org |
-| *The Coming Wave* | Mustafa Suleyman | Easy | Co-founder of DeepMind on why the AI wave is different from any previous technology shift |
+| Title | Author | Level | What it covers | Free |
+|---|---|---|---|---|
+| *The Alignment Problem* | Brian Christian | Easy | How AI systems learn human values (and fail to) — readable narrative for non-specialists | — |
+| *Human Compatible* | Stuart Russell | Medium | Berkeley AI professor argues the current approach to AI is dangerous and proposes a new paradigm | — |
+| *Attention Is All You Need* (paper) | Vaswani et al. | Medium | The original 2017 transformer paper — surprisingly readable; the foundation of every modern LLM | [Free →](https://arxiv.org/abs/1706.03762) |
+| *Deep Learning* | Goodfellow, Bengio & Courville | Hard | The standard graduate-level textbook; free online at deeplearningbook.org | [Free →](http://deeplearningbook.org) |
+| *The Coming Wave* | Mustafa Suleyman | Easy | Co-founder of DeepMind on why the AI wave is different from any previous technology shift | — |
 
 ### 🌐 Articles & Interactive Resources
 

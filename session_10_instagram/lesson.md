@@ -378,13 +378,13 @@ Kevin Systrom, Instagram's co-founder, studied symbolic systems at Stanford. His
 
 ### 📖 Books
 
-| Title | Author | Level | What it covers |
-|---|---|---|---|
-| *Designing Data-Intensive Applications* | Martin Kleppmann | Hard | The definitive book on databases, replication, partitioning, and the systems that power apps like Instagram at scale |
-| *System Design Interview — An Insider's Guide* | Alex Xu | Medium | Step-by-step walkthroughs of 15 real system design problems (including social media feeds and CDN design) |
-| *The Art of Scalability* | Abbott & Fisher | Medium | Practical framework for scaling web applications; covers the database, caching, and microservices layers described in this session |
-| *No Filter: The Inside Story of Instagram* | Sarah Frier | Easy | Narrative account of Instagram's founding, growth, and acquisition by Facebook — the human story behind the technical architecture |
-| *Hooked* | Nir Eyal | Easy | How consumer products (including Instagram) are designed to build habits; explains the psychology behind the engagement loop the recommendation algorithm exploits |
+| Title | Author | Level | What it covers | Free |
+|---|---|---|---|---|
+| *Designing Data-Intensive Applications* | Martin Kleppmann | Hard | The definitive book on databases, replication, partitioning, and the systems that power apps like Instagram at scale | — |
+| *System Design Interview — An Insider's Guide* | Alex Xu | Medium | Step-by-step walkthroughs of 15 real system design problems (including social media feeds and CDN design) | — |
+| *The Art of Scalability* | Abbott & Fisher | Medium | Practical framework for scaling web applications; covers the database, caching, and microservices layers described in this session | — |
+| *No Filter: The Inside Story of Instagram* | Sarah Frier | Easy | Narrative account of Instagram's founding, growth, and acquisition by Facebook — the human story behind the technical architecture | — |
+| *Hooked* | Nir Eyal | Easy | How consumer products (including Instagram) are designed to build habits; explains the psychology behind the engagement loop the recommendation algorithm exploits | — |
 
 ### 🌐 Articles & Interactive Resources
 

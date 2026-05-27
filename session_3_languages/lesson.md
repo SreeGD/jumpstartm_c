@@ -217,12 +217,12 @@ The same in C — 20+ lines of memory management.
 
 ### 📖 Books
 
-| Title | Author | Level | Covers |
-|-------|--------|-------|--------|
-| *The C Programming Language* | Kernighan & Ritchie | Medium | The original C textbook, written by Dennis Ritchie himself; brief, dense, and essential context for understanding why Python was such a relief |
-| *Fluent Python* | Luciano Ramalho | Medium | Deep dive into Python's design; explains why Python works the way it does — a book for after the basics are solid |
-| *The Pragmatic Programmer* | Hunt & Thomas | Medium | Language-agnostic guide to thinking like a software engineer; highly relevant to "why languages exist" from this session |
-| *Coders* | Clive Thompson | Easy | Profiles of working programmers; readable narrative of how different languages shaped different computing cultures |
+| Title | Author | Level | Covers | Free |
+|-------|--------|-------|--------|------|
+| *The C Programming Language* | Kernighan & Ritchie | Medium | The original C textbook, written by Dennis Ritchie himself; brief, dense, and essential context for understanding why Python was such a relief | [Free →](https://openlibrary.org) |
+| *Fluent Python* | Luciano Ramalho | Medium | Deep dive into Python's design; explains why Python works the way it does — a book for after the basics are solid | [Free →](https://openlibrary.org) |
+| *The Pragmatic Programmer* | Hunt & Thomas | Medium | Language-agnostic guide to thinking like a software engineer; highly relevant to "why languages exist" from this session | — |
+| *Coders* | Clive Thompson | Easy | Profiles of working programmers; readable narrative of how different languages shaped different computing cultures | — |
 
 ### 🌐 Articles & Interactive Resources
 

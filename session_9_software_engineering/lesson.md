@@ -388,13 +388,13 @@ Draw this on a whiteboard (or show it as a diagram):
 
 ### 📖 Books
 
-| Title | Author | Level | What it covers |
-|---|---|---|---|
-| *The Phoenix Project* | Gene Kim, Kevin Behr & George Spafford | Easy | A novel about a fictional IT disaster; teaches DevOps, CI/CD, and platform engineering principles through story |
-| *Building Microservices* | Sam Newman | Medium | The definitive practical guide to designing, building, and deploying microservices architectures |
-| *Docker Deep Dive* | Nigel Poulton | Easy | Concise, practical introduction to Docker containers; widely used as a first Docker text |
-| *Kubernetes Up and Running* | Brendan Burns, Joe Beda & Kelsey Hightower | Medium | Written by the creators of Kubernetes; the authoritative hands-on guide |
-| *Accelerate* | Nicole Forsgren, Jez Humble & Gene Kim | Medium | Data-driven research on what separates high-performing engineering teams; makes the case for CI/CD with evidence |
+| Title | Author | Level | What it covers | Free |
+|---|---|---|---|---|
+| *The Phoenix Project* | Gene Kim, Kevin Behr & George Spafford | Easy | A novel about a fictional IT disaster; teaches DevOps, CI/CD, and platform engineering principles through story | [Open Library](https://openlibrary.org) |
+| *Building Microservices* | Sam Newman | Medium | The definitive practical guide to designing, building, and deploying microservices architectures | [Open Library](https://openlibrary.org) |
+| *Docker Deep Dive* | Nigel Poulton | Easy | Concise, practical introduction to Docker containers; widely used as a first Docker text | — |
+| *Kubernetes Up and Running* | Brendan Burns, Joe Beda & Kelsey Hightower | Medium | Written by the creators of Kubernetes; the authoritative hands-on guide | — |
+| *Accelerate* | Nicole Forsgren, Jez Humble & Gene Kim | Medium | Data-driven research on what separates high-performing engineering teams; makes the case for CI/CD with evidence | — |
 
 ### 🌐 Articles & Interactive Resources
 

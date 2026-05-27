@@ -214,13 +214,13 @@ Then show: StatsBomb's published xG model documentation. It uses the same inputs
 
 ### 📖 Books
 
-| Title | Author | Level | Covers |
-|-------|--------|-------|--------|
-| *The Art of Statistics* | David Spiegelhalter | Easy | Readable introduction to statistical thinking; covers distributions, correlation, and probability using real-world examples including sport |
-| *Mathematics for Machine Learning* | Deisenroth, Faisal & Ong | Medium | Free PDF online; covers linear algebra, calculus, and probability specifically as they apply to ML — the mathematical backbone of this session |
-| *Neural Networks and Deep Learning* | Michael Nielsen | Medium | Free online book; builds neural networks from scratch using gradient descent; the most approachable deep-learning text |
-| *The Signal and the Noise* | Nate Silver | Easy–Medium | How probabilistic thinking works in sport, politics, and science; Silver's xG-equivalent work for baseball is woven throughout |
-| *Deep Learning* | Goodfellow, Bengio & Courville | Hard | The graduate-level textbook of the field written by two of the key people from this session; free online at deeplearningbook.org |
+| Title | Author | Level | Covers | Free |
+|-------|--------|-------|--------|------|
+| *The Art of Statistics* | David Spiegelhalter | Easy | Readable introduction to statistical thinking; covers distributions, correlation, and probability using real-world examples including sport | — |
+| *Mathematics for Machine Learning* | Deisenroth, Faisal & Ong | Medium | Free PDF online; covers linear algebra, calculus, and probability specifically as they apply to ML — the mathematical backbone of this session | [Free →](https://mml-book.github.io/) |
+| *Neural Networks and Deep Learning* | Michael Nielsen | Medium | Free online book; builds neural networks from scratch using gradient descent; the most approachable deep-learning text | [Free →](http://neuralnetworksanddeeplearning.com) |
+| *The Signal and the Noise* | Nate Silver | Easy–Medium | How probabilistic thinking works in sport, politics, and science; Silver's xG-equivalent work for baseball is woven throughout | — |
+| *Deep Learning* | Goodfellow, Bengio & Courville | Hard | The graduate-level textbook of the field written by two of the key people from this session; free online at deeplearningbook.org | [Free →](http://deeplearningbook.org) |
 
 ### 🌐 Articles & Interactive Resources
 

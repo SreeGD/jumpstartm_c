@@ -224,13 +224,13 @@ That's the whole goal.
 
 ### 📖 Books
 
-| Title | Author | Level | What it covers |
-|---|---|---|---|
-| *Automate the Boring Stuff with Python* | Al Sweigart | Easy | Free online; teaches Python through real projects (web scraping, working with files, APIs) — ideal capstone companion |
-| *Python Crash Course* | Eric Matthes | Easy | Project-based introduction; Part II walks through three complete projects from scratch |
-| *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* | Aurélien Géron | Medium | The standard practical ML book; Chapter 10–12 covers neural networks with working code examples |
-| *Flask Web Development* | Miguel Grinberg | Medium | Build and deploy a real Flask web application; directly applicable to adding a web front end to any capstone track |
-| *The Pragmatic Programmer* | Hunt & Thomas | Medium | Timeless advice on software craftsmanship, debugging, and writing code that actually works in the real world |
+| Title | Author | Level | What it covers | Free |
+|---|---|---|---|---|
+| *Automate the Boring Stuff with Python* | Al Sweigart | Easy | Free online; teaches Python through real projects (web scraping, working with files, APIs) — ideal capstone companion | [Free →](https://automatetheboringstuff.com) |
+| *Python Crash Course* | Eric Matthes | Easy | Project-based introduction; Part II walks through three complete projects from scratch | — |
+| *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* | Aurélien Géron | Medium | The standard practical ML book; Chapter 10–12 covers neural networks with working code examples | [Open Library](https://openlibrary.org) |
+| *Flask Web Development* | Miguel Grinberg | Medium | Build and deploy a real Flask web application; directly applicable to adding a web front end to any capstone track | — |
+| *The Pragmatic Programmer* | Hunt & Thomas | Medium | Timeless advice on software craftsmanship, debugging, and writing code that actually works in the real world | — |
 
 ### 🌐 Articles & Interactive Resources
 

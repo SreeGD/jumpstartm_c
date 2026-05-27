@@ -480,7 +480,7 @@ What is the single most important thing you want to build or learn in your first
 ### Books (Worth Owning)
 - **"The Pragmatic Programmer" by David Thomas and Andrew Hunt** — The best book on what it means to be a professional software engineer. Not about any specific language or framework — about how to think about software craft. Read it in your first year.
 - **"Designing Data-Intensive Applications" by Martin Kleppmann** — The standard reference for understanding databases, distributed systems, and data architecture. Harder reading, but this is the book that separates engineers who understand systems from those who merely use them. Read it in your second or third year.
-- **"Staff Engineer" by Will Larson** — For students who want to understand the senior IC (individual contributor) path in detail. Readable in 4 hours. Gives an honest picture of what it takes to become technically influential at a large company.
+- **"Staff Engineer" by Will Larson** — For students who want to understand the senior IC (individual contributor) path in detail. Readable in 4 hours. Gives an honest picture of what it takes to become technically influential at a large company. [Free →](https://staffeng.com/guides/)
 - **"The Art of Problem Solving" series** — For students pursuing the quant path. The mathematical reasoning developed here directly prepares for quant interviews.
 
 ### Podcasts and Video Channels
@@ -492,4 +492,4 @@ What is the single most important thing you want to build or learn in your first
 ### For the Quant Path Specifically
 - **Jane Street's Blog and YouTube** — Jane Street publishes genuine technical content about how they think. Reading their materials is one of the best ways to understand what quant trading actually involves.
 - **Quantlib** (quantlib.org) — Open-source library for quantitative finance. Contributing to this project is a concrete way to build a portfolio for quant roles.
-- **"A Random Walk Down Wall Street" by Burton Malkiel** — Essential context for understanding markets before building trading systems.
+- **"A Random Walk Down Wall Street" by Burton Malkiel** — Essential context for understanding markets before building trading systems. [Open Library](https://openlibrary.org)
