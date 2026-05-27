@@ -51,6 +51,11 @@ Sun Microsystems wanted code that could run anywhere — "Write once, run anywhe
 **1995 — JavaScript**  
 Brendan Eich was hired by Netscape to add interactivity to web browsers. He wrote JavaScript in 10 days. It became the language of the web — every browser runs it, no installation needed. Now it runs servers too (Node.js).
 
+**2012 — TypeScript (Microsoft)**  
+JavaScript was written in 10 days and it shows — no types, no guardrails, errors only visible at runtime. Fine for a small web page. Catastrophic for a 500,000-line codebase with 200 engineers. Microsoft's Anders Hejlsberg (who also designed C#) created TypeScript: JavaScript with type annotations that catch bugs before the code runs. Today TypeScript is the default for any serious web project.
+
+Microsoft also built **VS Code** (2015) — a free, open-source code editor written in TypeScript — and released it to the world. It became the most-used code editor on the planet. The tool you'll use throughout this curriculum is a Microsoft product.
+
 ---
 
 ### Key Distinctions

@@ -65,6 +65,11 @@ Scale the Transformer with billions of parameters and train on the entire intern
 The emergent behaviour is shocking — the model can write code, explain concepts, do math, translate languages — without being explicitly trained on any of those tasks.  
 ChatGPT: 1 million users in 5 days. 100 million in 2 months. Fastest product adoption in history.
 
+**Microsoft's $10 billion bet**  
+In January 2023, Microsoft invested $10 billion in OpenAI — the company behind ChatGPT. They integrated GPT-4 into Bing, Office, and Windows. More importantly, they launched **GitHub Copilot** — an AI that writes code alongside you, trained on billions of lines of code from GitHub (which Microsoft acquired in 2018 for $7.5B). Within a year, over 1 million developers were using Copilot daily. It is the first mass-market AI tool that directly replaces a part of a software engineer's job.
+
+*"Microsoft was written off in 2013. By 2024, they were the most valuable company in the world again — because of this bet."*
+
 **2024–2025: Agents**  
 What makes a **chatbot**: ask a question → get an answer. One turn. Passive.  
 What makes an **agent**: given a goal → plan → use tools → take actions → verify → iterate.

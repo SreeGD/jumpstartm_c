@@ -56,6 +56,10 @@ Turing also asked: *"Can machines think?"* He invented the theoretical foundatio
 
 **Apple II (1977), IBM PC (1981)** — Computers shrink to desktops. The idea: *what if everyone had one?* Bill Gates, Steve Jobs, Steve Wozniak — garage founders who changed everything.
 
+**The deal that made Microsoft** — IBM needed an operating system for its new PC. They called Bill Gates. Gates didn't have one, but he knew a man who did. He bought a small operating system called QDOS from Tim Paterson for $50,000. He licensed it to IBM — not as a sale, but per unit. Every IBM PC shipped with MS-DOS. Millions of units. Gates got a royalty on each. The most important business deal in the history of technology, made by a 25-year-old.
+
+Microsoft went on to build Windows, Office, and Internet Explorer — becoming the most valuable company in the world by the late 1990s.
+
 **1984 Apple Mac ad** → *Play it now. Let Student react.*
 
 The Mac introduced the mouse, windows, and icons. Before that, you typed everything in command lines. The Mac made computers human.
@@ -79,6 +83,8 @@ Google (1998), Wikipedia (2001), Facebook (2004), YouTube (2005), iPhone (2007).
 **ImageNet moment (2012)** — A neural network called AlexNet wins an image recognition competition by a huge margin. The AI winter is over. Deep learning works.
 
 **2017 — "Attention is All You Need"** — Google researchers publish a paper introducing the Transformer architecture. Every modern AI runs on this.
+
+**2014 — Microsoft reinvents itself** — Satya Nadella becomes CEO of Microsoft. The company was dismissed as irrelevant — losing to Google in search, Apple in phones, Amazon in cloud. Nadella's move: go all-in on cloud (Azure), open-source everything, and acquire GitHub ($7.5B, 2018) — the platform where all software is built. Then in 2023, Microsoft invests $10 billion in OpenAI and integrates AI into every product. Microsoft becomes the most valuable company in the world again. The comeback story of Silicon Valley.
 
 **2022 — ChatGPT** — OpenAI releases ChatGPT. 1 million users in 5 days. Fastest product adoption in history.
 
@@ -206,6 +212,7 @@ These people appear in this session. A 5-minute Wikipedia read on each one is wo
 - **Billy Beane** — Moneyball GM; changed sports forever
 - **Daryl Morey** — the NBA executive who proved mid-range shots are mathematically bad
 - **Geoffrey Hinton** — "Godfather of deep learning"; won the 2024 Nobel Prize in Physics for neural networks
+- **Satya Nadella** — CEO who transformed Microsoft from a declining giant to the world's most valuable company through cloud and AI bets
 
 ---
 

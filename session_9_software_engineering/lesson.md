@@ -68,7 +68,7 @@ Session 1.2 (how the web works), Session 3 (programming languages), Session 4 (P
 **What engineers learned:**
 - **Single-Page Applications (SPAs)** — the page loads once. User interactions swap content dynamically via API calls without reloading. (Student saw this in the DevTools lab — those XHR requests are SPAs talking to servers.)
 - **Angular / React / Vue** — frameworks that manage the complexity of SPAs.
-- **TypeScript** — JavaScript with type hints. Catches bugs before the code runs. Scales better in large teams.
+- **TypeScript** — JavaScript with type hints, created by **Microsoft** (Anders Hejlsberg, 2012). Catches bugs before the code runs. Scales better in large teams. Microsoft also released **VS Code** (2015) — a free editor built in TypeScript, now the most-used editor in the world.
 
 **The shift:** Frontend engineering became a serious specialisation. "Full-stack" became a thing — one engineer who could do both front and back end.
 
@@ -207,7 +207,7 @@ spec:
 
 **What engineers are learning now:**
 
-**Code Copilots** — AI that writes code alongside you. GitHub Copilot, Claude Code, Cursor. You describe what you want; the AI writes a first draft. You review, refine, redirect.
+**Code Copilots** — AI that writes code alongside you. **GitHub Copilot** (Microsoft + OpenAI, 2021) was first — trained on billions of lines of code from GitHub, which Microsoft acquired for $7.5B in 2018. Now: Claude Code, Cursor, Gemini Code Assist. You describe what you want; the AI writes a first draft. You review, refine, redirect. Over 1 million developers use Copilot daily.
 
 **Agentic Workflows** — AI that takes multi-step actions autonomously. "Review this PR, run the tests, fix the failing ones, update the documentation." Student built a simple agent in Session 6. Production systems now have agents managing entire workflows.
 
