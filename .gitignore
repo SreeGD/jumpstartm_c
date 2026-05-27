@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Office temp files
+~$*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Generated outputs (regenerate with scripts)
+curriculum_advaith.html
+curriculum_advaith.pptx
