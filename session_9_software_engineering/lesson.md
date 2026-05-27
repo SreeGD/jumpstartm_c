@@ -38,6 +38,8 @@ By the end of this session, Student can:
 
 **The key insight:** Software engineering in 2010 was about learning *one* language deeply and one paradigm (OOP) thoroughly. Mastery mattered more than breadth.
 
+**Who owned this era:** **Oracle** owns Java and has since its acquisition of Sun Microsystems in 2010. The **Spring Framework** — the toolkit that made large Java applications manageable — came from Pivotal (later acquired by VMware). **IBM** dominated enterprise contracts, selling the consulting services and hardware that ran Java applications in banks and insurance companies. That world hasn't gone away — every major bank and insurance company still runs Java at its core. It's the "boring but extremely well-paid" end of engineering.
+
 **What Student already knows from this curriculum:**  
 Session 1.2 (how the web works), Session 3 (programming languages), Session 4 (Python — same OOP principles apply in Java)
 
@@ -56,6 +58,8 @@ Session 1.2 (how the web works), Session 3 (programming languages), Session 4 (P
 
 **The shift:** Speed of development started to matter as much as raw performance. "Ship it fast, improve it later" became viable.
 
+**Who drove this era:** **Dropbox** famously rewrote its entire backend from Java to Python — a signal to the industry that Python was production-ready. **Node.js** was created at **Joyent** by Ryan Dahl in 2009, with the explicit goal of handling thousands of simultaneous connections without the overhead of Java threading. The **npm** registry (Node Package Manager) became the single largest software registry in the world — millions of reusable packages, free for anyone.
+
 **Sports parallel:** *"It's like the difference between a methodical possession team (Java) and a high-press counter-attacking side (Python). Both can win. Different contexts."*
 
 ---
@@ -72,6 +76,8 @@ Session 1.2 (how the web works), Session 3 (programming languages), Session 4 (P
 
 **The shift:** Frontend engineering became a serious specialisation. "Full-stack" became a thing — one engineer who could do both front and back end.
 
+**The framework wars — and how they ended:** **Google** open-sourced Angular in 2010. **Facebook** open-sourced React in 2013. React won. Today it powers Meta's own products, plus Airbnb, Netflix, and Atlassian — and it's the default choice for most new frontend projects worldwide. (TypeScript and VS Code, as noted above, are Microsoft's contributions to this era.)
+
 **What it looks like today:** Instagram, YouTube, Gmail — all SPAs. When you scroll your feed and new posts load without the page refreshing, that's an SPA making API calls.
 
 ---
@@ -87,6 +93,8 @@ Session 1.2 (how the web works), Session 3 (programming languages), Session 4 (P
 - **Enterprise patterns** — dependency injection, ORMs (translate between code and databases), middleware.
 
 **The shift:** Backend development became about assembling well-designed components, not building from scratch. Most of a typical backend is now framework code; engineers focus on the business logic.
+
+**The companies that set the standard:** **Twitter's** public API in this era was studied by every backend engineer — it established the vocabulary for how REST APIs should behave. **Stripe** took it further: their API documentation became the industry benchmark for how to design developer-facing APIs (clear, consistent, testable). **Twilio** made the most important point of all — that an API *itself* could be a business model. You didn't need an app; you could sell access to a capability over HTTP and charge per call.
 
 **A real example:** When the student's `sports_analyst.py` calls the Claude API, it's making a REST POST request to Anthropic's backend — which almost certainly runs on a framework like this.
 
@@ -117,6 +125,8 @@ Developer pushes code
 
 **The shift:** Software stopped being released in big versions and started being released continuously. Netflix deploys new code thousands of times per day.
 
+**The pioneers:** **Netflix** didn't just use microservices — they invented the playbook. They broke a single monolith into 700+ independent services, and then went further: they built **Chaos Monkey**, a tool that *deliberately kills random services in production* to test whether the rest of the system can survive. The philosophy: if failure is inevitable, practise it constantly. **Amazon** made the architectural shift even earlier — around 2002, Jeff Bezos issued his famous internal "API mandate" memo, requiring every team to expose their data through APIs and communicate only that way. Bezos added the line: "Anyone who doesn't do this will be fired." That mandate is the origin story of AWS. **Docker** was created by Solomon Hykes at a startup called dotCloud in 2013 — originally an internal tool, demonstrated in a five-minute PyCon lightning talk, and immediately recognised as something the whole industry needed.
+
 **Sports parallel:** *"This is like changing from a squad of 11 generalists to 11 specialists — a goalkeeper specialist coach, a set-piece coach, a fitness coach. Each expert in their lane. Faster to improve each part."*
 
 ---
@@ -142,6 +152,8 @@ Developer pushes code
 **Infrastructure as Code** — describe your infrastructure in code (Terraform, CloudFormation). Same version control, review, and automation as software. Rebuild your entire production environment in minutes.
 
 **The shift:** A two-person startup could now serve millions of users on the same infrastructure as Netflix. The playing field levelled.
+
+**The big three — and the numbers:** **AWS** (Amazon) launched in 2006, giving it a ten-year head start on rivals. Today it holds ~32% of the cloud market. **Azure** (Microsoft) is at ~22%, and **GCP** (Google) at ~11%. Google's contribution that changed everything wasn't just cloud compute — in 2014 they open-sourced **Kubernetes**, the container orchestration system they had built internally under the name Borg. It became the standard way to run microservices across every cloud provider.
 
 **the student's connection:** Every API he's called in this curriculum (Claude, yfinance) runs on cloud infrastructure. The Anthropic API is deployed on AWS or GCP. He's been a cloud user since Session 6.
 
@@ -175,6 +187,8 @@ spec:
 
 **The shift:** Reliability became a first-class concern. Teams started having SLOs (Service Level Objectives) — "99.9% of requests will respond in under 200ms." Engineers who could run and monitor systems at scale became the most valuable people in tech.
 
+**The tooling ecosystem:** **Datadog** and **Grafana** became the commercial dashboards every engineering team lived inside. **Prometheus** — open-source, created at **SoundCloud** in 2012 — became the standard for collecting metrics. The observability market is now worth $3B/year. For infrastructure itself, **HashiCorp** built **Terraform**, making "infrastructure as code" mainstream: describe your entire cloud setup in a text file, version-control it, and rebuild your production environment from scratch in minutes.
+
 ---
 
 ## Era 8 — 2023: Platform Engineering & Security
@@ -198,6 +212,8 @@ spec:
 
 **The shift:** The best engineers in 2023 weren't just building features — they were building the platform that made everyone else more productive. This is "10x engineer" done right.
 
+**The companies that defined this era:** **Spotify** built an internal developer portal called **Backstage** to manage their hundreds of microservices — and then open-sourced it in 2020, where it became the blueprint for how companies build IDPs. **Vercel** and **Netlify** solved the same problem for frontend teams: deploy a web app by pushing to Git, full stop. And the era ended with a landmark acquisition: **IBM bought HashiCorp for $6.4 billion in 2024** — a sign that infrastructure tooling had become valuable enough for the old enterprise giants to want it back.
+
 ---
 
 ## Era 9 — 2026: AI-Assisted Software Engineering
@@ -207,7 +223,7 @@ spec:
 
 **What engineers are learning now:**
 
-**Code Copilots** — AI that writes code alongside you. **GitHub Copilot** (Microsoft + OpenAI, 2021) was first — trained on billions of lines of code from GitHub, which Microsoft acquired for $7.5B in 2018. Now: Claude Code, Cursor, Gemini Code Assist. You describe what you want; the AI writes a first draft. You review, refine, redirect. Over 1 million developers use Copilot daily.
+**Code Copilots** — AI that writes code alongside you. **GitHub Copilot** (Microsoft + OpenAI, 2021) was first — trained on billions of lines of code from GitHub, which Microsoft acquired for $7.5B in 2018. **Cursor** arrived next, built on Claude (Anthropic's model). **JetBrains AI** — embedded in the IDE most professional Java and Kotlin developers already use — draws on multiple models. **Amazon CodeWhisperer** targets developers already inside the AWS ecosystem. Over 1 million developers use Copilot daily, and that number is growing across all the tools. You describe what you want; the AI writes a first draft. You review, refine, redirect.
 
 **Agentic Workflows** — AI that takes multi-step actions autonomously. "Review this PR, run the tests, fix the failing ones, update the documentation." Student built a simple agent in Session 6. Production systems now have agents managing entire workflows.
 

@@ -42,6 +42,8 @@ Kevin Systrom and Mike Krieger built the first version of Instagram in **13 days
 
 **The Wow:** In 2012, Facebook acquired Instagram for **$1 billion**. Instagram had 13 employees. That's $77 million per person.
 
+Kevin Systrom had met Mark Zuckerberg through mutual contacts in the Bay Area startup scene. The acquisition was controversial at the time — Instagram had zero revenue. But Zuckerberg saw the threat clearly: mobile photo sharing was the thing Facebook had failed to crack, and Instagram was eating that space. It turned out to be one of the best investments in tech history. Thirteen years later, Instagram generates roughly **$32 billion per year in ad revenue** — more than YouTube. The $1 billion price tag looks absurd in hindsight, but only because the architecture decisions that followed were so good.
+
 Why was it worth that? Not the app. The **architecture decisions** — they'd built something that could scale.
 
 ---
@@ -135,6 +137,14 @@ From 1,000 candidates, rank them precisely using a deep neural network.
 **Stage 3 — Diversity filter:**
 Don't show 10 posts from the same person in a row.
 
+### The Ethical Dimension
+
+The algorithm's stated goal is maximising **"time spent"** — the total minutes a user stays in the app. Meta tracks this obsessively as a core business metric, because more time spent means more ad impressions.
+
+In 2021, **Frances Haugen** — a former Meta product manager turned whistleblower — leaked internal research documents to the Wall Street Journal. The documents revealed that Meta's own researchers had found the algorithm intentionally amplifies outrage and emotionally provocative content, because that content drives higher engagement than neutral or positive posts. Meta knew this, debated it internally, and largely chose not to fix it because the engagement numbers were too valuable.
+
+This is the real ethical dimension of recommendation systems. The engineering is impressive. The goal it's optimising for is worth examining.
+
 ---
 
 ## Part 4 — Stories vs Reels vs Posts (Different Data Models)
@@ -197,6 +207,12 @@ Instagram isn't one program. It's dozens of independent services:
 | `ml-ranking-service` | Scores posts for the algorithm |
 
 Each service is deployed independently. If `search-service` crashes, the feed still works.
+
+### Meta's Infrastructure — Built From Scratch
+
+One thing that surprises most people: Instagram (Meta) does **not** run on AWS or Azure. Meta owns and operates its own data centres — enormous, custom-built facilities. In 2011, Meta launched the **Open Compute Project**, open-sourcing the hardware and data centre designs they'd developed, so the rest of the industry could benefit. They needed racks, cooling systems, and power management tailored to their exact workloads, and rather than keep it proprietary, they shared it.
+
+Meta's engineering culture has also produced a striking number of tools the rest of the industry depends on. They wrote **Cassandra** (now Apache Cassandra) for their own inbox search. They open-sourced **React**, **GraphQL**, **PyTorch**, and **LLaMA**. This is worth pausing on: the company that built Instagram has become one of the most prolific open-source contributors in tech, releasing the infrastructure that other companies — including competitors — use to build their own products.
 
 ### Caching with Redis
 
