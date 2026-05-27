@@ -284,3 +284,117 @@ Draw this on a whiteboard (or show it as a diagram):
 - The strongest connection: Student has already used Era 9 tools (Claude API in Session 6). Go backwards from what he knows.
 - Best question at the end: *"If you were joining a software team at NITW placement, which era's skills would be expected? Which would make you stand out?"*
 - Honest answer: Eras 1-5 are table stakes at placement. Era 6-7 (cloud, K8s) makes you stand out. Era 9 (AI-native) is the frontier.
+
+---
+
+## 🧪 Quiz
+
+*Complete after the session. Bring answers to the next class.*
+
+**Q1.** What problem did microservices solve that the "monolith" architecture struggled with?
+- A) Monoliths were too slow to write code in
+- B) As teams grew, one giant codebase made coordination and independent deployments nearly impossible ✓
+- C) Monoliths could not connect to the internet
+- D) Monoliths required too many programming languages
+
+**Q2.** What is a Docker container, and what problem does it solve?
+- A) A database that stores application logs
+- B) A virtual machine that runs a full operating system
+- C) A packaged bundle of an application and all its dependencies that runs consistently anywhere ✓
+- D) A cloud storage service for files
+
+**Q3.** What does CI/CD stand for, and what does it automate?
+- A) Cloud Integration / Cloud Deployment — automating server purchases
+- B) Continuous Integration / Continuous Deployment — automating testing and releasing code to production ✓
+- C) Code Inspection / Code Delivery — automating code reviews
+- D) Container Integration / Container Deployment — automating Docker builds
+
+**Q4.** Kubernetes is described as "the operating system for containers." What two specific problems does it solve that plain Docker alone cannot handle?
+
+**Q5.** A startup is choosing between renting servers on AWS or buying their own physical servers. Give two advantages of the cloud option for an early-stage company.
+
+**Q6.** What is "platform engineering" and how does it differ from regular software engineering?
+- A) It is engineering for gaming platforms like PlayStation
+- B) It involves building the internal tools and "golden paths" that make other developers more productive ✓
+- C) It means writing code for cloud providers like AWS
+- D) It is the same as DevOps — just a new name for an old role
+
+**Q7.** The session describes AI copilots as "removing toil, not replacing engineers." What specific skills does the session say become MORE important in the AI-assisted era?
+
+**Q8 (explain in your own words).** A football club's data engineering team runs a monolith: one giant codebase handles scouting data, squad planning, match analytics, and ticketing. The team is now 15 engineers and deployments are slow and risky. Using concepts from this session, explain what architectural change you would recommend and what specific benefits it would bring.
+
+---
+
+*Answers are at the bottom of this file.*
+
+## Quiz Answers
+
+**Q1.** B — In a monolith, all features are tightly coupled. When Netflix grew to hundreds of engineers, one team's change could break another's, and releasing required everyone to coordinate. Microservices gave each team ownership of one service they deploy independently.
+
+**Q2.** C — Docker containers bundle the application code with every library and configuration it needs. This eliminates the "works on my machine but not on the server" problem — the container behaves identically in development, testing, and production.
+
+**Q3.** B — CI (Continuous Integration) automatically runs tests every time code is pushed. CD (Continuous Deployment) automatically releases code to production if tests pass. Together they let teams ship safely multiple times per day instead of once a month.
+
+**Q4.** Kubernetes handles automatic restart of crashed containers (self-healing) and auto-scaling — spinning up more copies when traffic spikes and fewer when traffic drops. Docker alone just runs containers; Kubernetes orchestrates fleets of them.
+
+**Q5.** Any two of: pay only for what you use (no upfront hardware cost); scale instantly to handle traffic spikes; no need for a physical data centre, power, or cooling; faster to get started; global infrastructure already built.
+
+**Q6.** B — Platform engineers build the shared internal developer platform: standard CI/CD pipelines, Dockerfiles, monitoring, and deployment tools. Rather than shipping user-facing features, they multiply the productivity of every other engineer on the team.
+
+**Q7.** The session names: system design, problem decomposition, judgment, debugging, and knowing when the AI is wrong. These are the higher-order skills that AI cannot yet replace.
+
+**Q8.** Model answer: Recommend splitting into microservices — for example, a separate scouting-service, analytics-service, squad-planning-service, and ticketing-service. Each team can develop and deploy their service independently using CI/CD pipelines, which eliminates the coordination bottleneck. Docker containers ensure each service runs consistently across environments. Kubernetes can manage the services in production, restarting any that crash and scaling the analytics-service during peak usage (match nights). The overall result is faster releases, fewer cross-team breakages, and the ability to update the ticketing system without any risk to the match analytics pipeline.
+
+---
+
+## 📚 Research Materials
+
+> 💡 **Start here:** Watch Fireship's "Docker in 100 Seconds" followed by "Kubernetes Explained in 100 Seconds" on YouTube — they are the fastest possible mental model for how containers and orchestration work before diving deeper.
+
+### 🎬 Films & Documentaries
+
+| Title | Year | What to watch for |
+|---|---|---|
+| [The Internet's Own Boy](https://www.imdb.com/title/tt3268458/) | 2014 | The story of Aaron Swartz; touches on open-source culture, the ethos behind GitHub, and the politics of software infrastructure |
+| [General Magic](https://www.generalmagicthemovie.com/) | 2018 | The forgotten Silicon Valley project that incubated the engineers who later built the cloud infrastructure we use today |
+| [lo and behold: Reveries of the Connected World](https://www.imdb.com/title/tt5ourselves/) | 2016 | Werner Herzog documentary on the internet's origins and infrastructure — excellent background on how the cloud came to exist |
+
+### 📺 YouTube
+
+| Channel | Video | Link |
+|---|---|---|
+| Fireship | Docker in 100 Seconds | [youtube.com/watch?v=Gjnup-PuquQ](https://www.youtube.com/watch?v=Gjnup-PuquQ) |
+| Fireship | Kubernetes Explained in 100 Seconds | [youtube.com/watch?v=PziYflu8cB8](https://www.youtube.com/watch?v=PziYflu8cB8) |
+| TechWorld with Nana | Docker Tutorial for Beginners — Full Course | [youtube.com/watch?v=3c-iBn73dDE](https://www.youtube.com/watch?v=3c-iBn73dDE) |
+| TechWorld with Nana | Kubernetes Tutorial for Beginners — Full Course | [youtube.com/watch?v=X48VuDVv0do](https://www.youtube.com/watch?v=X48VuDVv0do) |
+| Fireship | CI/CD Explained in 100 Seconds | *search "Fireship CI CD 100 seconds"* |
+| AWS | AWS re:Invent — Werner Vogels Keynote (any recent year) | *search "Werner Vogels AWS re:Invent keynote"* |
+
+### 📖 Books
+
+| Title | Author | Level | What it covers |
+|---|---|---|---|
+| *The Phoenix Project* | Gene Kim, Kevin Behr & George Spafford | Easy | A novel about a fictional IT disaster; teaches DevOps, CI/CD, and platform engineering principles through story |
+| *Building Microservices* | Sam Newman | Medium | The definitive practical guide to designing, building, and deploying microservices architectures |
+| *Docker Deep Dive* | Nigel Poulton | Easy | Concise, practical introduction to Docker containers; widely used as a first Docker text |
+| *Kubernetes Up and Running* | Brendan Burns, Joe Beda & Kelsey Hightower | Medium | Written by the creators of Kubernetes; the authoritative hands-on guide |
+| *Accelerate* | Nicole Forsgren, Jez Humble & Gene Kim | Medium | Data-driven research on what separates high-performing engineering teams; makes the case for CI/CD with evidence |
+
+### 🌐 Articles & Interactive Resources
+
+| Resource | Link | What it covers |
+|---|---|---|
+| Play with Docker | [labs.play-with-docker.com](https://labs.play-with-docker.com) | Free browser-based Docker playground — run real containers without installing anything |
+| Kubernetes Interactive Tutorial | [kubernetes.io/docs/tutorials/kubernetes-basics/](https://kubernetes.io/docs/tutorials/kubernetes-basics/) | Official step-by-step tutorial in your browser; deploys and scales a real app |
+| Martin Fowler — Microservices | [martinfowler.com/articles/microservices.html](https://martinfowler.com/articles/microservices.html) | The original 2014 article that defined the term and the architectural pattern |
+| GitHub Actions Documentation | [docs.github.com/en/actions](https://docs.github.com/en/actions) | Official docs for the most widely used CI/CD platform; includes worked examples for Python projects |
+| The Twelve-Factor App | [12factor.net](https://12factor.net) | Methodology for building scalable, maintainable cloud-native applications — the principles behind every modern microservice |
+
+### 🔗 People to Look Up
+
+- **Solomon Hykes** — Creator of Docker; his 2013 PyCon lightning talk "The Future of Linux Containers" is the moment Docker was introduced to the world
+- **Kelsey Hightower** — Principal Engineer at Google and one of the most respected Kubernetes educators; known for making complex infrastructure concepts genuinely accessible
+- **Martin Fowler** — Chief Scientist at ThoughtWorks; coined or popularised "microservices", "continuous integration", and "refactoring"; his website martinfowler.com is an essential reference
+- **Werner Vogels** — CTO of Amazon; architect of AWS; his philosophy "you build it, you run it" is the origin of DevOps culture in cloud computing
+- **Linus Torvalds** — Creator of Linux (the OS inside every Docker container and cloud server) and Git (the version control system underpinning every CI/CD pipeline)
+- **Nicole Forsgren** — Researcher whose DORA metrics (from the *Accelerate* book) are the industry standard for measuring software delivery performance

@@ -273,3 +273,118 @@ Kevin Systrom, Instagram's co-founder, studied symbolic systems at Stanford. His
 - Show Student how to inspect Instagram's API calls using browser DevTools
 - Look at the `graph.instagram.com` requests in the Network tab
 - Discuss GraphQL vs REST (Instagram uses GraphQL internally)
+
+---
+
+## 🧪 Quiz
+
+*Complete after the session. Bring answers to the next class.*
+
+**Q1.** What is a CDN (Content Delivery Network) and why does Instagram use one?
+- A) A type of database for storing user passwords
+- B) A network of servers in cities worldwide that serves content from the location nearest to the user, reducing load times ✓
+- C) A machine learning model that ranks posts in the feed
+- D) Instagram's internal messaging system between microservices
+
+**Q2.** What is the "fan-out problem" in the context of Instagram, and what technology does Instagram use to solve it?
+- A) A problem where photos are too large to store; solved with image compression
+- B) When a celebrity posts and 500M notifications must be created instantly; solved with message queues like Kafka ✓
+- C) When the feed algorithm runs too slowly; solved with Redis caching
+- D) When the CDN fails; solved with S3 replication
+
+**Q3.** Instagram switched from chronological feed to algorithmic feed in 2016. What does the algorithm actually predict?
+- A) Which posts were uploaded most recently
+- B) Which posts have the most likes globally
+- C) How likely a specific user is to engage with a specific post, based on their history ✓
+- D) Which posts contain the most hashtags
+
+**Q4.** Why does Instagram store Cristiano Ronaldo's profile data in Redis rather than querying PostgreSQL each time? What is the trade-off?
+
+**Q5.** Stories disappear after 24 hours, but Posts are permanent. What is the technical mechanism that makes Stories expire, and why does this design make sense from a storage cost perspective?
+
+**Q6.** A Reel uses "adaptive bitrate streaming." What does this mean for the viewer?
+- A) The video always plays in the highest quality regardless of connection speed
+- B) The video pauses every 30 seconds to check your connection
+- C) The phone automatically switches video quality up or down based on available WiFi or 4G speed ✓
+- D) Reels are pre-downloaded to your phone when connected to WiFi
+
+**Q7.** Instagram is free to use. Explain the full business model: what is being sold, to whom, and how is it priced?
+
+**Q8 (explain in your own words).** The session describes a "two-stage recommendation system" for the Explore page. Imagine you are designing the same system for a football highlights app — one that recommends clips to users. Describe what Stage 1 (candidate generation) and Stage 2 (ranking) would each do, and what signals you would use in each stage.
+
+---
+
+*Answers are at the bottom of this file.*
+
+## Quiz Answers
+
+**Q1.** B — Without a CDN, all users worldwide would fetch photos from a single origin server (e.g., in California), adding hundreds of milliseconds of latency. CDN nodes in Mumbai, Frankfurt, and Singapore serve content locally, reducing photo load time from ~300ms to ~20ms.
+
+**Q2.** B — When a user with 500 million followers posts, Instagram must create 500 million notification tasks near-simultaneously. Apache Kafka (or similar message queues) queues these tasks and distributes them across thousands of worker servers processing in parallel.
+
+**Q3.** C — The algorithm is a machine learning model that predicts the probability a specific user will like, comment on, or save a specific post, based on that user's historical behaviour (likes, pauses, DMs, profile views).
+
+**Q4.** Redis is an in-memory database — reads take under 1ms versus 5–50ms for PostgreSQL on disk. For data accessed by millions of users simultaneously (like Ronaldo's profile), caching in Redis prevents millions of identical database queries. The trade-off is memory cost and the need to keep the cache up to date when the underlying data changes.
+
+**Q5.** Stories are stored with a TTL (Time-To-Live) field in the database. When 24 hours elapse, the database automatically marks them for deletion and the CDN purges the cached versions. This makes sense because temporary content does not need to be retained indefinitely — it reduces storage costs significantly for content most users watch once.
+
+**Q6.** C — Adaptive bitrate streaming monitors connection speed in real time. On fast WiFi, the phone requests 1080p video chunks; on slow 4G, it switches to 360p chunks seamlessly. This prevents buffering while maintaining the best possible quality the connection allows.
+
+**Q7.** Users' attention is the product. Meta sells advertisers the ability to show targeted ads to users based on detailed behavioural and demographic profiles. Advertisers bid in a real-time auction (completing in ~50ms per ad slot) and pay per 1,000 impressions (CPM) or per click (CPC). Instagram generated ~$32 billion in ad revenue in 2022 this way.
+
+**Q8.** Model answer: Stage 1 (candidate generation) — from millions of clips available, quickly narrow to ~1,000 candidates relevant to this user. Signals: clips from teams and leagues the user has watched before, clips featuring players they follow, clips trending globally in the last 24 hours. Use a fast, simpler model (e.g., nearest-neighbour on user embeddings). Stage 2 (ranking) — score the 1,000 candidates precisely using a deep neural network. Signals: how long the user historically watches clips of similar type, whether they share or replay clips, their preferred clip length, time of day (short clips in the morning, longer ones at night). The top 20 are shown in the recommended feed.
+
+---
+
+## 📚 Research Materials
+
+> 💡 **Start here:** Watch the "System Design Interview — Instagram" walkthrough by Gaurav Sen on YouTube — it takes the exact concepts from this session and shows how an engineer would sketch them in a real interview in under 20 minutes.
+
+### 🎬 Films & Documentaries
+
+| Title | Year | What to watch for |
+|---|---|---|
+| [The Social Network](https://www.imdb.com/title/tt1285016/) | 2010 | Fiction, but accurate on the early scaling challenges of a social platform — database overload, caching, and the move from dorm room to data centre |
+| [The Social Dilemma](https://www.thesocialdilemma.com/) | 2020 | Former Instagram and Facebook engineers explain how the recommendation algorithm was designed to maximise engagement |
+| [Break Point (Netflix series)](https://www.netflix.com/title/81482279/) | 2023 | Not a tech doc, but shows how sports media organisations use short-form video and engagement mechanics similar to Instagram's Reels |
+| [Coded Bias](https://www.imdb.com/title/tt11394170/) | 2020 | Documentary on bias in algorithmic systems including ad targeting and recommendation engines |
+
+### 📺 YouTube
+
+| Channel | Video | Link |
+|---|---|---|
+| Gaurav Sen | System Design Interview — Design Instagram | [youtube.com/watch?v=QmX2NPkJTKg](https://www.youtube.com/watch?v=QmX2NPkJTKg) |
+| ByteByteGo | How Instagram Scaled to 1 Billion Users | *search "ByteByteGo Instagram scale system design"* |
+| Fireship | CDN Explained in 100 Seconds | *search "Fireship CDN 100 seconds"* |
+| Gaurav Sen | Consistent Hashing — System Design | [youtube.com/watch?v=zaRkONvyGr8](https://www.youtube.com/watch?v=zaRkONvyGr8) |
+| Hussain Nasser | Apache Kafka Explained — Message Queues for Beginners | *search "Hussain Nasser Kafka explained beginners"* |
+| Google Developers | How Google Search Works (Crawling, Indexing, Ranking) | [youtube.com/watch?v=BNHR6IQJGZs](https://www.youtube.com/watch?v=BNHR6IQJGZs) |
+
+### 📖 Books
+
+| Title | Author | Level | What it covers |
+|---|---|---|---|
+| *Designing Data-Intensive Applications* | Martin Kleppmann | Hard | The definitive book on databases, replication, partitioning, and the systems that power apps like Instagram at scale |
+| *System Design Interview — An Insider's Guide* | Alex Xu | Medium | Step-by-step walkthroughs of 15 real system design problems (including social media feeds and CDN design) |
+| *The Art of Scalability* | Abbott & Fisher | Medium | Practical framework for scaling web applications; covers the database, caching, and microservices layers described in this session |
+| *No Filter: The Inside Story of Instagram* | Sarah Frier | Easy | Narrative account of Instagram's founding, growth, and acquisition by Facebook — the human story behind the technical architecture |
+| *Hooked* | Nir Eyal | Easy | How consumer products (including Instagram) are designed to build habits; explains the psychology behind the engagement loop the recommendation algorithm exploits |
+
+### 🌐 Articles & Interactive Resources
+
+| Resource | Link | What it covers |
+|---|---|---|
+| Instagram Engineering Blog | [engineering.fb.com/tag/instagram/](https://engineering.fb.com/tag/instagram/) | First-hand engineering posts from the Instagram team on scaling, machine learning, and infrastructure decisions |
+| High Scalability — Instagram Architecture | [highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users.html](http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users.html) | Classic breakdown of Instagram's early architecture decisions — CDN, PostgreSQL, Redis, Django |
+| ByteByteGo System Design Newsletter | [blog.bytebytego.com](https://blog.bytebytego.com) | Weekly newsletter with clear visual explanations of how large-scale systems are built |
+| Redis Documentation — Caching Patterns | [redis.io/docs/manual/patterns/](https://redis.io/docs/manual/patterns/) | Official guide to the caching patterns (cache-aside, write-through) described in this session |
+| Cloudflare Learning Centre — What is a CDN? | [cloudflare.com/learning/cdn/what-is-a-cdn/](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/) | Clear, visual explanation of how CDNs work with real latency diagrams |
+
+### 🔗 People to Look Up
+
+- **Kevin Systrom** — Co-founder and former CEO of Instagram; his technical and product decisions from 2010–2018 are the subject of this entire session
+- **Mike Krieger** — Co-founder and former CTO of Instagram; a Brazilian-born engineer who built and scaled the original infrastructure from zero to one billion users
+- **Adam Mosseri** — Current Head of Instagram; his public posts and interviews explain how the recommendation algorithm and ranking system work in plain language
+- **Jeff Dean** — Google Senior Fellow who designed the infrastructure (Bigtable, MapReduce, Spanner) that influenced how every large-scale platform including Instagram thinks about distributed data
+- **Werner Vogels** — CTO of Amazon/AWS; Instagram ran on AWS; his writing on distributed systems and the "eventually consistent" database model is fundamental to understanding how Instagram's data layer works
+- **Andrej Karpathy** — His work on deep learning at Tesla and OpenAI is directly relevant to understanding how Instagram's recommendation neural networks are designed and trained

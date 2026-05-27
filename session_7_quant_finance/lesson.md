@@ -133,3 +133,118 @@ Find the exact date the Glazers announced they were considering selling (Novembe
 - Don't go deep on derivatives pricing — Black-Scholes is a "here's what the math enables" moment, not a derivation.
 - The Sharpe Ratio is the one formula worth memorising — it's used in every performance discussion.
 - Best question at the end: *"If you were managing a £100m transfer budget like a portfolio, how would you apply what we learned today?"*
+
+---
+
+## 🧪 Quiz
+
+*Complete after the session. Bring answers to the next class.*
+
+**Q1.** A stock is priced at £100 on Monday and £108 on Tuesday. What is the daily return?
+- A) £8
+- B) 0.08 or 8% ✓
+- C) 1.08
+- D) 8
+
+**Q2.** The Sharpe Ratio formula is (Return − Risk-Free Rate) / Volatility. What does a higher Sharpe Ratio indicate?
+- A) The investment is riskier
+- B) The investment has lower returns
+- C) The investment delivers more return per unit of risk taken ✓
+- D) The investment is in a bear market
+
+**Q3.** Why did Markowitz win the Nobel Prize? What was his key insight about diversification?
+- A) He proved that holding more stocks always increases returns
+- B) He showed that combining uncorrelated assets reduces total portfolio risk without reducing expected return ✓
+- C) He invented the concept of a stock price
+- D) He proved that diversification always leads to higher returns
+
+**Q4.** Consider two strikers: Striker A scores 20, 21, 19, 22, 20 goals across five seasons. Striker B scores 38, 5, 29, 7, 31 goals. Which has higher volatility, and if you were a club with a tight budget, which would you prefer and why?
+
+**Q5.** What is the correlation between two assets, and why does the Markowitz portfolio benefit most when you combine assets with a correlation close to −1?
+
+**Q6.** Renaissance Technologies' Medallion Fund returned ~66% per year for 30 years. The S&P 500 index returns about 10% per year. What does this suggest about their approach to markets?
+- A) They took enormous amounts of risk
+- B) They found mathematical patterns in market data that others missed, giving them a persistent edge ✓
+- C) They got lucky for three decades
+- D) They only invested in technology stocks
+
+**Q7.** Black-Scholes is used to price options. In plain terms, what is an option, and which two mathematical concepts from your 12th-grade studies appear in the formula?
+
+**Q8 (explain in your own words).** The session described managing a football transfer budget "like a portfolio." Using the concepts of volatility, correlation, and diversification from today, explain what a data-driven sporting director might consider when allocating a £100m transfer budget across multiple player positions.
+
+---
+
+*Answers are at the bottom of this file.*
+
+## Quiz Answers
+
+**Q1.** B — Return = (108 − 100) / 100 = 0.08 = 8%. The return is a percentage change, not an absolute number.
+
+**Q2.** C — The Sharpe Ratio measures risk-adjusted return. Renaissance Medallion's ~2.0 versus the S&P 500's ~0.5 means Renaissance generated four times more return per unit of risk, which is extraordinary.
+
+**Q3.** B — Markowitz proved that portfolio risk is not the weighted average of individual risks. Because assets do not move in perfect lockstep, combining them reduces overall volatility — the mathematical justification for "don't put all your eggs in one basket."
+
+**Q4.** Striker B has far higher volatility (large swings between seasons). A club on a tight budget would likely prefer Striker A — more predictable output makes squad planning and wage structures more manageable, even if Striker B's peak seasons are spectacular.
+
+**Q5.** Correlation ranges from −1 to +1 and measures how two assets move together. A correlation of −1 means they move in exactly opposite directions. Combining such assets means when one falls, the other rises, so losses in one are offset by gains in the other — the maximum risk reduction possible.
+
+**Q6.** B — Renaissance employed mathematicians and physicists who found statistical patterns (signals) in price data that gave them a consistent edge. Their returns were too persistent and too large to be luck alone.
+
+**Q7.** An option gives the buyer the right (but not the obligation) to buy or sell an asset at a fixed price on a future date. The Black-Scholes formula uses the normal distribution (from probability and statistics) and partial derivatives (from calculus) — both standard 12th-grade topics.
+
+**Q8.** Model answer: A data-driven sporting director would treat each position as an "asset class" — spending on a mix of attackers, midfielders, and defenders. Volatility matters: a reliable 15-goal striker (low volatility) is more plannable than a boom-or-bust player. Correlation matters too — signing two players from the same injury-prone mould doubles risk. Diversification suggests spreading budget across age groups (a young player is a long-term asset, a proven veteran reduces near-term risk) rather than concentrating the entire £100m on one marquee signing.
+
+---
+
+## 📚 Research Materials
+
+> 💡 **Start here:** Watch the "Quantitative Finance Full Course" by Coding Jesus on YouTube — it covers returns, volatility, and the Sharpe ratio with actual Python code, making it the perfect bridge from this session to hands-on practice.
+
+### 🎬 Films & Documentaries
+
+| Title | Year | What to watch for |
+|---|---|---|
+| [The Man Who Solved the Market](https://www.imdb.com/title/tt11528906/) | 2019 | Based on Gregory Zuckerman's biography of Jim Simons; no official documentary yet, but several documentary-style interviews on YouTube |
+| [Betting on Zero](https://www.imdb.com/title/tt5818932/) | 2016 | Hedge fund short-selling in action; shows the adversarial side of quantitative trading |
+| [Margin Call](https://www.imdb.com/title/tt1615147/) | 2011 | Fiction but forensically accurate about a Wall Street firm discovering a catastrophic risk model failure overnight |
+| [The Big Short](https://www.imdb.com/title/tt1596363/) | 2015 | How a small group used quantitative analysis to short the 2008 housing market; excellent on CDOs and derivatives |
+
+### 📺 YouTube
+
+| Channel | Video | Link |
+|---|---|---|
+| Coding Jesus | Python for Finance — Sharpe Ratio, Volatility, Portfolio Theory | *search "Coding Jesus quantitative finance Python"* |
+| Quantopian / QuantConnect | Introduction to Algorithmic Trading | *search "QuantConnect algorithmic trading tutorial"* |
+| Patrick Boyle | Jim Simons and Renaissance Technologies Explained | [youtube.com/watch?v=dARzFl_U0cs](https://www.youtube.com/watch?v=dARzFl_U0cs) |
+| Khan Academy | Finance & Capital Markets — Introduction to Stocks | [khanacademy.org/economics-finance-domain/core-finance](https://www.khanacademy.org/economics-finance-domain/core-finance) |
+| 3Blue1Brown | The Black-Scholes Equation Explained | *search "3Blue1Brown Black-Scholes"* |
+| Two Minute Papers | How AI is Used in Quantitative Finance | *search "Two Minute Papers AI hedge fund trading"* |
+
+### 📖 Books
+
+| Title | Author | Level | What it covers |
+|---|---|---|---|
+| *The Man Who Solved the Market* | Gregory Zuckerman | Easy | Narrative biography of Jim Simons and the founding of Renaissance Technologies; no maths required |
+| *Beat the Dealer* | Edward O. Thorp | Easy | Thorp's original card-counting system and how it became the foundation of quantitative trading |
+| *A Random Walk Down Wall Street* | Burton Malkiel | Easy | Classic argument that markets are efficient; great counterpoint to algorithmic trading approaches |
+| *Options, Futures, and Other Derivatives* | John C. Hull | Hard | The standard university textbook for derivatives pricing including Black-Scholes; used in every finance programme |
+| *Quantitative Finance for Dummies* | Steve Bell | Medium | Covers returns, volatility, portfolio theory, and options without requiring a maths degree |
+
+### 🌐 Articles & Interactive Resources
+
+| Resource | Link | What it covers |
+|---|---|---|
+| Investopedia — Sharpe Ratio | [investopedia.com/terms/s/sharperatio.asp](https://www.investopedia.com/terms/s/sharperatio.asp) | Clear definition and worked examples with interactive calculator |
+| QuantLib | [quantlib.org](https://www.quantlib.org) | Open-source library for quantitative finance; used by banks and hedge funds |
+| Quantopian Lectures (archived) | [quantopian.com/lectures](https://www.quantopian.com/lectures) | Free university-level course on algorithmic trading and portfolio theory in Python |
+| Khan Academy — Stocks and Bonds | [khanacademy.org/economics-finance-domain/core-finance/stock-and-bonds](https://www.khanacademy.org/economics-finance-domain/core-finance/stock-and-bonds) | Free, beginner-friendly video series covering the fundamentals of financial markets |
+| Black-Scholes Interactive Calculator | [optionspricingcalculator.net](https://www.optionspricingcalculator.net) | Plug in real numbers and see how each variable affects an option's price |
+
+### 🔗 People to Look Up
+
+- **Jim Simons** — Mathematician and founder of Renaissance Technologies; built the most successful quantitative hedge fund in history using pattern recognition in data
+- **Ed Thorp** — Mathematician who invented card counting and then applied probability theory to beat financial markets; godfather of quant finance
+- **Harry Markowitz** — Economist who invented Modern Portfolio Theory (MPT) in 1952; showed mathematically why diversification reduces risk; Nobel Prize winner
+- **Fischer Black & Myron Scholes** — Developed the Black-Scholes options pricing model in 1973; Scholes won the Nobel Prize (Black had died); transformed derivatives markets
+- **Warren Buffett** — The deliberate contrast to quant finance; fundamental value investor who relies on business analysis rather than statistical models — understanding both approaches sharpens thinking
+- **Robert Shiller** — Yale economist known for the CAPE ratio and behavioural finance; argues markets are driven by narratives and psychology, not pure maths

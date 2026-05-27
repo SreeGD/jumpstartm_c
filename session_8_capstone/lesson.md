@@ -196,3 +196,62 @@ Not: a sophisticated project.
 Success: Student can sit down in front of a keyboard, write a Python program that does something real, and explain every line he wrote.
 
 That's the whole goal.
+
+---
+
+## 📚 Research Materials
+
+> 💡 **Start here:** Work through the official [Python.org Beginner's Guide](https://wiki.python.org/moin/BeginnersGuide) alongside your project — it is concise, trustworthy, and structured exactly for someone writing their first real programs.
+
+### 🎬 Films & Documentaries
+
+| Title | Year | What to watch for |
+|---|---|---|
+| [General Magic](https://www.generalmagicthemovie.com/) | 2018 | Documentary about a forgotten 1990s startup whose alumni founded or shaped Google, eBay, Android, and LinkedIn — a masterclass in what makes or breaks a product vision |
+| [The Inventor: Out for Blood in Silicon Valley](https://www.imdb.com/title/tt8488126/) | 2019 | HBO documentary on Theranos; sobering lesson on the dangers of demo culture over working product |
+| [Indie Game: The Movie](https://www.imdb.com/title/tt1942884/) | 2012 | Three indie developers building and launching their first commercial games; captures the emotional reality of a solo build project |
+
+### 📺 YouTube
+
+| Channel | Video | What it covers |
+|---|---|---|
+| Tech With Tim | Build a Stock Price Tracker in Python | *search "Tech With Tim Python stock price tracker"* — Stock Oracle track |
+| 3Blue1Brown | Neural Networks series (Chapters 1–4) | [youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) — Neural Net track |
+| Sentdex | Python for Finance — Pulling Stock Data with yfinance | *search "Sentdex yfinance tutorial"* — Stock Oracle track |
+| Tech With Tim | Build a Chatbot with Python and the OpenAI API | *search "Tech With Tim Python chatbot OpenAI API"* — Tutor Bot track |
+| Coding Is Fun | Build a Sports Data App with Python | *search "Python sports data API project tutorial"* — Sports Oracle track |
+| Corey Schafer | Python OOP Tutorial — Classes and Objects | [youtube.com/watch?v=ZDa-Z5JzLYM](https://www.youtube.com/watch?v=ZDa-Z5JzLYM) — All tracks: structuring a real project |
+
+### 📖 Books
+
+| Title | Author | Level | What it covers |
+|---|---|---|---|
+| *Automate the Boring Stuff with Python* | Al Sweigart | Easy | Free online; teaches Python through real projects (web scraping, working with files, APIs) — ideal capstone companion |
+| *Python Crash Course* | Eric Matthes | Easy | Project-based introduction; Part II walks through three complete projects from scratch |
+| *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* | Aurélien Géron | Medium | The standard practical ML book; Chapter 10–12 covers neural networks with working code examples |
+| *Flask Web Development* | Miguel Grinberg | Medium | Build and deploy a real Flask web application; directly applicable to adding a web front end to any capstone track |
+| *The Pragmatic Programmer* | Hunt & Thomas | Medium | Timeless advice on software craftsmanship, debugging, and writing code that actually works in the real world |
+
+### 🌐 Articles & Interactive Resources
+
+| Resource | Link | What it covers |
+|---|---|---|
+| yfinance Documentation | [pypi.org/project/yfinance/](https://pypi.org/project/yfinance/) | Python library to pull live and historical stock data from Yahoo Finance — essential for Stock Oracle and Sports Oracle tracks |
+| Anthropic Claude API Quickstart | [docs.anthropic.com/en/docs/quickstart](https://docs.anthropic.com/en/docs/quickstart) | 10-minute guide to sending your first API request — essential for Tutor Bot track |
+| Scikit-learn Getting Started | [scikit-learn.org/stable/getting_started.html](https://scikit-learn.org/stable/getting_started.html) | Official tutorial for building ML models in Python; relevant to Neural Net track |
+| Real Python | [realpython.com](https://realpython.com) | High-quality tutorials on specific Python topics (APIs, data visualisation, web scraping) — great for unblocking specific problems |
+| GitHub Student Developer Pack | [education.github.com/pack](https://education.github.com/pack) | Free access to hosting, domains, and developer tools for students |
+
+### 🔗 People to Look Up (by Capstone Track)
+
+**All tracks — Software Engineering Process**
+- **Jon Skeet** — Legendary Stack Overflow contributor; his answers on debugging and clean code are a model for how to think through problems
+- **Martin Fowler** — Author of *Refactoring*; his writing on clean, maintainable code is the best practical guide for structuring a project that actually works
+
+**Stock Oracle & Sports Oracle**
+- **Siraj Raval** — YouTube educator known for fast-paced Python and ML project tutorials; good for rapid inspiration (verify his code carefully)
+- **Sentdex (Harrison Kinsley)** — YouTube channel dedicated to Python finance, trading, and data science projects with complete code walkthroughs
+
+**Tutor Bot**
+- **Andrej Karpathy** — His lectures on LLMs give the deepest understanding of what is happening inside the chatbot you are building
+- **Simon Willison** — Developer and writer who publishes extensively on practical, responsible use of LLM APIs in real projects at [simonwillison.net](https://simonwillison.net)

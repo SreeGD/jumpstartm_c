@@ -206,3 +206,63 @@ These people appear in this session. A 5-minute Wikipedia read on each one is wo
 - **Billy Beane** — Moneyball GM; changed sports forever
 - **Daryl Morey** — the NBA executive who proved mid-range shots are mathematically bad
 - **Geoffrey Hinton** — "Godfather of deep learning"; won the 2024 Nobel Prize in Physics for neural networks
+
+---
+
+## 🧪 Quiz
+
+*Complete after the session. Bring answers to the next class.*
+
+**Q1.** Ada Lovelace is considered the first programmer. What did she actually write, and for which machine?
+- A) She wrote the first operating system for the Difference Engine
+- B) She wrote the first algorithm — to compute Bernoulli numbers — for Babbage's Analytical Engine ✓
+- C) She wrote machine code instructions for the ENIAC
+- D) She designed the circuit diagrams for the first transistor radio
+
+**Q2.** Alan Turing's Bombe machine cracked the Nazi Enigma code during World War 2. What did this have to do with computing — and what happened to Turing after the war?
+
+**Q3.** Moore's Law states that the number of transistors on a chip doubles approximately every two years. If a chip had 1,000 transistors in 1971 and the law held perfectly, roughly how many would it have by 1981?
+- A) 2,000
+- B) 10,000
+- C) 32,000 ✓
+- D) 1,000,000
+
+**Q4.** What is the difference between the internet and the World Wide Web? (Many people use these terms interchangeably — explain why that's wrong.)
+
+**Q5.** The Houston Rockets' analytics team, led by Daryl Morey, concluded that the mid-range jump shot is the worst shot in basketball. Explain the mathematical reasoning behind this claim — why is it worse than both a layup and a three-pointer?
+- A) Mid-range shots take more time to execute, so they slow the game down
+- B) Mid-range shots are attempted further from the basket than layups (lower percentage) but only worth 2 points, unlike three-pointers which compensate for difficulty with extra value ✓
+- C) Mid-range shooters have lower free-throw percentages than other players
+- D) The mid-range zone has worse sight lines due to arena lighting angles
+
+**Q6.** In the Moneyball story, Billy Beane's Oakland A's competed with teams like the New York Yankees who had much larger payrolls. What specific insight did the data reveal that the traditional scouts were missing?
+
+**Q7.** Explain in your own words: why did the transition from vacuum tubes to transistors matter so much? What did it unlock that vacuum tubes couldn't provide?
+
+**Q8.** The 2017 paper "Attention Is All You Need" introduced the Transformer architecture. ChatGPT reached 1 million users in 5 days. What does the term "AI agent" mean, and how is it different from a chatbot like ChatGPT?
+- A) An AI agent is just a faster version of ChatGPT that responds in under 1 second
+- B) An AI agent is an AI that not only answers questions but takes real-world actions — browsing, writing code, sending emails, managing workflows ✓
+- C) An AI agent is any AI that has been trained on more than 1 trillion parameters
+- D) An AI agent is an AI designed specifically for customer service applications
+
+---
+
+*Answers are at the bottom of this file.*
+
+## Quiz Answers
+
+**Q1.** B — Ada Lovelace wrote an algorithm to compute Bernoulli numbers for Babbage's Analytical Engine in 1843 — a machine that was never fully built in her lifetime.
+
+**Q2.** Turing's Bombe was one of the first purpose-built computational machines — it used mechanical logic to test possible Enigma key settings at speed no human team could match. After the war, despite saving an estimated 14 million lives, Turing was prosecuted for homosexuality under British law and subjected to chemical castration. He died at 41.
+
+**Q3.** C — Doubling every 2 years over 10 years means 5 doublings: 1,000 × 2⁵ = 32,000. Moore's Law is exponential growth, not linear.
+
+**Q4.** The internet is the physical and protocol infrastructure — cables, routers, IP addresses, TCP/IP. The World Wide Web is one application that runs on top of it, invented by Tim Berners-Lee in 1989 using HTTP, HTML, and URLs. Email, FTP, and video calls are also internet applications but are not "the web."
+
+**Q5.** B — A mid-range shot combines the worst of both worlds: it's far enough from the basket to have a low conversion rate (like a three-pointer) but only rewards 2 points if it goes in (like a layup). The expected points per attempt is lower than either alternative.
+
+**Q6.** Scouts valued observable, traditional qualities (speed, appearance, confidence at the plate). The data revealed that on-base percentage — how often a player simply doesn't make an out — was dramatically undervalued. Players who walked a lot but looked ordinary were cheap and highly effective.
+
+**Q7.** Vacuum tubes were large, generated enormous heat, burned out frequently, and consumed vast amounts of power. Transistors were tiny, reliable, cool-running, and could be manufactured at scale. This made it physically possible to pack millions — then billions — of switches onto a single chip, enabling miniaturisation, personal computers, and eventually smartphones.
+
+**Q8.** B — A chatbot responds to messages. An AI agent can reason about a goal and then autonomously take actions in the world — running code, browsing websites, sending emails — to achieve it. The distinction is between answering and doing.
