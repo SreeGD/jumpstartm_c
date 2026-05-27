@@ -2,13 +2,13 @@
 ## Fundamentals of Maths and Stats for AI
 
 **Duration:** 2–3 hours  
-**Sree's prep:** Have the xG scatter plot ready to run live. Prepare shot data CSV or hardcode it.
+**the teacher's prep:** Have the xG scatter plot ready to run live. Prepare shot data CSV or hardcode it.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith understands:
+By the end of this session, Student understands:
 - How linear algebra (vectors, matrices) powers neural networks
 - What gradient descent is and how it's connected to derivatives
 - How probability and statistics underpin AI decisions
@@ -16,7 +16,7 @@ By the end of this session, Advaith understands:
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook
 
@@ -43,7 +43,7 @@ Mbappe = [27, 8, 142, 203, 18.3]
 
 *"The dot product is how a neural network combines input features with weights. Every layer of a neural network is: output = matrix × input + bias."*
 
-Connect to 12th grade: Advaith knows vectors from physics. He knows matrix multiplication. *"You already know how neural networks work at the mathematical level."*
+Connect to 12th grade: Student knows vectors from physics. He knows matrix multiplication. *"You already know how neural networks work at the mathematical level."*
 
 ---
 
@@ -96,7 +96,7 @@ Run the xG scatter plot live. Then ask:
 
 *"If you drew a smooth S-curve through this data, you'd have a logistic regression model — the xG model that Premier League clubs pay £100k for. You just built the intuition from scratch."*
 
-Then show: StatsBomb's published xG model documentation. It uses the same inputs — distance, angle, shot type — that they're plotting. Real clubs pay for this. Advaith understands it.
+Then show: StatsBomb's published xG model documentation. It uses the same inputs — distance, angle, shot type — that they're plotting. Real clubs pay for this. Student understands it.
 
 ---
 
@@ -115,9 +115,9 @@ Then show: StatsBomb's published xG model documentation. It uses the same inputs
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
-- Start with linear algebra through player stats vectors — Advaith can relate to these numbers.
+- Start with linear algebra through player stats vectors — Student can relate to these numbers.
 - The gradient descent explanation with the "ball rolling downhill" is the key metaphor. Make it visual — draw it.
 - Don't derive Bayes' Theorem. Just show the intuition — probabilities update with evidence.
 - The lab is the centrepiece of this session. Run it slowly. Explain every line.

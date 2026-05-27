@@ -1,15 +1,15 @@
 # Capstone Demo Rubric
 ## Session 8 — Demo Day Checklist
 
-**Presenter:** Advaith  
-**Reviewer:** Sree  
+**Presenter:** Student  
+**Reviewer:** Teacher  
 **Time limit:** 5 minutes
 
 ---
 
 ## Before the Demo
 
-- [ ] Code runs without errors on Sree's machine (not just Advaith's)
+- [ ] Code runs without errors on the teacher's machine (not just the student's)
 - [ ] At least one chart or visual output is generated
 - [ ] AI commentary (if applicable) produces a real response
 - [ ] Code is in a single folder with a clear `README.md` or comments
@@ -18,7 +18,7 @@
 
 ## Demo Structure (5 minutes)
 
-| Time | What Advaith Does |
+| Time | What Student Does |
 |------|------------------|
 | 0:00 – 2:00 | **Live demo** — run the program, show it working end-to-end |
 | 2:00 – 3:00 | **Explain one piece of code** — pick the function he's most proud of. Walk through line by line. |
@@ -27,9 +27,9 @@
 
 ---
 
-## Sree's Review Questions
+## the teacher's Review Questions
 
-Sree asks exactly 3:
+Teacher asks exactly 3:
 
 1. *"Walk me through what happens when [specific input or edge case] is given."*
    - Good answer: traces through the code step by step
@@ -53,17 +53,17 @@ Sree asks exactly 3:
 - Production readiness
 
 **Evaluated on:**
-- [ ] Can Advaith explain every line he wrote?
+- [ ] Can Student explain every line he wrote?
 - [ ] Does the program run and produce output?
-- [ ] Does Advaith understand what the output means?
-- [ ] Can Advaith identify one way it could go wrong?
+- [ ] Does Student understand what the output means?
+- [ ] Can Student identify one way it could go wrong?
 
 ---
 
 ## After the Demo
 
-Sree writes 3 sentences:
-1. One thing Advaith did really well
+Teacher writes 3 sentences:
+1. One thing Student did really well
 2. One thing to learn next
 3. One project idea that builds on this
 
@@ -71,7 +71,7 @@ Sree writes 3 sentences:
 
 ## The Real Milestone
 
-At the start of this curriculum, Advaith had never written a line of code.
+At the start of this curriculum, Student had never written a line of code.
 
 By Demo Day, he has:
 - Built a working program that downloads real data

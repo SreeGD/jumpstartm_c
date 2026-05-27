@@ -2,13 +2,13 @@
 ## How the Web Works
 
 **Duration:** 2 hours  
-**Sree's prep:** Have Chrome DevTools open. Know how to open Network tab. Have the HTML template ready.
+**the teacher's prep:** Have Chrome DevTools open. Know how to open Network tab. Have the HTML template ready.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith understands:
+By the end of this session, Student understands:
 - What happens step-by-step when you type a URL and hit Enter
 - What DNS, HTTP, requests, responses, and status codes are
 - The difference between HTML, CSS, and JavaScript
@@ -17,13 +17,13 @@ By the end of this session, Advaith understands:
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook
 
 *"Quick question — when you type youtube.com and press Enter, what actually happens?"*
 
-Let Advaith guess. He'll probably say something like "it loads the website." That's true — but there are 8 distinct technical steps that happen in under a second. Today we learn all 8.
+Let Student guess. He'll probably say something like "it loads the website." That's true — but there are 8 distinct technical steps that happen in under a second. Today we learn all 8.
 
 ---
 
@@ -136,14 +136,14 @@ When Instagram loads your feed, it's making dozens of API calls: one for posts, 
 
 ## ⚡ Wow Moment — Spy on the Internet
 
-**Do this live with Advaith:**
+**Do this live with Student:**
 
 1. Open Chrome. Go to any website — Instagram, YouTube, ESPN
 2. Right-click → Inspect → Network tab
 3. Refresh the page
 4. Watch 50–100 requests light up in real time
 
-Show Advaith:
+Show Student:
 - The status codes (green 200s, occasional 304s)
 - The different types: Doc, Script, Image, XHR (API calls)
 - Click on an XHR request — show the request headers and the JSON response
@@ -171,10 +171,10 @@ Then find an API call returning JSON. Show the raw data.
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
 - The DevTools demo is the session highlight. Spend time here.
 - Don't go deep on TCP/IP internals — just "they agree to connect."
-- JSON is important. Advaith will use it constantly from Session 4 onwards.
+- JSON is important. Student will use it constantly from Session 4 onwards.
 - The HTML lab is light — it's just to make the web feel tangible and owned.
 - Great question to ask: *"When you POST a login form, where does your password go?"* (It goes in the request body, encrypted by HTTPS.) Leads naturally to a security conversation.

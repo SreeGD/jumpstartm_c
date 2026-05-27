@@ -1,8 +1,8 @@
 # Lab — Fibonacci in Python
 # Session 3: Introduction to Programming Languages
 #
-# Advaith types this himself — his first standalone Python file.
-# Sree reads each line and explains it before Advaith types it.
+# Student types this himself — his first standalone Python file.
+# Teacher reads each line and explains it before Student types it.
 #
 # Run with: python fibonacci.py
 

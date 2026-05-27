@@ -2,13 +2,13 @@
 ## Introduction to Programming Languages
 
 **Duration:** 1.5–2 hours  
-**Sree's prep:** Have side-by-side code comparisons ready. Install Python and VS Code before this session.
+**the teacher's prep:** Have side-by-side code comparisons ready. Install Python and VS Code before this session.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith understands:
+By the end of this session, Student understands:
 - Why so many programming languages exist
 - The key distinctions: compiled vs interpreted, high vs low level
 - Where Python fits and why it dominates AI and data science
@@ -16,7 +16,7 @@ By the end of this session, Advaith understands:
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook
 
@@ -112,10 +112,10 @@ The same in C — 20+ lines of memory management.
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
 - The history is a story — tell it as one. Don't list facts.
 - The side-by-side comparison is the centrepiece. Spend time on it.
 - By the end of this session, Python should be installed and VS Code open.
-- Advaith types the Fibonacci code himself — first time with a real IDE.
+- Student types the Fibonacci code himself — first time with a real IDE.
 - If he asks "which language should I learn after Python?" — answer: Python deeply first, then JavaScript for web, then C for systems/understanding.

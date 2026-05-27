@@ -60,7 +60,7 @@ Answer in 3–5 sentences:
 
 ## Task 4 — Think
 
-Sree described a CPU as LeBron James and a GPU as a soccer team.
+Teacher described a CPU as LeBron James and a GPU as a soccer team.
 
 Write your own analogy for CPU vs GPU using basketball or soccer.  
 Be specific — describe a real game situation that maps to how they work differently.

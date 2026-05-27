@@ -2,13 +2,13 @@
 ## Maths for Computing
 
 **Duration:** 2–3 hours  
-**Sree's prep:** Have the Caesar cipher code ready. Have a graph visualisation of Dijkstra's algorithm ready to show (YouTube: "Dijkstra's algorithm visualised").
+**the teacher's prep:** Have the Caesar cipher code ready. Have a graph visualisation of Dijkstra's algorithm ready to show (YouTube: "Dijkstra's algorithm visualised").
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith understands:
+By the end of this session, Student understands:
 - Binary arithmetic and number systems
 - Boolean algebra — the same as set theory from 12th grade
 - What Big-O notation means and how to read it
@@ -17,13 +17,13 @@ By the end of this session, Advaith understands:
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook
 
 *"You've been doing computing math your entire school life. You just didn't know it had a name."*
 
-Open with this: ask Advaith to find the maximum element in a list of 10 numbers. He scans through them. Ask him: *"How many comparisons did you make? What if the list had a million numbers? A billion?"*
+Open with this: ask Student to find the maximum element in a list of 10 numbers. He scans through them. Ask him: *"How many comparisons did you make? What if the list had a million numbers? A billion?"*
 
 That's Big-O notation. He's been thinking algorithmically without knowing it.
 
@@ -43,7 +43,7 @@ Decimal 13 = 8 + 4 + 1
            = 1101 in binary
 ```
 
-Let Advaith convert 25, 42, and 100 manually. Then show that `bin(25)` in Python does it instantly — but understanding why is what matters.
+Let Student convert 25, 42, and 100 manually. Then show that `bin(25)` in Python does it instantly — but understanding why is what matters.
 
 **Hexadecimal (base 16)** — used in HTML colours, memory addresses.  
 `#e94560` (the red colour from the web lab) is hex: e9=233, 45=69, 60=96 in RGB.
@@ -52,7 +52,7 @@ Let Advaith convert 25, 42, and 100 manually. Then show that `bin(25)` in Python
 
 ### Boolean Algebra
 
-Advaith learned set theory in 12th grade. Boolean algebra is the same thing:
+Student learned set theory in 12th grade. Boolean algebra is the same thing:
 
 | Set Theory | Boolean Algebra | Python |
 |-----------|-----------------|--------|
@@ -62,7 +62,7 @@ Advaith learned set theory in 12th grade. Boolean algebra is the same thing:
 
 *"The logic gates from Session 1.1 are just Boolean algebra made physical in silicon."*
 
-**De Morgan's Laws** — Advaith knows these from sets:
+**De Morgan's Laws** — Student knows these from sets:
 - NOT(A AND B) = NOT(A) OR NOT(B)
 - NOT(A OR B) = NOT(A) AND NOT(B)
 
@@ -74,7 +74,7 @@ Computers use these to simplify circuits. The same law that simplifies set expre
 
 *"Not all solutions to the same problem are equal. Some are fast for small inputs but catastrophic for large ones. Big-O tells you which."*
 
-Show Advaith a visual: input size (n) on x-axis, time taken on y-axis.
+Show Student a visual: input size (n) on x-axis, time taken on y-axis.
 
 | Notation | Name | Example | Growth |
 |----------|------|---------|--------|
@@ -84,7 +84,7 @@ Show Advaith a visual: input size (n) on x-axis, time taken on y-axis.
 | O(n²) | Quadratic | Nested loops | Curves up fast |
 | O(2ⁿ) | Exponential | Brute-force chess | Explodes |
 
-**The guessing game connection:** In Session 4's guessing game, Advaith will use binary search — always guess the middle number. With 1000 numbers, you find it in at most 10 guesses. That's O(log n). *That's why it's so powerful.*
+**The guessing game connection:** In Session 4's guessing game, Student will use binary search — always guess the middle number. With 1000 numbers, you find it in at most 10 guesses. That's O(log n). *That's why it's so powerful.*
 
 **Sports connection:** When Second Spectrum's cameras track 22 football players 25 times per second, they're processing 550 data points per second per match. An O(n²) algorithm on that data would mean comparing every player to every other player — 550² = 302,500 operations per second per match. That's why algorithmic efficiency matters in sports analytics.
 
@@ -105,7 +105,7 @@ Real-world graphs:
 - **Shortest path** — the fastest route (Dijkstra's algorithm)
 - **Centrality** — how "important" a node is in the network
 
-**Dijkstra's algorithm:** Finds the shortest path between two nodes. Used in Google Maps, network routing, and — as Advaith will build in the lab — football passing analysis.
+**Dijkstra's algorithm:** Finds the shortest path between two nodes. Used in Google Maps, network routing, and — as Student will build in the lab — football passing analysis.
 
 *Show a YouTube visualisation of Dijkstra's running step by step.*
 
@@ -136,9 +136,9 @@ Show Dijkstra's algorithm finding a route on Google Maps — then reveal the alg
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
 - Don't spend too long on binary conversion — it's a tool, not the point.
-- Big-O is crucial. Advaith will need it throughout NITW. Build the intuition carefully.
+- Big-O is crucial. Student will need it throughout NITW. Build the intuition carefully.
 - The graph theory section leads directly to the football passing network lab — end the theory section there and go straight into the lab.
 - The connection to set theory from 12th grade (Boolean algebra) is a major confidence booster. Use it.

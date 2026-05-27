@@ -2,13 +2,13 @@
 ## General Introduction to Agentic AI
 
 **Duration:** 2–3 hours  
-**Sree's prep:** Anthropic API key ready. `pip install anthropic` done. Live demo of Claude/GPT agent prepared.
+**the teacher's prep:** Anthropic API key ready. `pip install anthropic` done. Live demo of Claude/GPT agent prepared.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith understands:
+By the end of this session, Student understands:
 - The arc from rule-based AI → ML → deep learning → LLMs → Agents
 - What a Transformer is (conceptually)
 - What makes an AI "agentic"
@@ -17,7 +17,7 @@ By the end of this session, Advaith understands:
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook
 
@@ -25,7 +25,7 @@ Live demo first. Before any explanation:
 
 Open a terminal. Run a simple Claude API call:
 ```python
-# Sree runs this live, unexplained
+# Teacher runs this live, unexplained
 response = client.messages.create(
     model="claude-opus-4-7",
     max_tokens=300,
@@ -35,7 +35,7 @@ response = client.messages.create(
 print(response.content[0].text)
 ```
 
-Let Advaith read the response. Then: *"That was 8 lines of Python calling an AI that understands football, statistics, and context. Let's understand how we got here."*
+Let Student read the response. Then: *"That was 8 lines of Python calling an AI that understands football, statistics, and context. Let's understand how we got here."*
 
 ---
 
@@ -104,7 +104,7 @@ Show: change the system prompt from "sports analyst" to "harsh critic" to "tacti
 
 ## ⚡ Wow Moment
 
-Show Advaith a multi-turn conversation with the sports analyst agent:
+Show Student a multi-turn conversation with the sports analyst agent:
 1. *"Analyse Bellingham's season"*
 2. *"Compare him to Zidane at the same age"* (agent has memory — knows who "him" is)
 3. *"What tactical system would get the best out of him?"*
@@ -131,10 +131,10 @@ Then: *"You're going to build this in 15 minutes."*
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
 - Start with the live demo — create the "wow" before the explanation. Don't explain first.
 - The history section should feel like a story, not a lecture. Use the AI winter and the 2012 moment as dramatic beats.
-- The system prompt experiment (changing persona) is essential. Advaith needs to feel the power of that dial.
+- The system prompt experiment (changing persona) is essential. Student needs to feel the power of that dial.
 - Keep the lab simple — 10-15 lines. The magic is in understanding what each line does, not in complexity.
 - Best question: *"If you were building an AI agent for a football club, what would you have it do?"* — let him dream. Then show him he's 80% of the way to building it.

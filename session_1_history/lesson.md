@@ -2,20 +2,20 @@
 ## The Story of Computing
 
 **Duration:** 2–3 hours  
-**Sree's prep:** Watch the 1984 Apple Mac ad. Pull up the Imitation Game trailer. Have the NBA 3-point chart ready.
+**the teacher's prep:** Watch the 1984 Apple Mac ad. Pull up the Imitation Game trailer. Have the NBA 3-point chart ready.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith understands:
+By the end of this session, Student understands:
 - How computing evolved from mechanical machines to AI agents
 - Why each leap happened — what problem it solved
 - How sports analytics is part of the same revolution
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook — Start Here
 Open with this question: *"Name one thing in your life that doesn't involve a computer."*
@@ -32,7 +32,7 @@ Let him answer. Then reveal: almost nothing qualifies. The clothes he wears were
 
 **Ada Lovelace** — Babbage's collaborator. She didn't just describe the machine — she wrote the first algorithm. In 1843. For a machine that didn't fully exist. She is the first programmer. She was 27.
 
-*Ask Advaith: "What is an algorithm?" Let him answer. Then confirm: a precise sequence of steps to solve a problem. Ada wrote one for computing Bernoulli numbers.*
+*Ask Student: "What is an algorithm?" Let him answer. Then confirm: a precise sequence of steps to solve a problem. Ada wrote one for computing Bernoulli numbers.*
 
 **Alan Turing** — World War 2. The Nazis used a machine called Enigma to encrypt all military communications. Britain was losing. Turing built a machine called the Bombe that cracked Enigma. Historians estimate he shortened the war by 2 years and saved 14 million lives. After the war, the British government chemically castrated him for being gay. He died at 41.
 
@@ -56,11 +56,11 @@ Turing also asked: *"Can machines think?"* He invented the theoretical foundatio
 
 **Apple II (1977), IBM PC (1981)** — Computers shrink to desktops. The idea: *what if everyone had one?* Bill Gates, Steve Jobs, Steve Wozniak — garage founders who changed everything.
 
-**1984 Apple Mac ad** → *Play it now. Let Advaith react.*
+**1984 Apple Mac ad** → *Play it now. Let Student react.*
 
 The Mac introduced the mouse, windows, and icons. Before that, you typed everything in command lines. The Mac made computers human.
 
-**Client and Server** — As computers multiplied, they needed to talk. The model: a *client* (your computer) asks for things; a *server* (a powerful central computer) provides them. Every app Advaith uses is a client talking to a server.
+**Client and Server** — As computers multiplied, they needed to talk. The model: a *client* (your computer) asks for things; a *server* (a powerful central computer) provides them. Every app Student uses is a client talking to a server.
 
 ---
 
@@ -127,7 +127,7 @@ Then say: *"Ada Lovelace wrote the first algorithm in 1843. This is where it end
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
 - Don't rush Act 1. Ada Lovelace and Turing are emotional stories. Let them land.
 - Ask questions throughout — don't lecture. "What do you think happened next?"

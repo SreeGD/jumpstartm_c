@@ -4,7 +4,7 @@
 # Concepts: graphs, nodes, edges, centrality
 # Library needed: pip install networkx matplotlib
 #
-# Instructions for Sree:
+# Instructions for Teacher:
 #   This lab requires networkx. Install it beforehand.
 #   Run Part 1 first to show the concept, then Part 2 for the visual.
 

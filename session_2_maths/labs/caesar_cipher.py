@@ -3,11 +3,11 @@
 #
 # Concepts: ASCII values, modular arithmetic, loops, strings
 #
-# Instructions for Sree:
-#   Build Part 1 live. Let Advaith predict outputs.
+# Instructions for Teacher:
+#   Build Part 1 live. Let Student predict outputs.
 #   Part 2 is the challenge — let him try it first.
 #
-# Instructions for Advaith:
+# Instructions for Student:
 #   Run each part. Understand what % (modulo) is doing.
 #   Can you break the cipher without the key?
 
@@ -63,10 +63,10 @@ print(f"Original:  {message}")
 print(f"Encrypted: {encrypted}")
 print(f"Decrypted: {decrypted}")
 
-# Send Sree an encrypted message!
+# Send Teacher an encrypted message!
 secret = encrypt("ADVAITH WILL ACE NITW", 7)
-print(f"\nSecret message for Sree: {secret}")
-print("(Sree decrypts it using shift=7)")
+print(f"\nSecret message for Teacher: {secret}")
+print("(Teacher decrypts it using shift=7)")
 
 
 # ─────────────────────────────────────────
@@ -109,11 +109,11 @@ print(f"Decrypted guess:\n{decrypt(encrypted_long, guessed_shift)[:100]}")
 
 
 # ─────────────────────────────────────────
-# CHALLENGE for Advaith
+# CHALLENGE for Student
 # ─────────────────────────────────────────
 
-# 1. Send Sree an encrypted message using any shift you choose
-#    (don't tell Sree the shift — see if he can crack it)
+# 1. Send Teacher an encrypted message using any shift you choose
+#    (don't tell Teacher the shift — see if he can crack it)
 
 # 2. Try encrypting "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with shift=13
 #    This special cipher is called ROT13 — why is it special?

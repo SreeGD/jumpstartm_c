@@ -3,7 +3,7 @@
 
 **Type:** Browser investigation  
 **Time:** 20–30 minutes  
-**Do with Sree:** Explore together, Advaith narrates what he sees
+**Do with Teacher:** Explore together, Student narrates what he sees
 
 ---
 

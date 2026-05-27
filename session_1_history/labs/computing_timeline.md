@@ -2,7 +2,7 @@
 
 **Type:** Research + Writing activity (no coding)  
 **Time:** 30–45 minutes  
-**Do together:** Sree and Advaith fill it in collaboratively
+**Do together:** Teacher and Student fill it in collaboratively
 
 ---
 
@@ -18,7 +18,7 @@ For each milestone, write:
 
 ## Template
 
-Fill in the table below. Sree provides the computing milestones — Advaith researches the sports ones.
+Fill in the table below. Teacher provides the computing milestones — Student researches the sports ones.
 
 | Year | Milestone | Why It Mattered |
 |------|-----------|-----------------|
@@ -27,15 +27,15 @@ Fill in the table below. Sree provides the computing milestones — Advaith rese
 | 1969 | ARPANET (internet predecessor) goes live | First time computers talked to each other across distance |
 | 1989 | Tim Berners-Lee invents the World Wide Web | Made the internet accessible to everyone, not just scientists |
 | 2012 | AlexNet wins ImageNet — deep learning works | Triggered the modern AI revolution |
-| ___ | *(Advaith finds this one — sports analytics)* | |
-| ___ | *(Advaith finds this one — sports analytics)* | |
-| ___ | *(Advaith finds this one — sports analytics)* | |
-| ___ | *(Advaith finds this one — sports analytics)* | |
-| ___ | *(Advaith finds this one — sports analytics)* | |
+| ___ | *(Student finds this one — sports analytics)* | |
+| ___ | *(Student finds this one — sports analytics)* | |
+| ___ | *(Student finds this one — sports analytics)* | |
+| ___ | *(Student finds this one — sports analytics)* | |
+| ___ | *(Student finds this one — sports analytics)* | |
 
 ---
 
-## Hints for Advaith's Research
+## Hints for the student's Research
 
 Search for these topics — pick the 5 most interesting:
 - "Moneyball Oakland A's statistics"
@@ -52,13 +52,13 @@ Search for these topics — pick the 5 most interesting:
 ## Deliverable
 
 A completed table — written neatly or typed.  
-Advaith presents his 5 sports milestones to Sree, explaining each in his own words.
+Student presents his 5 sports milestones to Teacher, explaining each in his own words.
 
 ---
 
 ## Discussion Questions
 
-After completing the timeline, Sree asks:
+After completing the timeline, Teacher asks:
 1. *"Which milestone surprised you the most? Why?"*
 2. *"Is there a pattern — what drove each leap forward?"*
 3. *"What do you think the next big milestone will be?"*

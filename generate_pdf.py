@@ -521,7 +521,7 @@ def build_session_html(session):
         <div class="content-body">
 
             <div class="section-block lesson">
-                <span class="section-label">📖 Lesson — Sree's Teaching Guide</span>
+                <span class="section-label">📖 Lesson — the teacher's Teaching Guide</span>
                 {lesson_html}
             </div>
 
@@ -535,14 +535,14 @@ def build_session_html(session):
             <hr class="section-divider">
 
             <div class="section-block assign">
-                <span class="section-label">📝 Assignment — Advaith's Independent Work</span>
+                <span class="section-label">📝 Assignment — the student's Independent Work</span>
                 {assign_html}
             </div>
 
         </div>
 
         <div class="page-footer">
-            NITW M&C Prep · Advaith · {title} · Taught by Sree
+            NITW M&C Prep · Student · {title} · Taught by Teacher
         </div>
     </div>
     """
@@ -613,11 +613,11 @@ def generate():
     cover = f"""
     <div class="cover">
         <div class="cover-badge">NITW M&amp;C Preparation · 2026</div>
-        <h1>Advaith's Curriculum</h1>
+        <h1>the student's Curriculum</h1>
         <div class="cover-sub">Computing · Math · AI · Quant Finance · Software Engineering</div>
         <div class="cover-divider"></div>
         <div class="cover-meta">
-            <strong>Student:</strong> Advaith &nbsp;·&nbsp; <strong>Teacher:</strong> Sree<br>
+            <strong>Student:</strong> Student &nbsp;·&nbsp; <strong>Teacher:</strong> Teacher<br>
             <strong>Duration:</strong> 2 months &nbsp;·&nbsp; <strong>Sessions:</strong> 11<br>
             <strong>Starting Point:</strong> 12th PCM done, zero coding experience<br>
             <strong>Goal:</strong> NITW M&amp;C ready — computing, AI, and quant finance
@@ -648,7 +648,7 @@ def generate():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advaith's NITW M&C Curriculum — Sree</title>
+    <title>the student's NITW M&C Curriculum — Teacher</title>
     <style>{CSS}</style>
 </head>
 <body>

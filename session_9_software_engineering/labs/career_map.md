@@ -3,7 +3,7 @@
 
 **Type:** Discussion + Research activity  
 **Time:** 45–60 minutes  
-**Do with Sree:** Work through together, Advaith researches and fills in
+**Do with Teacher:** Work through together, Student researches and fills in
 
 ---
 
@@ -59,7 +59,7 @@ Write 4–6 sentences comparing the two job descriptions.
 
 ---
 
-## Part 4 — Discussion with Sree
+## Part 4 — Discussion with Teacher
 
 Work through these questions together:
 
@@ -90,4 +90,4 @@ Given what you've learned in this curriculum and Session 9, rank these in order 
 - [ ] Building more LLM apps  
 - [ ] System design (how to architect large systems)  
 
-No right answer. Bring your ranking to Sree and be ready to defend it.
+No right answer. Bring your ranking to Teacher and be ready to defend it.

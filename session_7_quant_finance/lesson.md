@@ -2,13 +2,13 @@
 ## General Overview of Quant Finance
 
 **Duration:** 2–3 hours  
-**Sree's prep:** `pip install yfinance` done. Man United ticker confirmed working. Data pre-downloaded if internet is unreliable.
+**the teacher's prep:** `pip install yfinance` done. Man United ticker confirmed working. Data pre-downloaded if internet is unreliable.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith understands:
+By the end of this session, Student understands:
 - What quantitative finance is and why it's relevant
 - How stock prices, returns, and volatility work
 - Why portfolio theory (Markowitz) is just linear algebra
@@ -17,7 +17,7 @@ By the end of this session, Advaith understands:
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook
 
@@ -51,7 +51,7 @@ Daily return = (price today - price yesterday) / price yesterday
 **Volatility** — how much a stock's returns vary (standard deviation of returns).  
 High volatility = the stock swings a lot = riskier.
 
-*"Standard deviation — Advaith knows this from stats. In finance, it IS risk. Low std dev = stable investment. High std dev = roller coaster."*
+*"Standard deviation — Student knows this from stats. In finance, it IS risk. Low std dev = stable investment. High std dev = roller coaster."*
 
 **Sports connection:** *"A player who scores 25 goals every season has low volatility. A player who scores 45 one season and 8 the next has high volatility. Would you sign a striker with high volatility? Depends on the price and your squad's needs. Same logic as portfolio construction."*
 
@@ -94,7 +94,7 @@ Man United (ticker: MANU) is publicly listed. The Glazer family bought the club 
 In 1973, Fischer Black and Myron Scholes published a formula to price options (the right to buy a stock at a fixed price in the future).
 
 Show the formula — don't derive it. Just point to each symbol:
-- The exponential and logarithm — Advaith knows these
+- The exponential and logarithm — Student knows these
 - The normal distribution — covered in Session 5
 - The partial derivatives — 12th-grade calculus
 
@@ -126,9 +126,9 @@ Find the exact date the Glazers announced they were considering selling (Novembe
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
-- Connect everything to the math Advaith already knows. Don't introduce new math — reveal that familiar math has financial applications.
+- Connect everything to the math Student already knows. Don't introduce new math — reveal that familiar math has financial applications.
 - The Man United example is personal and accessible. Use it as the thread.
 - Don't go deep on derivatives pricing — Black-Scholes is a "here's what the math enables" moment, not a derivation.
 - The Sharpe Ratio is the one formula worth memorising — it's used in every performance discussion.

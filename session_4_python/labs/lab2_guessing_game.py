@@ -56,7 +56,7 @@ def play_game(max_number=100):
 def binary_search_strategy(secret, max_number=100):
     """
     Demonstrate that binary search always wins.
-    Sree runs this, Advaith watches the strategy.
+    Teacher runs this, Student watches the strategy.
     """
     low = 1
     high = max_number

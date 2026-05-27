@@ -2,13 +2,13 @@
 ## Capstone Project
 
 **Duration:** 5–7 days total  
-**Structure:** Day 1–2 (Scope together) · Day 3–5 (Advaith builds) · Day 6 (Code review) · Day 7 (Demo)
+**Structure:** Day 1–2 (Scope together) · Day 3–5 (Student builds) · Day 6 (Code review) · Day 7 (Demo)
 
 ---
 
 ## 🎯 Goal
 
-Advaith builds one complete, working project that:
+Student builds one complete, working project that:
 - Connects at least 3 sessions of learning
 - Can be demonstrated in 5 minutes
 - He is genuinely proud of
@@ -17,28 +17,28 @@ Advaith builds one complete, working project that:
 
 ## 📖 How This Session Works
 
-This is different from all other sessions. Sree doesn't teach — Sree coaches.
+This is different from all other sessions. Teacher doesn't teach — Teacher coaches.
 
 **Day 1–2: Scope and Scaffold (together)**
-- Advaith presents his chosen track
-- Sree helps scope it down to what's achievable in 3 days
+- Student presents his chosen track
+- Teacher helps scope it down to what's achievable in 3 days
 - Together they create the file structure and a working "skeleton" with placeholder functions
-- Advaith should leave Day 2 with code that runs (even if it doesn't do much yet)
+- Student should leave Day 2 with code that runs (even if it doesn't do much yet)
 
-**Day 3–5: Advaith Builds Independently**
-- Advaith works on his own
-- Sree is available for "unblocking" — not writing code, but answering questions
-- Advaith should commit working code at the end of each day
+**Day 3–5: Student Builds Independently**
+- Student works on his own
+- Teacher is available for "unblocking" — not writing code, but answering questions
+- Student should commit working code at the end of each day
 
 **Day 6: Code Review (together)**
-- Sree reviews the code like a senior engineer
+- Teacher reviews the code like a senior engineer
 - Focus: does it work? Is it readable? What's one thing to improve?
-- Advaith makes the improvements
+- Student makes the improvements
 
 **Day 7: Demo**
-- Advaith presents the project to Sree (and anyone else who wants to watch)
+- Student presents the project to Teacher (and anyone else who wants to watch)
 - 5 minutes max
-- Sree plays devil's advocate: asks hard questions about the code and the results
+- Teacher plays devil's advocate: asks hard questions about the code and the results
 
 ---
 
@@ -131,13 +131,13 @@ def run_session(topic: str): ...
 
 ---
 
-### ⚽🏀 Track D — The Sports Oracle (Recommended for Advaith)
+### ⚽🏀 Track D — The Sports Oracle (Recommended for Student)
 **Sports Analytics Dashboard + AI Commentary**
 
 Connect: Sessions 2, 4, 5, 6
 
 **What it does:**
-- Loads pre-built CSV data for soccer + basketball (Sree provides this)
+- Loads pre-built CSV data for soccer + basketball (Teacher provides this)
 - Computes: top scorers, most consistent players, goals vs xG comparison
 - Plots 3 charts: bar chart, scatter (goals vs assists), xG comparison
 - AI analyst comments on the standout finding in the data
@@ -165,22 +165,22 @@ def main():
 
 ## Demo Day Structure (Day 7)
 
-Advaith presents for 5 minutes:
+Student presents for 5 minutes:
 1. **Show it working** (2 minutes) — live demo
 2. **Explain one piece of code** (1 minute) — pick the part he's most proud of
 3. **What surprised him** (1 minute) — something unexpected during building
 4. **What he'd add next** (1 minute) — one feature he didn't have time for
 
-Sree asks 3 questions:
+Teacher asks 3 questions:
 - *"Walk me through what happens when [specific input] is given"*
 - *"What would break this if the data was different?"*
 - *"Which session did you use most in this project?"*
 
 ---
 
-## Sree's Coaching Principles
+## the teacher's Coaching Principles
 
-- **Unblock, don't write.** If Advaith is stuck, help him think — don't touch the keyboard.
+- **Unblock, don't write.** If Student is stuck, help him think — don't touch the keyboard.
 - **Celebrate small wins.** Getting the first chart to appear is worth celebrating.
 - **Embrace broken code.** Errors are information. "Read the error message out loud."
 - **Scope ruthlessly.** If he's behind, cut features — not quality.
@@ -193,6 +193,6 @@ Sree asks 3 questions:
 Not: perfect code.  
 Not: a sophisticated project.  
 
-Success: Advaith can sit down in front of a keyboard, write a Python program that does something real, and explain every line he wrote.
+Success: Student can sit down in front of a keyboard, write a Python program that does something real, and explain every line he wrote.
 
 That's the whole goal.

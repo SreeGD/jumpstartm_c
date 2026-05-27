@@ -2,13 +2,13 @@
 ## Get Started with Python
 
 **Duration:** 3–4 hours (can split across 2 sittings)  
-**Sree's prep:** Python + VS Code installed. All 4 lab files ready. `pip install matplotlib numpy pandas` done.
+**the teacher's prep:** Python + VS Code installed. All 4 lab files ready. `pip install matplotlib numpy pandas` done.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith can:
+By the end of this session, Student can:
 - Write and run Python programs independently
 - Use variables, loops, conditionals, and functions
 - Plot graphs using matplotlib
@@ -17,7 +17,7 @@ By the end of this session, Advaith can:
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook
 
@@ -27,7 +27,7 @@ By the end of this session, Advaith can:
 
 ### The Python Mental Model — Connect to Math
 
-Everything Advaith knows from 12th grade has a direct Python equivalent:
+Everything Student knows from 12th grade has a direct Python equivalent:
 
 | Math Concept | Python Equivalent |
 |-------------|------------------|
@@ -47,7 +47,7 @@ Everything Advaith knows from 12th grade has a direct Python equivalent:
 
 **Variables and Types**
 ```python
-name = "Advaith"        # string
+name = "Student"        # string
 goals = 24              # integer
 average = 24.5          # float
 is_champion = True      # boolean
@@ -105,7 +105,7 @@ def rate_season(goals, assists):
 
 **Lab 3 (top_scorers.py):** Lists, sorting, bar charts  
 *Teach: lists, sorted(), zip(), matplotlib bar charts*  
-*Key insight: Advaith fills in his own players — makes it personal*
+*Key insight: Student fills in his own players — makes it personal*
 
 **Lab 4 (dice_simulator.py):** Loops, randomness, histograms  
 *Teach: list comprehensions, random module, histograms*  
@@ -117,7 +117,7 @@ def rate_season(goals, assists):
 
 **Lab 1:** The sin and cos waves appear instantly. *"You just plotted a wave in 6 lines. This took me an hour in C."*
 
-**Lab 2:** Advaith beats 7 guesses using binary search. *"You just implemented an O(log n) algorithm. Computers use this to search through billions of sorted records."*
+**Lab 2:** Student beats 7 guesses using binary search. *"You just implemented an O(log n) algorithm. Computers use this to search through billions of sorted records."*
 
 **Lab 3:** His own player stats appear as a beautiful chart. *"This is what ESPN's stat team does — except they do it for 500 players a night."*
 
@@ -139,10 +139,10 @@ def rate_season(goals, assists):
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
 - Go slow on indexing (0-indexed). It trips up everyone at first.
-- The guessing game is the most satisfying lab — let Advaith play it a few times.
-- Encourage Advaith to break things. "What happens if you type a letter instead of a number in the guessing game?"
+- The guessing game is the most satisfying lab — let Student play it a few times.
+- Encourage Student to break things. "What happens if you type a letter instead of a number in the guessing game?"
 - Don't worry about explaining everything perfectly — curiosity > completeness.
 - At the end, ask: *"What would you build if you could build anything with Python?"* That's his Session 8 capstone.

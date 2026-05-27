@@ -1,6 +1,6 @@
 # Lab — Spy on the Internet with DevTools
 
-**Time:** 20–30 minutes (do with Sree)  
+**Time:** 20–30 minutes (do with Teacher)  
 **Requires:** Chrome or Firefox browser
 
 ---

@@ -2,13 +2,13 @@
 ## Building Blocks: CPU → GPU
 
 **Duration:** 2–3 hours  
-**Sree's prep:** Pull up a die shot of Apple M3 chip. Have the half-adder code ready.
+**the teacher's prep:** Pull up a die shot of Apple M3 chip. Have the half-adder code ready.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith understands:
+By the end of this session, Student understands:
 - How binary and transistors form the base of all computing
 - How a CPU works: fetch, decode, execute
 - Why GPUs exist and why they power AI
@@ -16,7 +16,7 @@ By the end of this session, Advaith understands:
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook
 *"There are 19 billion transistors in an Apple M3 chip. Each one is 3 nanometres wide. A human hair is 80,000 nanometres wide. How is that even possible — and what does it actually DO?"*
@@ -44,14 +44,14 @@ Stack enough instructions together and you can run Instagram.
 | 5       | 0101   |
 | 10      | 1010   |
 
-Ask Advaith: *"Why do computers use binary and not decimal?"*  
+Ask Student: *"Why do computers use binary and not decimal?"*  
 Answer: Because transistors have two states (on/off), not ten. Physics decided.
 
 ---
 
 ### Stacking Bits → Representing Any Instruction
 
-The leap from "switches" to "running Instagram" is not magic. Walk Advaith through it step by step.
+The leap from "switches" to "running Instagram" is not magic. Walk Student through it step by step.
 
 **One bit — two possibilities:**
 ```
@@ -96,7 +96,7 @@ OPCODE      REGISTER 1   REGISTER 2   RESULT
   ADD       reg 2        reg 3     → reg 4
 ```
 
-Show Advaith this actual ARM instruction (the CPU inside every iPhone and Android):
+Show Student this actual ARM instruction (the CPU inside every iPhone and Android):
 
 ```
 1110 0000 1000 0001 0000 0000 0000 0010
@@ -129,7 +129,7 @@ Three logical operations underlie all computing:
 
 *"Every decision your computer makes — every if/else in every app ever built — reduces to these three operations."*
 
-Show the truth tables. Let Advaith verify a few rows mentally.
+Show the truth tables. Let Student verify a few rows mentally.
 
 ---
 
@@ -209,9 +209,9 @@ Then: *"Let's build one. Not 19 billion. Just three."*
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
 - Don't get lost in CPU microarchitecture. Keep it to: transistor → gate → ALU → CPU → done.
 - The basketball/football analogy for CPU vs GPU always lands. Use it.
-- The lab (logic gates in Python) is Advaith's first real Python code. Go slow. Explain every line.
+- The lab (logic gates in Python) is the student's first real Python code. Go slow. Explain every line.
 - It's fine if he doesn't fully get binary arithmetic — the concept of "two states = on/off" is enough for now.

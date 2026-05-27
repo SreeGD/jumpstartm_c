@@ -1,7 +1,7 @@
-# NITW M&C Prep — Advaith's 2-Month Curriculum
+# NITW M&C Prep — 2-Month Curriculum
 
-**Student:** Advaith  
-**Teacher:** Sree  
+**Student:** *(your student's name)*  
+**Teacher:** *(your name)*  
 **Duration:** 2 months  
 **Goal:** Build genuine understanding of computing, math, AI, and quant finance — starting from zero code experience.
 
@@ -12,16 +12,16 @@
 > Every session opens with a story or demo that creates a question. Then answers it.
 
 No session starts with "today we learn X."  
-Every session starts with something that makes Advaith *want* to understand X.
+Every session starts with something that makes Student *want* to understand X.
 
 **Session structure:**
 ```
-HOOK      → Sree tells a story or shows something surprising
-EXPLAIN   → Sree walks through the concept live
-DEMO      → Sree runs something — code, simulation, visualization
-PRACTICE  → Sree and Advaith do it together
+HOOK      → Teacher tells a story or shows something surprising
+EXPLAIN   → Teacher walks through the concept live
+DEMO      → Teacher runs something — code, simulation, visualization
+PRACTICE  → Teacher and Student do it together
 WOW       → The moment it all clicks
-HOMEWORK  → Advaith continues independently
+HOMEWORK  → Student continues independently
 ```
 
 ---
@@ -66,14 +66,14 @@ HOMEWORK  → Advaith continues independently
 Each session folder contains:
 ```
 session_X/
-├── lesson.md        ← Sree's teaching guide (narrative, concepts, wow moments)
+├── lesson.md        ← teacher's guide (narrative, concepts, wow moments)
 ├── labs/            ← Hands-on code and activities (do together in session)
-└── assignments/     ← Advaith's independent work after the session
+└── assignments/     ← student's independent work after the session
 ```
 
 ---
 
-## Advaith's Profile
+## Student Profile (adapt to your student)
 - Just finished 12th PCM
 - Loves math — scored well, genuinely enjoyed it
 - Zero programming experience

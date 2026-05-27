@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 
 print("=== Python as a Calculator ===")
 print(2 ** 10)          # 2 to the power of 10
-print(17 % 5)           # modulo (remainder) — Advaith knows this from ciphers!
+print(17 % 5)           # modulo (remainder) — Student knows this from ciphers!
 print(round(3.14159, 2))
 print(abs(-42))
 

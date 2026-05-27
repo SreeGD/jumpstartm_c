@@ -87,4 +87,4 @@ Before Session 8, think about which capstone track you want to do:
 | 🎓 C — The Tutor Bot | AI that teaches math interactively |
 | ⚽🏀 D — The Sports Oracle | Sports analytics dashboard + AI |
 
-**Come to Session 8 with your choice.** Sree will help you scope it.
+**Come to Session 8 with your choice.** Teacher will help you scope it.

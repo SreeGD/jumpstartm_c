@@ -1,8 +1,8 @@
 # Session 10 — How Instagram Actually Works
 ## The app you use every day hides a billion-dollar engineering story
 
-**Teacher:** Sree  
-**Student:** Advaith  
+**Teacher:** *(your name)*  
+**Student:** *(your student's name)*  
 **Prerequisite:** Session 1.2 (How the Web Works), Session 4 (Python), Session 6 (Agentic AI)  
 **Duration:** 90–120 minutes
 
@@ -12,7 +12,7 @@
 
 > "Open Instagram right now. Scroll for 30 seconds. Close it."
 
-Ask Advaith: **How many servers just worked for you?**
+Ask Student: **How many servers just worked for you?**
 
 The answer: **hundreds**.
 
@@ -26,7 +26,7 @@ In 30 seconds of scrolling, Instagram:
 
 And it did all of this in under **200 milliseconds** per action.
 
-Advaith uses Instagram for hours every day. Today he finds out it's one of the most sophisticated engineering systems ever built.
+Student uses Instagram for hours every day. Today he finds out it's one of the most sophisticated engineering systems ever built.
 
 ---
 
@@ -118,7 +118,7 @@ Instagram considers **hundreds of signals**, but the main ones:
 **Recency signals:**
 - When was this posted? (Fresher = higher score, but not always)
 
-**This is a machine learning model.** Every action you take — like, skip, pause, zoom — is training data. Instagram predicts: **"Given what Advaith has done before, how likely is he to like this post?"**
+**This is a machine learning model.** Every action you take — like, skip, pause, zoom — is training data. Instagram predicts: **"Given what Student has done before, how likely is he to like this post?"**
 
 ### The Recommendation System
 
@@ -244,7 +244,7 @@ But behind that simple interface:
 - **Real-time auctions** happening in milliseconds
 - **Distributed databases** keeping everything consistent across 20+ data centres
 
-And all of it was built by humans who learned the same things Advaith is learning now.
+And all of it was built by humans who learned the same things Student is learning now.
 
 Kevin Systrom, Instagram's co-founder, studied symbolic systems at Stanford. His co-founder Mike Krieger built the first backend in Python. The first engineer they hired was a 22-year-old.
 
@@ -252,7 +252,7 @@ Kevin Systrom, Instagram's co-founder, studied symbolic systems at Stanford. His
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
 **Key connections to previous sessions:**
 - HTTP requests (Session 1.2) → Instagram's API calls
@@ -260,7 +260,7 @@ Kevin Systrom, Instagram's co-founder, studied symbolic systems at Stanford. His
 - Machine learning concepts (Session 5) → The ranking algorithm
 - APIs and microservices (Session 9) → Instagram's service architecture
 
-**Good questions to ask Advaith:**
+**Good questions to ask Student:**
 1. "Why does Instagram not show posts chronologically anymore?"
 2. "If you have 1 million followers and you post, what has to happen technically?"
 3. "Why does the same Reel load faster on WiFi than 4G — what's adapting?"
@@ -270,6 +270,6 @@ Kevin Systrom, Instagram's co-founder, studied symbolic systems at Stanford. His
 > "If you learn Python, backend web development, and ML — you could build something like the early Instagram. Not the scale (you'd need thousands of engineers for that) but the ideas? Completely learnable."
 
 **Optional deep dive (if time allows):**
-- Show Advaith how to inspect Instagram's API calls using browser DevTools
+- Show Student how to inspect Instagram's API calls using browser DevTools
 - Look at the `graph.instagram.com` requests in the Network tab
 - Discuss GraphQL vs REST (Instagram uses GraphQL internally)

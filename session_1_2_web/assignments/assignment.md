@@ -29,7 +29,7 @@ For each site, answer:
 
 ## Task 3 — Map the Journey
 
-Draw (or type) the full journey of a request — from Advaith's laptop to the server and back.
+Draw (or type) the full journey of a request — from the student's laptop to the server and back.
 
 Include all 6 steps:
 1. DNS lookup

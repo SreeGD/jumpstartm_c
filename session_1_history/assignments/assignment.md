@@ -38,11 +38,11 @@ Write 2 sentences on each — what the language is, and one reason why they chos
 
 ## Task 4 — Think
 
-Advaith, write 3–5 sentences answering this question:
+Student, write 3–5 sentences answering this question:
 
 > *"Ada Lovelace wrote an algorithm for a machine that hadn't been built yet. What does that tell you about the relationship between ideas and technology?"*
 
-No right answer. Sree wants to know how Advaith thinks, not what the internet says.
+No right answer. Teacher wants to know how Student thinks, not what the internet says.
 
 ---
 

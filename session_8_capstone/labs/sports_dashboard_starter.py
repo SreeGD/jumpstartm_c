@@ -2,7 +2,7 @@
 # Session 8: Capstone
 #
 # This is a SKELETON — not a finished project.
-# Advaith fills in the functions using what he learned in Sessions 4, 5, 6.
+# Student fills in the functions using what he learned in Sessions 4, 5, 6.
 #
 # Prerequisites: pip install matplotlib numpy pandas anthropic
 # Run: python sports_dashboard_starter.py
@@ -13,8 +13,8 @@ import matplotlib.pyplot as plt
 import anthropic
 
 # ─────────────────────────────────────────
-# THE DATA — Sree provides this
-# Advaith can also find his own data online:
+# THE DATA — Teacher provides this
+# Student can also find his own data online:
 # https://fbref.com (football)
 # https://www.basketball-reference.com
 # ─────────────────────────────────────────
@@ -39,7 +39,7 @@ BASKETBALL_DATA = {
 
 # ─────────────────────────────────────────
 # FUNCTION 1: Load the data
-# Advaith: turn the dictionaries above into DataFrames
+# Student: turn the dictionaries above into DataFrames
 # ─────────────────────────────────────────
 
 def load_data(sport: str) -> pd.DataFrame:
@@ -47,7 +47,7 @@ def load_data(sport: str) -> pd.DataFrame:
     Load player data for 'soccer' or 'basketball'
     Returns a pandas DataFrame
 
-    TODO: Advaith fills this in
+    TODO: Student fills this in
     Hint: pd.DataFrame(SOCCER_DATA) or pd.DataFrame(BASKETBALL_DATA)
     """
     if sport == 'soccer':
@@ -60,7 +60,7 @@ def load_data(sport: str) -> pd.DataFrame:
 
 # ─────────────────────────────────────────
 # FUNCTION 2: Compute interesting stats
-# Advaith: add computed columns to the DataFrame
+# Student: add computed columns to the DataFrame
 # ─────────────────────────────────────────
 
 def compute_stats(df: pd.DataFrame, sport: str) -> pd.DataFrame:
@@ -73,7 +73,7 @@ def compute_stats(df: pd.DataFrame, sport: str) -> pd.DataFrame:
 
     For basketball: add 'efficiency' (ppg + rpg + apg)
 
-    TODO: Advaith fills this in
+    TODO: Student fills this in
     """
     if sport == 'soccer':
         pass  # Replace with your code
@@ -84,7 +84,7 @@ def compute_stats(df: pd.DataFrame, sport: str) -> pd.DataFrame:
 
 # ─────────────────────────────────────────
 # FUNCTION 3: Plot the dashboard
-# Advaith: create 2 charts per sport (4 total)
+# Student: create 2 charts per sport (4 total)
 # Use code from Session 4 labs as reference
 # ─────────────────────────────────────────
 
@@ -94,7 +94,7 @@ def plot_soccer_dashboard(df: pd.DataFrame):
     Chart 1: Goals vs Assists bar chart (like lab3_top_scorers.py)
     Chart 2: Scatter plot of Goals vs xG (who is over/under-performing?)
 
-    TODO: Advaith fills this in
+    TODO: Student fills this in
     Hint: copy from lab3_top_scorers.py and modify
     """
     fig, axes = plt.subplots(1, 2, figsize=(14, 6))
@@ -116,7 +116,7 @@ def plot_basketball_dashboard(df: pd.DataFrame):
     Chart 1: PPG bar chart sorted by score
     Chart 2: PPG vs APG scatter (scorer vs playmaker)
 
-    TODO: Advaith fills this in
+    TODO: Student fills this in
     """
     fig, axes = plt.subplots(1, 2, figsize=(14, 6))
     fig.patch.set_facecolor('#0f0f1a')
@@ -131,7 +131,7 @@ def plot_basketball_dashboard(df: pd.DataFrame):
 
 # ─────────────────────────────────────────
 # FUNCTION 4: AI Commentary
-# Advaith: use skills from Session 6
+# Student: use skills from Session 6
 # ─────────────────────────────────────────
 
 def ai_commentary(df: pd.DataFrame, sport: str) -> str:
@@ -139,7 +139,7 @@ def ai_commentary(df: pd.DataFrame, sport: str) -> str:
     Feed the stats to Claude and ask for 3 insights.
     Use the system prompt and API call from Session 6.
 
-    TODO: Advaith fills this in
+    TODO: Student fills this in
     Hint: Convert df to a string with df.to_string()
          Then pass it to the Claude API like in sports_analyst.py
     """

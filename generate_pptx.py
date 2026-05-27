@@ -139,7 +139,7 @@ def make_cover():
         Inches(0.5), Inches(1.0), Inches(3.0), Inches(0.36),
         sz=8.5, bold=True, col=WHITE, align=PP_ALIGN.CENTER)
     # Title
-    txt(s, "Advaith's", Inches(0.5), Inches(1.55), Inches(9), Inches(0.6),
+    txt(s, "2-Month", Inches(0.5), Inches(1.55), Inches(9), Inches(0.6),
         sz=26, col=LGREY)
     txt(s, "2-Month Curriculum",
         Inches(0.5), Inches(2.1), Inches(10), Inches(1.1),
@@ -150,7 +150,7 @@ def make_cover():
         sz=14, col=TEAL, italic=True)
     hline(s, Inches(3.9), TEAL, Inches(5))
     # Meta
-    pairs = [("Student","Advaith"),("Teacher","Sree"),("Duration","2 Months"),("Sessions","11 + Capstone")]
+    pairs = [("Student","—"),("Teacher","—"),("Duration","2 Months"),("Sessions","11 + Capstone")]
     for i,(k,v) in enumerate(pairs):
         x = Inches(0.5 + i*2.0)
         txt(s, k.upper(), x, Inches(4.1), Inches(1.8), Inches(0.28), sz=8, col=MGREY, bold=True)
@@ -158,7 +158,7 @@ def make_cover():
     # Sports emojis
     txt(s, "⚽  🏀  📊  🤖  📈  🏗️",
         Inches(0.5), Inches(5.45), Inches(9), Inches(0.75), sz=28)
-    txt(s, "Taught by Sree  ·  Built for NITW M&C  ·  Starting from zero",
+    txt(s, "Taught by Teacher ·  Built for NITW M&C  ·  Starting from zero",
         Inches(0.5), Inches(6.65), Inches(9), Inches(0.45),
         sz=10, col=MGREY, italic=True)
 
@@ -306,7 +306,7 @@ def make_lab(session_label, lab_title, steps, output_desc, col, sports_note=None
             sz=12, col=WHITE)
 
 def make_assignment(session_label, tasks, col):
-    """Assignment slide: what Advaith does independently."""
+    """Assignment slide: what Student does independently."""
     s = slide()
     bg(s, DARK)
     rect(s, 0, 0, Inches(0.15), H, AMBER)
@@ -443,16 +443,16 @@ make_cover()
 # 2. About This Curriculum
 make_content("What This Curriculum Is", [
     "⏱️  Two months of structured learning — one dedicated session at a time",
-    "👨‍🏫  Sree teaches every session. Advaith practices independently after each.",
+    "👨‍🏫  Teacher teaches every session. Student practices independently after each.",
     "🎯  Goal: arrive at NITW M&C with genuine understanding, not surface familiarity",
     "🧱  Builds from zero — no prior coding knowledge assumed",
     "⚽🏀  Basketball and soccer woven into every session as the primary examples",
-    "🏆  Ends with a real, working capstone project Advaith presents himself",
+    "🏆  Ends with a real, working capstone project Student presents himself",
 ], TEAL)
 
-# 3. Advaith's Profile
+# 3. Student Profile
 make_two_col(
-    "Who Is Advaith?",
+    "Student Profile",
     "📚 Starting Point",
     ["Just finished 12th PCM",
      "Loves math — scored well, genuinely enjoyed it",
@@ -470,13 +470,13 @@ make_two_col(
 
 # 4. The Teaching Philosophy
 make_content("Every Session Has the Same Shape", [
-    "🎬  HOOK — Sree opens with a story or demo that creates a question",
-    "📖  EXPLAIN — Sree walks through the concept live, no slides-only lectures",
-    "🔧  DEMO — Sree runs real code or a visualisation",
-    "🤝  PRACTICE — Sree and Advaith build it together",
+    "🎬  HOOK — Teacher opens with a story or demo that creates a question",
+    "📖  EXPLAIN — Teacher walks through the concept live, no slides-only lectures",
+    "🔧  DEMO — Teacher runs real code or a visualisation",
+    "🤝  PRACTICE — Teacher and Student build it together",
     "⚡  WOW — the moment everything clicks into place",
-    "📝  HOMEWORK — Advaith continues independently before the next session",
-], TEAL, note="Rule: no session starts with 'today we learn X'. Every session starts with something that makes Advaith want to understand X.")
+    "📝  HOMEWORK — Student continues independently before the next session",
+], TEAL, note="Rule: no session starts with 'today we learn X'. Every session starts with something that makes Student want to understand X.")
 
 # 5. Curriculum Map
 s = slide()
@@ -540,7 +540,7 @@ make_content("Ada Lovelace — The First Programmer", [
     "🧮  Her algorithm computed Bernoulli numbers — a real mathematical sequence",
     "💡  She saw that the machine could do more than arithmetic — it could manipulate symbols",
     "🏆  She is recognised as the world's first computer programmer — 100 years before computers existed",
-], C["s1"], note="Sree: 'She wrote an algorithm for a machine that didn't fully exist yet. What does that tell you about the relationship between ideas and technology?'",
+], C["s1"], note="Teacher: 'She wrote an algorithm for a machine that didn't fully exist yet. What does that tell you about the relationship between ideas and technology?'",
 sub="Session 1 — History of Computing")
 
 # 9. Alan Turing
@@ -550,7 +550,7 @@ make_content("Alan Turing — The Greatest Codebreaker", [
     "📊  Historians estimate he shortened the war by 2 years and saved 14 million lives",
     "🤔  He asked: 'Can machines think?' — invented the theoretical Turing Machine (basis of all computing)",
     "💔  After the war, the British government prosecuted him for being gay. He died at 41.",
-    "🌍  The Imitation Game (2014 film) tells his story. Advaith's homework: watch it.",
+    "🌍  The Imitation Game (2014 film) tells his story. the student's homework: watch it.",
 ], C["s1"], sub="Session 1 — History of Computing")
 
 # 10. Machines Arrive
@@ -592,11 +592,11 @@ make_two_col(
 
 # 13. Lab + Assignment
 make_lab("Session 1", "The Computing & Sports Analytics Timeline",
-    ["Research 5 computing milestones (Sree provides starting points)",
-     "Research 5 sports analytics milestones (Advaith finds these)",
+    ["Research 5 computing milestones (Teacher provides starting points)",
+     "Research 5 sports analytics milestones (Student finds these)",
      "For each: write what happened + why it mattered (1 sentence each)",
-     "Present the sports milestones to Sree — explain each one"],
-    "A 10-row table: half computing, half sports. Advaith presents his 5 sports milestones aloud.",
+     "Present the sports milestones to Teacher — explain each one"],
+    "A 10-row table: half computing, half sports. Student presents his 5 sports milestones aloud.",
     C["s1"],
     sports_note="Moneyball · NBA 3-point revolution · xG in football · GPS vests in training")
 
@@ -617,7 +617,7 @@ make_content("The Transistor — It All Starts Here", [
     "📱  Stack billions of instructions → run Instagram",
     "🦠  A Covid virus is ~100 nanometres. Apple M3 transistors are 3nm. Smaller by 33×.",
     "📊  Your phone has more computing power than NASA had for the entire Apollo programme",
-], C["s11"], note="Sree: show the electron microscope die shot of an Apple M3 chip. Let it land silently for 5 seconds.",
+], C["s11"], note="Teacher: show the electron microscope die shot of an Apple M3 chip. Let it land silently for 5 seconds.",
 sub="Session 1.1 — Building Blocks")
 
 # 16. Logic Gates
@@ -634,7 +634,7 @@ make_code_slide("Three Gates That Run the World",
      "NOT(1)     →  False",
      "NOT(0)     →  True",
      ],
-    "Every decision a computer makes — every if/else in every app ever written — reduces to these three operations.\n\nAND, OR, NOT are Boolean algebra.\n\nAdvaith already knows this from 12th-grade set theory:\nAND = ∩\nOR = ∪\nNOT = complement",
+    "Every decision a computer makes — every if/else in every app ever written — reduces to these three operations.\n\nAND, OR, NOT are Boolean algebra.\n\nStudent already knows this from 12th-grade set theory:\nAND = ∩\nOR = ∪\nNOT = complement",
     C["s11"], sub="Session 1.1 — Building Blocks")
 
 # 17. CPU Architecture
@@ -696,7 +696,7 @@ make_content("Step 1 & 2 — Find the Server and Connect", [
     "📞  TCP — your browser and the server 'pick up the phone' — agree to talk",
     "🔒  HTTPS = encrypted TCP — both sides agree on a secret code before speaking",
     "🔐  The padlock in your browser means nobody can eavesdrop on this conversation",
-], C["s12"], note="Ask Advaith: 'What's your phone number in this analogy?' Answer: your device's IP address.",
+], C["s12"], note="Ask Student: 'What's your phone number in this analogy?' Answer: your device's IP address.",
 sub="Session 1.2 — How the Web Works")
 
 # 22. HTTP Request/Response
@@ -730,7 +730,7 @@ make_two_col(
     ["Controls how everything looks",
      "Colours, fonts, sizes, spacing",
      "background-color: #1a1a2e",
-     "The dark theme on Advaith's sports page",
+     "The dark theme on the student's sports page",
      "JavaScript — the muscles: makes things interactive and dynamic"],
     C["s12"], sub="Session 1.2 — How the Web Works"
 )
@@ -756,7 +756,7 @@ make_code_slide("APIs — Apps Talking to Apps",
 # 25. Lab + Assignment
 make_lab("Session 1.2", "First Webpage + Spy on the Internet",
     ["Open labs/my_sports_page.html in VS Code",
-     "Replace all players with Advaith's actual favourites",
+     "Replace all players with the student's actual favourites",
      "Change colours to a favourite team's hex code",
      "Add a third section (match results or anything sports)",
      "Open Chrome DevTools → Network tab → refresh Instagram",
@@ -826,7 +826,7 @@ make_content("Graph Theory — The Math of Networks", [
     "⚡  Shortest path = fastest route (Dijkstra's algorithm, 1956)",
     "🏆  Centrality = how 'important' a node is — how many paths pass through it",
     "📱  Google Maps, social networks, the web, passing networks in football — all graphs",
-], C["s2"], note="Sree: 'Google's PageRank algorithm that made them $100B is betweenness centrality on the web's link graph. Invented in 1956, used for billions of searches today.'",
+], C["s2"], note="Teacher: 'Google's PageRank algorithm that made them $100B is betweenness centrality on the web's link graph. Invented in 1956, used for billions of searches today.'",
 sub="Session 2 — Maths for Computing")
 
 # 31. Dijkstra's + Football Passing Networks
@@ -856,10 +856,10 @@ make_lab("Session 2 — Lab A", "Secret Message Machine — Caesar Cipher",
      "Understand how ord() and chr() convert letters to numbers",
      "Encrypt 'MESSI IS GOAT' with shift=3 — predict output first",
      "Decrypt the result back — verify you get the original",
-     "Send Sree an encrypted message — see if he can decode it"],
-    "encrypt() and decrypt() functions working.\nSend Sree a real secret message.",
+     "Send Teacher an encrypted message — see if he can decode it"],
+    "encrypt() and decrypt() functions working.\nSend Teacher a real secret message.",
     C["s2"],
-    sports_note="Encrypt 'ADVAITH WILL ACE NITW' and send it to Sree")
+    sports_note="Encrypt 'ADVAITH WILL ACE NITW' and send it to Teacher")
 
 # 33. Lab: Passing Network + Assignment
 make_lab("Session 2 — Lab B", "Barcelona Passing Network",
@@ -1020,7 +1020,7 @@ make_lab("Session 4 — Lab 2", "The Guessing Game — Binary Search in Action",
      "Play the game: find the secret number, count your attempts",
      "Try to beat it in 7 guesses (it's possible — here's how)",
      "Watch binary_search_strategy() run — always guess the middle",
-     "Sree explains: this is O(log n) — 1,000 numbers in 10 guesses"],
+     "Teacher explains: this is O(log n) — 1,000 numbers in 10 guesses"],
     "Play the game yourself first.\nWatch the binary search demo.\nUnderstand why log₂(1000) ≈ 10.",
     C["s4"],
     sports_note="Binary search is how NBA databases find any player instantly among millions of records")
@@ -1032,7 +1032,7 @@ make_lab("Session 4 — Lab 3", "Top Scorers Dashboard — NBA + Soccer",
      "Run it — two charts appear side by side",
      "Left chart: soccer goals + assists bar chart",
      "Right chart: basketball PPG vs APG scatter plot"],
-    "Two charts saved as top_scorers.png\nAdvaith's own favourite players, his own data.\nSend it to friends — it looks professional.",
+    "Two charts saved as top_scorers.png\nthe student's own favourite players, his own data.\nSend it to friends — it looks professional.",
     C["s4"],
     sports_note="Use YOUR players — Mbappe, Luka, Vini, Giannis — whoever you actually watch")
 
@@ -1071,7 +1071,7 @@ make_content("Vectors and Matrices — Neural Networks Are Matrix Math", [
     "📊  Matrix = a grid of numbers. A neural network 'layer' = matrix × input vector + bias",
     "🔄  Matrix multiplication: transform one vector into another. Each layer reshapes the data.",
     "⚡  The entire forward pass of GPT-4 = billions of matrix multiplications happening in parallel on GPUs",
-    "✅  Advaith already knows vectors from 12th-grade physics. He already knows matrix multiplication.",
+    "✅  Student already knows vectors from 12th-grade physics. He already knows matrix multiplication.",
 ], C["s5"], note="The whole secret of neural networks: output = matrix × input + bias. Repeated many times. That's it.",
 sub="Session 5 — Math & Stats for AI")
 
@@ -1143,7 +1143,7 @@ make_timeline("70 Years of AI — The Story So Far", [
     ("2017",  "'Attention Is All You Need'",
                                      "Transformer architecture · Parallel training · Scales to any size"),
     ("2022",  "ChatGPT",            "1M users in 5 days · 100M in 2 months · Fastest adoption in history"),
-    ("2025",  "AI Agents",          "AI that reasons, uses tools, takes actions · The era Advaith enters"),
+    ("2025",  "AI Agents",          "AI that reasons, uses tools, takes actions · The era Student enters"),
 ], C["s6"], sub="Session 6 — Agentic AI")
 
 # 56. Transformers + LLMs
@@ -1275,10 +1275,10 @@ make_content("Black-Scholes — The Equation That Won the Nobel Prize", [
     "📜  Fischer Black and Myron Scholes (1973): formula to price options on stocks",
     "❓  An option = the right (not obligation) to buy a stock at a fixed price in the future",
     "🧮  The formula uses: logarithms, exponentials, normal distribution, partial derivatives",
-    "✅  Every single symbol in Black-Scholes is something Advaith already knows from 12th grade",
+    "✅  Every single symbol in Black-Scholes is something Student already knows from 12th grade",
     "💰  This formula governs a $10 trillion global derivatives market",
     "🎓  Scholes won the Nobel Prize in Economics for it (Black had died by then)",
-], C["s7"], note="Sree: write the Black-Scholes formula on a whiteboard. Point to each symbol. 'You know this. This. And this. All of it.' This is the moment.",
+], C["s7"], note="Teacher: write the Black-Scholes formula on a whiteboard. Point to each symbol. 'You know this. This. And this. All of it.' This is the moment.",
 sub="Session 7 — Quant Finance")
 
 # 66. Lab: Stock Analysis
@@ -1328,7 +1328,7 @@ make_content("Track B — NeuralNet from Zero: Digit Recognition", [
     "🧠  Architecture: 784 inputs (28×28 pixels) → 64 hidden units → 10 outputs",
     "🎯  Target accuracy: >85% on test set",
     "💡  Sessions used: 4 (Python + NumPy), 5 (gradient descent, matrix math)",
-], C["s8"], note="This is the hardest track. But if Advaith can explain how a neural network learns from scratch, he understands something most CS graduates can't.",
+], C["s8"], note="This is the hardest track. But if Student can explain how a neural network learns from scratch, he understands something most CS graduates can't.",
 sub="Session 8 — Capstone")
 
 # 71. Track C: Tutor Bot
@@ -1339,7 +1339,7 @@ make_content("Track C — The Tutor Bot: AI That Teaches Math", [
     "✅  User submits an answer → AI gives feedback and adjusts difficulty",
     "🔁  Loop continues — getting harder or easier based on performance",
     "💡  Sessions used: 4 (Python), 6 (Claude API + multi-turn memory)",
-], C["s8"], note="Meta-moment: Advaith is building a system that does what Sree has been doing. The student builds the teacher.",
+], C["s8"], note="Meta-moment: Student is building a system that does what Teacher has been doing. The student builds the teacher.",
 sub="Session 8 — Capstone")
 
 # 72. Track D: Sports Oracle (Recommended)
@@ -1350,20 +1350,20 @@ make_content("Track D — The Sports Oracle  ⭐ Recommended", [
     "🤖  Claude API summarises the 3 most interesting findings in the data",
     "🏁  Demo: running program → charts open → AI commentary prints below",
     "💡  Sessions used: 2 (stats), 4 (Python + pandas), 5 (xG), 6 (Claude API)",
-], C["s8"], note="Starter file: sports_dashboard_starter.py — skeleton with empty functions. Advaith fills them in using what he learned.",
+], C["s8"], note="Starter file: sports_dashboard_starter.py — skeleton with empty functions. Student fills them in using what he learned.",
 sub="Session 8 — Capstone")
 
 # 73. 7-Day Build + Demo Day
 make_two_col(
     "How the Capstone Week Works",
     "🗓️ 7-Day Structure",
-    ["Day 1–2: Scope and scaffold with Sree",
+    ["Day 1–2: Scope and scaffold with Teacher",
      "→ Pick track, define functions, create skeleton",
-     "→ Advaith leaves with something that runs (even if empty)",
-     "Day 3–5: Advaith builds independently",
-     "→ Sree available to unblock — NOT to write code",
+     "→ Student leaves with something that runs (even if empty)",
+     "Day 3–5: Student builds independently",
+     "→ Teacher available to unblock — NOT to write code",
      "Day 6: Code review session",
-     "→ Sree reviews like a senior engineer",
+     "→ Teacher reviews like a senior engineer",
      "→ One improvement implemented together",
      "Day 7: Demo Day"],
     "🎤 Demo Day (5 minutes)",
@@ -1372,7 +1372,7 @@ make_two_col(
      "3:00–4:00  What surprised you during building?",
      "4:00–5:00  What would you add if you had one more week?",
      "",
-     "Sree asks 3 questions:",
+     "Teacher asks 3 questions:",
      "→ Walk me through what happens when [input]",
      "→ What would break this with different data?",
      "→ Which session did you use most?"],
@@ -1462,7 +1462,7 @@ make_two_col(
      "LLM apps: AI is the core feature, not an add-on",
      "Engineers using AI tools write 2–5× more code per day",
      "Skills that matter more: judgment, system design, knowing when AI is wrong",
-     "Advaith enters engineering when it is being reinvented. No habits to unlearn."],
+     "Student enters engineering when it is being reinvented. No habits to unlearn."],
     C["s9"], left_col=SLATE, right_col=RED,
     sub="Session 9 — Software Engineering Landscape"
 )
@@ -1513,7 +1513,7 @@ txt(s, "What Success Looks Like",
 hline(s, Inches(1.45), RED, Inches(11), Inches(1.15))
 
 quote = (
-    "At the start of this curriculum, Advaith had never written a line of code.\n\n"
+    "At the start of this curriculum, Student had never written a line of code.\n\n"
     "By Demo Day, he can sit down at a keyboard, build a Python program that\n"
     "downloads real data, computes statistics, plots charts, and calls an AI API —\n"
     "and explain every single line he wrote."
@@ -1535,7 +1535,7 @@ for i, (b, a) in enumerate(zip(befores, afters)):
     txt(s, f"✓  {a}", Inches(7.2), y, Inches(5.85), Inches(0.46),
         sz=13, col=RGBColor(0x88,0xee,0xaa), align=PP_ALIGN.LEFT)
 
-txt(s, "⚽  🏀  Let's go, Advaith.",
+txt(s, "⚽  🏀  Let's go, Student.",
     Inches(0.5), Inches(6.9), Inches(12.3), Inches(0.5),
     sz=18, bold=True, col=GOLD, align=PP_ALIGN.CENTER)
 

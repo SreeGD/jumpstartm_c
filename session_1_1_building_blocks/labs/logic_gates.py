@@ -1,11 +1,11 @@
 # Lab — Logic Gates in Python
 # Session 1.1: Building Blocks
 #
-# Instructions for Sree:
+# Instructions for Teacher:
 #   Type this live. Explain each line as you go.
-#   Let Advaith predict the output before running each section.
+#   Let Student predict the output before running each section.
 #
-# Instructions for Advaith:
+# Instructions for Student:
 #   Run each section. Try changing the inputs.
 #   Can you predict the output before running?
 
@@ -79,11 +79,11 @@ for a in [0, 1]:
         print(f"{a} | {b} | {int(XOR(a, b))}")
 
 # Notice: XOR(1,1) = 0. Different from OR.
-# Sree: "XOR is the key gate in binary addition."
+# Teacher: "XOR is the key gate in binary addition."
 
 
 # ─────────────────────────────────────────
-# CHALLENGE: Can Advaith extend this?
+# CHALLENGE: Can Student extend this?
 # ─────────────────────────────────────────
 
 # Try building NAND (NOT AND) — used in actual chip design

@@ -11,7 +11,7 @@ import time
 
 # ── 1. Simulate a user's Instagram data ─────────────────────────
 
-# Advaith's interaction history (0–10 score)
+# the student's interaction history (0–10 score)
 user_profile = {
     "football_page":      {"past_likes": 9, "watch_time": 8, "dm_frequency": 2},
     "nba_highlights":     {"past_likes": 8, "watch_time": 9, "dm_frequency": 1},
@@ -48,7 +48,7 @@ def rank_post(post, user):
     account = post["from"]
     history = user.get(account, {"past_likes": 1, "watch_time": 1, "dm_frequency": 0})
 
-    # Signal 1 — Interest (how much has Advaith liked this account before?)
+    # Signal 1 — Interest (how much has Student liked this account before?)
     interest_score = history["past_likes"] / 10.0  # normalise to 0–1
 
     # Signal 2 — Relationship (DM frequency = close friend?)
@@ -148,18 +148,18 @@ def main():
     print(f"\n  Total load time for 3 posts: {total_latency}ms")
 
     # Step 4: Simulate an action (like) and explain what happens
-    print("\n❤️   STEP 3: Advaith double-taps post #1...")
+    print("\n❤️   STEP 3: Student double-taps post #1...")
     top_post = feed[0]
     print(f"\n  What Instagram does in background:")
     print(f"  → Write 'LIKE' to PostgreSQL database")
     print(f"  → Increment like counter in Redis cache (fast!)")
     print(f"  → Send notification to '{top_post['from']}'")
-    print(f"  → Update Advaith's interest model: '{top_post['from']}' ↑")
+    print(f"  → Update the student's interest model: '{top_post['from']}' ↑")
     print(f"  → Log event for ML training pipeline")
     print(f"  All of this happens in < 50ms")
 
-    # Step 5: Show what changes if Advaith posts
-    print("\n📤  STEP 4: Advaith posts a photo...")
+    # Step 5: Show what changes if Student posts
+    print("\n📤  STEP 4: Student posts a photo...")
     print(f"\n  Journey of your photo:")
     steps = [
         ("Phone → API Gateway",      "HTTP POST with JPEG + caption"),

@@ -3,13 +3,13 @@
 
 **Duration:** 2–3 hours  
 **Format:** Narrative overview + discussion. No heavy coding.  
-**Sree's prep:** Pull up real examples for each era as you go — GitHub, AWS console, a Kubernetes dashboard, a Copilot demo.
+**the teacher's prep:** Pull up real examples for each era as you go — GitHub, AWS console, a Kubernetes dashboard, a Copilot demo.
 
 ---
 
 ## 🎯 Goal
 
-By the end of this session, Advaith can:
+By the end of this session, Student can:
 - Describe what software engineers do at each layer of a modern system
 - Understand why the field evolved the way it did (each era solved a real problem)
 - Name the key technologies in each era and what they replaced
@@ -17,7 +17,7 @@ By the end of this session, Advaith can:
 
 ---
 
-## 📖 Sree's Narrative
+## 📖 the teacher's Narrative
 
 ### Hook
 
@@ -38,7 +38,7 @@ By the end of this session, Advaith can:
 
 **The key insight:** Software engineering in 2010 was about learning *one* language deeply and one paradigm (OOP) thoroughly. Mastery mattered more than breadth.
 
-**What Advaith already knows from this curriculum:**  
+**What Student already knows from this curriculum:**  
 Session 1.2 (how the web works), Session 3 (programming languages), Session 4 (Python — same OOP principles apply in Java)
 
 ---
@@ -49,7 +49,7 @@ Session 1.2 (how the web works), Session 3 (programming languages), Session 4 (P
 **The problem it solved:** Java is powerful but slow to write. Every experiment takes days to set up. Scientists, data analysts, and web startups needed something faster.
 
 **What engineers learned:**
-- **Python** — Advaith knows this. Scripting, automation, data analysis. The language that ate research.
+- **Python** — Student knows this. Scripting, automation, data analysis. The language that ate research.
 - **JavaScript (Node.js)** — JavaScript escaped the browser. Now you could run it as a server. One language, everywhere.
 - **Backend basics** — routing requests, connecting to databases, building simple APIs.
 - **Frontend foundations** — making web pages dynamic without reloading.
@@ -66,7 +66,7 @@ Session 1.2 (how the web works), Session 3 (programming languages), Session 4 (P
 **The problem it solved:** Every click reloading the whole page felt clunky. Gmail, Google Maps, and Facebook had proven that web apps could feel like native desktop apps.
 
 **What engineers learned:**
-- **Single-Page Applications (SPAs)** — the page loads once. User interactions swap content dynamically via API calls without reloading. (Advaith saw this in the DevTools lab — those XHR requests are SPAs talking to servers.)
+- **Single-Page Applications (SPAs)** — the page loads once. User interactions swap content dynamically via API calls without reloading. (Student saw this in the DevTools lab — those XHR requests are SPAs talking to servers.)
 - **Angular / React / Vue** — frameworks that manage the complexity of SPAs.
 - **TypeScript** — JavaScript with type hints. Catches bugs before the code runs. Scales better in large teams.
 
@@ -83,12 +83,12 @@ Session 1.2 (how the web works), Session 3 (programming languages), Session 4 (P
 
 **What engineers learned:**
 - **Spring Boot (Java)** — a framework that wires up a backend server with minimal configuration. Annotations do the heavy lifting. A REST API in a few dozen lines.
-- **REST APIs** — Advaith knows this from Session 1.2. HTTP verbs (GET, POST, PUT, DELETE) as a standard contract between frontend and backend. The universal language of the modern web.
+- **REST APIs** — Student knows this from Session 1.2. HTTP verbs (GET, POST, PUT, DELETE) as a standard contract between frontend and backend. The universal language of the modern web.
 - **Enterprise patterns** — dependency injection, ORMs (translate between code and databases), middleware.
 
 **The shift:** Backend development became about assembling well-designed components, not building from scratch. Most of a typical backend is now framework code; engineers focus on the business logic.
 
-**A real example:** When Advaith's `sports_analyst.py` calls the Claude API, it's making a REST POST request to Anthropic's backend — which almost certainly runs on a framework like this.
+**A real example:** When the student's `sports_analyst.py` calls the Claude API, it's making a REST POST request to Anthropic's backend — which almost certainly runs on a framework like this.
 
 ---
 
@@ -143,7 +143,7 @@ Developer pushes code
 
 **The shift:** A two-person startup could now serve millions of users on the same infrastructure as Netflix. The playing field levelled.
 
-**Advaith's connection:** Every API he's called in this curriculum (Claude, yfinance) runs on cloud infrastructure. The Anthropic API is deployed on AWS or GCP. He's been a cloud user since Session 6.
+**the student's connection:** Every API he's called in this curriculum (Claude, yfinance) runs on cloud infrastructure. The Anthropic API is deployed on AWS or GCP. He's been a cloud user since Session 6.
 
 ---
 
@@ -201,7 +201,7 @@ spec:
 ---
 
 ## Era 9 — 2026: AI-Assisted Software Engineering
-### *"The era Advaith is entering"*
+### *"The era Student is entering"*
 
 **The problem it solved:** Even with all the tooling above, writing software is still slow. Boilerplate, tests, documentation, debugging, code review — most of an engineer's time isn't on hard problems, it's on repetitive ones.
 
@@ -209,7 +209,7 @@ spec:
 
 **Code Copilots** — AI that writes code alongside you. GitHub Copilot, Claude Code, Cursor. You describe what you want; the AI writes a first draft. You review, refine, redirect.
 
-**Agentic Workflows** — AI that takes multi-step actions autonomously. "Review this PR, run the tests, fix the failing ones, update the documentation." Advaith built a simple agent in Session 6. Production systems now have agents managing entire workflows.
+**Agentic Workflows** — AI that takes multi-step actions autonomously. "Review this PR, run the tests, fix the failing ones, update the documentation." Student built a simple agent in Session 6. Production systems now have agents managing entire workflows.
 
 **LLM Apps** — applications where the AI IS the core feature, not an add-on. The sports analyst, the tutor bot — those are LLM apps. Every company is building them now.
 
@@ -221,7 +221,7 @@ spec:
 - The engineers who adapt fast will be the most valuable.
 - The skills that matter more: system design, problem decomposition, judgment, debugging, knowing when the AI is wrong.
 
-*"Advaith is entering engineering at the exact moment it's being reinvented. He doesn't have to unlearn 10 years of habits. He gets to start native."*
+*"Student is entering engineering at the exact moment it's being reinvented. He doesn't have to unlearn 10 years of habits. He gets to start native."*
 
 ---
 
@@ -253,7 +253,7 @@ Draw this on a whiteboard (or show it as a diagram):
    [Logs / Metrics / Traces]       ← Era 7 (2020)
 ```
 
-*"When Advaith uses Instagram, his request travels through every single one of these layers. Now he knows what each one is called, why it exists, and when it was invented."*
+*"When Student uses Instagram, his request travels through every single one of these layers. Now he knows what each one is called, why it exists, and when it was invented."*
 
 ---
 
@@ -277,10 +277,10 @@ Draw this on a whiteboard (or show it as a diagram):
 
 ---
 
-## Teaching Notes for Sree
+## Teaching Notes for Teacher
 
 - This is a *map*, not a deep dive. The goal is orientation, not mastery.
-- For each era, ask: *"Have you heard of any of these? Where?"* — Advaith may know Docker from YouTube or AWS from news.
-- The strongest connection: Advaith has already used Era 9 tools (Claude API in Session 6). Go backwards from what he knows.
+- For each era, ask: *"Have you heard of any of these? Where?"* — Student may know Docker from YouTube or AWS from news.
+- The strongest connection: Student has already used Era 9 tools (Claude API in Session 6). Go backwards from what he knows.
 - Best question at the end: *"If you were joining a software team at NITW placement, which era's skills would be expected? Which would make you stand out?"*
 - Honest answer: Eras 1-5 are table stakes at placement. Era 6-7 (cloud, K8s) makes you stand out. Era 9 (AI-native) is the frontier.

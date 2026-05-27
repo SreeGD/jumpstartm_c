@@ -12,7 +12,7 @@ Watch: Search "Docker in 100 seconds" by Fireship on YouTube (2 minutes)
 Then answer:
 1. What problem does Docker solve? (In your own words, not copied)
 2. What is the difference between a Docker image and a Docker container?
-3. If Advaith's `sports_analyst.py` was put into a Docker container, what would need to be included in the container for it to run?
+3. If the student's `sports_analyst.py` was put into a Docker container, what would need to be included in the container for it to run?
 
 ---
 
@@ -60,7 +60,7 @@ Write 300–400 words answering:
 
 *"You are entering software engineering in 2026 — the AI-native era. What skills do you think will matter most in 10 years? What won't matter? And what do you think AI will never be able to do in software engineering?"*
 
-No research needed. This is what Advaith actually thinks. Sree will challenge the answer.
+No research needed. This is what Student actually thinks. Teacher will challenge the answer.
 
 ---
 
