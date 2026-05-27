@@ -45,6 +45,8 @@ Mbappe = [27, 8, 142, 203, 18.3]
 
 Connect to 12th grade: Student knows vectors from physics. He knows matrix multiplication. *"You already know how neural networks work at the mathematical level."*
 
+This became very real in 2012. Geoffrey Hinton and two of his PhD students at Toronto built AlexNet — a neural network trained almost entirely on matrix operations — and crushed the ImageNet competition. Google immediately recognised what had happened and acquired the team for around $44 million. Three years later, Google Brain open-sourced TensorFlow, the very framework they used internally to train their own models. That decision put the same tools Google used in-house into the hands of every researcher and student on the planet. Facebook's AI lab (FAIR) followed in 2016 with PyTorch — a more Pythonic alternative that researchers found easier to experiment with. Today PyTorch is the dominant framework for training new models, including most of the frontier LLMs. Meta open-sourced it and it became the industry standard.
+
 ---
 
 ### Calculus — Gradient Descent is Just Finding the Minimum
@@ -87,6 +89,8 @@ Still 25%. Each shot is independent. Past failures don't reduce future probabili
 - Mean, variance, standard deviation — measure centre and spread of data
 - Correlation — how two variables move together (goals and xG should be highly correlated)
 - Regression — fitting a line through data to predict
+
+There is a famous example of these ideas at scale. In 2006, Netflix offered $1 million to whoever could improve their recommendation algorithm by 10%. The winning team's solution was built on matrix factorisation — representing each user and each film as a vector, and using dot products to predict which films a user would enjoy. The same linear algebra from the section above. The winning entry took three years of work from the best teams in the world. That xG model we're building uses the same statistical foundations as every recommendation system in production today — Netflix, Spotify, YouTube.
 
 ---
 

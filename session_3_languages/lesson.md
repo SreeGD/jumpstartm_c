@@ -46,7 +46,7 @@ C with "objects" — a way of organising code around real-world things (a `Playe
 Python's philosophy: code should be readable — almost like English. It should be quick to write. The programmer's time is more valuable than the computer's time.
 
 **1995 — Java**  
-Sun Microsystems wanted code that could run anywhere — "Write once, run anywhere." Java runs on a virtual machine (JVM) that sits between the code and the hardware.
+**Sun Microsystems** wanted code that could run anywhere — "Write once, run anywhere." Java runs on a virtual machine (JVM) that sits between the code and the hardware. For 15 years Java was the dominant language of enterprise software: banks, telecoms, Android apps. In 2010, Oracle acquired Sun Microsystems for $7.4 billion, primarily to get Java. Immediately, Oracle began suing companies over Java licensing. The irony is almost poetic: Java was designed to be open and universal, free to run on any machine by anyone — and the company that acquired it turned it into a legal weapon. The biggest lawsuit was against Google, who had used Java APIs in Android. The case ran for a decade.
 
 **1995 — JavaScript**  
 Brendan Eich was hired by Netscape to add interactivity to web browsers. He wrote JavaScript in 10 days. It became the language of the web — every browser runs it, no installation needed. Now it runs servers too (Node.js).
@@ -55,6 +55,12 @@ Brendan Eich was hired by Netscape to add interactivity to web browsers. He wrot
 JavaScript was written in 10 days and it shows — no types, no guardrails, errors only visible at runtime. Fine for a small web page. Catastrophic for a 500,000-line codebase with 200 engineers. Microsoft's Anders Hejlsberg (who also designed C#) created TypeScript: JavaScript with type annotations that catch bugs before the code runs. Today TypeScript is the default for any serious web project.
 
 Microsoft also built **VS Code** (2015) — a free, open-source code editor written in TypeScript — and released it to the world. It became the most-used code editor on the planet. The tool you'll use throughout this curriculum is a Microsoft product.
+
+**2009 — Go (Google)**  
+By 2009, **Google** had a problem that almost no other company in history had faced: codebases so vast that compilation itself became a bottleneck. A million-line C++ codebase at Google could take 45 minutes to compile. Engineers were losing half their morning waiting for builds. Robert Griesemer, Rob Pike, and Ken Thompson designed Go to fix this — a language that compiles in seconds, has concurrency built in from day one, and was purpose-built for the kind of networked, distributed systems Google runs. Go is now the language of cloud infrastructure: Docker, Kubernetes, and most of the software that makes AWS and Google Cloud work are written in it.
+
+**2014 — Hack (Meta)**  
+**Facebook** had written almost its entire early codebase in PHP — fast to start with, easy to iterate in a dorm room, catastrophic at the scale of a billion users. PHP had no types, which meant bugs that would be caught instantly in a typed language only appeared in production. Meta's engineers created Hack: a typed superset of PHP, the same way TypeScript is a typed superset of JavaScript. The pattern appears again and again — a language designed for speed in small teams becomes dangerous at scale, so someone adds a type system on top. Same problem, same solution, different company.
 
 ---
 

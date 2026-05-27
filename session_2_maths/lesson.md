@@ -68,6 +68,8 @@ Student learned set theory in 12th grade. Boolean algebra is the same thing:
 
 Computers use these to simplify circuits. The same law that simplifies set expressions also simplifies chip designs.
 
+One level up from circuits, Boolean algebra became the engine of databases. SQL — the language used to query every database on the planet — is Boolean algebra applied to tables of data. `SELECT * FROM patients WHERE age > 60 AND diagnosis = 'diabetes'` is an AND operation on rows. Every bank query, every hospital record, every airline booking runs this logic billions of times a day. **Oracle** built a $40 billion business on exactly this insight: Larry Ellison bet in 1977 that relational databases — rows, columns, and Boolean queries — would run the world's institutions. He was right.
+
 ---
 
 ### Big-O Notation — How Algorithms Grow
@@ -109,7 +111,9 @@ Real-world graphs:
 
 *Show a YouTube visualisation of Dijkstra's running step by step.*
 
-*"Barcelona's tiki-taka style of football is a graph with very high centrality for the midfielders — Xavi, Iniesta, Busquets. The ball flows through them. Analytics confirms what the eye sees."*
+Dijkstra is about the shortest path. But there is another question you can ask of a graph: which node is the most important? That measure is called **centrality** — and it is the mathematical idea behind one of the most consequential algorithms ever written. Larry Page and Sergey Brin were Stanford PhD students who asked: what if you modelled the entire web as a directed graph, with every hyperlink as an edge? A link from one page to another is a vote. A page that receives many links from other highly-linked pages ranks higher. They called it **PageRank**. It was graph centrality applied at web scale. The algorithm from this session became a $200 billion per year business — **Google**.
+
+*"Barcelona's tiki-taka style of football is a graph with very high centrality for the midfielders — Xavi, Iniesta, Busquets. The ball flows through them. Analytics confirms what the eye sees. And the same mathematics — applied to a different graph — is how you find things on the internet."*
 
 ---
 

@@ -38,6 +38,8 @@ Three main areas:
 
 *"The same skills that power AI — linear algebra, probability, Python — are the skills that power quant finance. The tools are identical. The data is different."*
 
+All of this runs on data — and for 40 years the data layer has been Bloomberg. Michael Bloomberg built the Bloomberg Terminal in 1981 after being fired from Merrill Lynch with a $10 million severance cheque. He used it to build the financial information system that every bank, hedge fund, and trading desk in the world relies on. Bloomberg LP now generates around $10 billion a year in revenue. A single terminal subscription costs $24,000 per year, and there are roughly 325,000 active subscribers globally. The terminal is so entrenched that most people in finance consider it a non-negotiable overhead, like electricity.
+
 ---
 
 ### The Basic Building Blocks
@@ -75,6 +77,8 @@ Sharpe Ratio = (Portfolio Return - Risk-Free Rate) / Portfolio Volatility
 ```
 Higher Sharpe = better risk-adjusted return. Renaissance Medallion Fund: Sharpe ratio of ~2.0. The S&P 500: ~0.5.
 
+Renaissance is the extreme case, but they are not alone. Goldman Sachs has an entire quantitative strategies division — systematically applying this math to global markets. Two Sigma, founded in 2001, treats investing purely as a data science problem: they hire hundreds of PhDs in mathematics, computer science, and physics, and the firm barely resembles a traditional finance company. Citadel, run by Ken Griffin, manages around $63 billion and is widely considered the most profitable hedge fund ever built. These are the firms that recruit people who can combine statistical modelling with programming — exactly the combination of skills this course is building toward.
+
 ---
 
 ### The Man United Thought Experiment
@@ -108,6 +112,8 @@ Run the lab live. Download 5 years of real Man United stock data in 3 lines of P
 Find the exact date the Glazers announced they were considering selling (November 2022) — watch the price spike on the chart.
 
 *"You just downloaded and visualised 5 years of real financial data in under 60 seconds. A Bloomberg terminal costs $24,000 per year for the same thing."*
+
+The data came from Yahoo Finance — the `yfinance` Python library pulls directly from it. Yahoo Finance is one of the few products that survived Yahoo's long decline from internet giant to acquisition target. Most of Yahoo's business faded, but the financial data product held on and became genuinely valuable. It is now one of the most-visited financial sites in the world, and for anyone learning quant finance without a Bloomberg subscription, it is the starting point.
 
 ---
 

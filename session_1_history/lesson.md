@@ -74,11 +74,21 @@ The Mac introduced the mouse, windows, and icons. Before that, you typed everyth
 
 *"The web is not the internet. The internet is the infrastructure — cables, routers, protocols. The web is an application that runs on top of it."*
 
-Google (1998), Wikipedia (2001), Facebook (2004), YouTube (2005), iPhone (2007). The web becomes the world.
+The web exploded into commerce and culture within a decade. The first company to make sense of all of it was **Yahoo (1995)** — a directory of websites, hand-curated by humans, that became the gateway to the internet for an entire generation. At its peak, Yahoo was the most visited site on earth. People didn't type URLs; they went to Yahoo and clicked.
+
+Then two Stanford PhD students — Larry Page and Sergey Brin — had a better idea. **Google (1998)** treated the web as a mathematical graph: every link from one page to another was a "vote." Pages with the most high-quality votes ranked highest. They called it PageRank. The algorithm was elegant, the results were dramatically better than Yahoo's, and within a few years Google owned search. Yahoo, unable to pivot, turned down a $44 billion acquisition offer from Microsoft in 2008. It kept declining. The lesson: even dominant companies die if they stop innovating.
+
+That same period saw **Oracle** cement its grip on the enterprise. Larry Ellison had founded Oracle in 1977 on a single insight: structured data belonged in relational tables that could be queried in a standard language. For 30 years, Oracle's database ran every bank, every hospital, and every corporation. The mainframe era ran on Oracle.
+
+**Facebook (2004)** — Mark Zuckerberg, Harvard dorm room. The idea was to map the social world: every person a node, every friendship an edge. A social graph. By 2012, one billion people were on it. Facebook acquired Instagram in 2012 for $1 billion and WhatsApp in 2014 for $19 billion — buying every threat before it could grow. The attention economy had found its engine.
+
+Wikipedia (2001), YouTube (2005), iPhone (2007). The web becomes the world.
 
 ---
 
 ### Act 5: The Intelligence Arrives (2010s–now)
+
+**2006 — The Cloud Begins** — While Google and Facebook were reshaping the consumer web, Amazon was quietly doing something else. The company had spent years building massive computing infrastructure to run its own e-commerce operation. Jeff Bezos realised that infrastructure — servers, storage, databases — was itself a product. In 2006, Amazon Web Services launched: raw compute and storage, rented by the hour. You no longer needed to buy servers to start a company. You just needed a credit card. AWS became the foundation on which most of the modern internet runs.
 
 **ImageNet moment (2012)** — A neural network called AlexNet wins an image recognition competition by a huge margin. The AI winter is over. Deep learning works.
 
@@ -86,9 +96,13 @@ Google (1998), Wikipedia (2001), Facebook (2004), YouTube (2005), iPhone (2007).
 
 **2014 — Microsoft reinvents itself** — Satya Nadella becomes CEO of Microsoft. The company was dismissed as irrelevant — losing to Google in search, Apple in phones, Amazon in cloud. Nadella's move: go all-in on cloud (Azure), open-source everything, and acquire GitHub ($7.5B, 2018) — the platform where all software is built. Then in 2023, Microsoft invests $10 billion in OpenAI and integrates AI into every product. Microsoft becomes the most valuable company in the world again. The comeback story of Silicon Valley.
 
-**2022 — ChatGPT** — OpenAI releases ChatGPT. 1 million users in 5 days. Fastest product adoption in history.
+**2015 — OpenAI founded** — A group of researchers and entrepreneurs — including Elon Musk and Sam Altman — founded OpenAI as a non-profit with a stated mission: ensure artificial general intelligence benefits all of humanity. The unusual idea: make the research open, not proprietary. Early work was academic. Then they built GPT-2 (2019), GPT-3 (2020), and quietly became the most important AI lab in the world. Musk left the board. The non-profit became a "capped profit" company. Microsoft invested $1B, then $10B. In 2022 they released ChatGPT, and everything changed.
 
-**2024-25 — Agents** — AI that doesn't just answer questions but takes actions: browses the web, writes code, sends emails, manages workflows.
+**2021 — Anthropic founded** — Dario Amodei (former VP Research at OpenAI) and his sister Daniela Amodei, along with several OpenAI colleagues, left to start Anthropic. The concern: OpenAI was moving too fast without enough focus on safety. Anthropic built Claude — named after Claude Shannon, the father of information theory — using a technique called Constitutional AI, training the model to be helpful, harmless, and honest. Amazon invested $4 billion in Anthropic, making it AWS's AI partner. Claude is what the labs in this curriculum use.
+
+**2022 — ChatGPT** — OpenAI releases ChatGPT. 1 million users in 5 days. Fastest product adoption in history. The AI race is now public, loud, and moving faster than anyone predicted.
+
+**2024-25 — Agents** — AI that doesn't just answer questions but takes actions: browses the web, writes code, sends emails, manages entire workflows. OpenAI, Anthropic, Google, Meta — all racing to build the same thing.
 
 ---
 

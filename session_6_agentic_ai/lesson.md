@@ -53,6 +53,8 @@ Decision trees, support vector machines, random forests. Spam filters, credit sc
 AlexNet wins ImageNet by a huge margin using a Convolutional Neural Network. The model learns its own features — nobody told it what edges and shapes to look for. It figured it out from millions of images.  
 *"The shift: humans stopped designing features. Models learned to design their own."*
 
+Google moved quickly. They acquired the AlexNet team for around $44 million, then bought DeepMind in 2014 for $500 million. DeepMind went on to build AlphaGo — the first AI to beat a world champion at Go, in 2016. Go has roughly 10^170 possible board positions, so brute-force search is impossible. AlphaGo used reinforcement learning combined with neural networks to develop intuition. It was a watershed moment. DeepMind then turned that same approach to biology: AlphaFold solved protein folding in 2020 — a problem that had stumped scientists for 50 years. Google's latest frontier model, Gemini, is their direct competitor to ChatGPT.
+
 **2017: "Attention Is All You Need"**  
 Google researchers publish the Transformer architecture. Two key ideas:
 1. **Attention mechanism** — the model learns which parts of the input to focus on for each output
@@ -70,6 +72,10 @@ In January 2023, Microsoft invested $10 billion in OpenAI — the company behind
 
 *"Microsoft was written off in 2013. By 2024, they were the most valuable company in the world again — because of this bet."*
 
+While Microsoft and OpenAI were building behind closed doors, Meta took the opposite approach. In 2023 they released LLaMA — Large Language Model Meta AI — as open-source. Unlike GPT-4, anyone could download and run it. That single decision changed the pace of the whole field: startups, researchers, and students gained access to a foundation model on par with what only the biggest labs had previously. LLaMA is why AI moved so fast in 2023 and 2024 — dozens of new models were built on top of it almost immediately.
+
+Anthropic came from a different direction. Founded in 2021 by Dario Amodei and others who left OpenAI, they focused on AI safety from the start. They developed Constitutional AI — a training approach designed to make models helpful, harmless, and honest. Their model is Claude. The one running in the lab today.
+
 **2024–2025: Agents**  
 What makes a **chatbot**: ask a question → get an answer. One turn. Passive.  
 What makes an **agent**: given a goal → plan → use tools → take actions → verify → iterate.
@@ -81,6 +87,8 @@ The four components of an agent:
 4. **Action** — can take actions in the world (send email, book calendar, write file)
 
 *"The transition from chatbot to agent is the same as the transition from a calculator to a programmer. One answers questions. The other gets things done."*
+
+The earliest mass-market attempt at a voice AI agent was Amazon's Alexa, launched in 2014. It could answer questions, set timers, control smart home devices — each of those was an action triggered by language. The limitations were obvious: it couldn't reason across multiple steps and had no real memory of who you were. Today Amazon provides access to dozens of frontier models through AWS Bedrock, and AWS itself hosts a large share of the infrastructure that all AI companies run on. The shift from Alexa to today's agents is the shift from a scripted response system to genuine multi-step reasoning.
 
 ---
 
