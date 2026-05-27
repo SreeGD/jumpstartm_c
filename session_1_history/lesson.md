@@ -133,3 +133,76 @@ Then say: *"Ada Lovelace wrote the first algorithm in 1843. This is where it end
 - Ask questions throughout — don't lecture. "What do you think happened next?"
 - The sports section at the end is the reward. Save it.
 - It's fine to spend the whole session on Acts 1-4 and do the sports section next time.
+
+---
+
+## 📚 Research Materials
+
+### 🎬 Films & Documentaries (watch before or after the session)
+
+| Title | Format | What it covers |
+|-------|--------|---------------|
+| **The Imitation Game** (2014) | Feature film | Alan Turing, Enigma, Bombe — Acts 1–2 |
+| **Moneyball** (2011) | Feature film | Billy Beane, Oakland A's, sports analytics — Act 6 |
+| **Pirates of Silicon Valley** (1999) | TV film | Steve Jobs vs Bill Gates, the PC revolution — Act 3 |
+| **General Magic** (2018) | Documentary | The forgotten team that invented the smartphone 10 years early |
+| **AlphaGo** (2017) | Documentary | DeepMind's AlphaGo vs Lee Sedol — the moment AI surpassed human intuition |
+| **iHuman** (2019) | Documentary | The social and ethical implications of AI — for discussion after Act 5 |
+
+---
+
+### 📺 YouTube (short, high-quality, free)
+
+| Video | Length | Why watch it |
+|-------|--------|-------------|
+| [1984 Apple Mac Ad](https://www.youtube.com/watch?v=2zfqw8nhUwA) | 1 min | Play in session — the moment personal computing became cultural |
+| [Steve Jobs iPhone reveal, 2007](https://www.youtube.com/watch?v=MnrJzXM7a6o) | 10 min | Watch the first 3 minutes — the "three devices" moment |
+| [How a CPU Works — In One Lesson](https://www.youtube.com/watch?v=cNN_tTXABUA) | 20 min | Bridges Session 1 and Session 1.1 |
+| [The History of the Internet](https://www.youtube.com/watch?v=9hIQjrMHTv4) | 8 min | Visual timeline from ARPANET to Web 2.0 |
+| [Attention Is All You Need — explained](https://www.youtube.com/watch?v=iDulhoQ2pro) | 13 min | Andrej Karpathy explains Transformers accessibly |
+| [The Magic of Moneyball](https://www.youtube.com/watch?v=pWgyy_rlmag) | 5 min | Quick visual explainer of the Oakland A's story |
+| [How GPS Works](https://www.youtube.com/watch?v=FU_pY2sTwTA) | 6 min | A satellite story that connects computing + physics the student already knows |
+
+---
+
+### 📖 Books (one-sitting reads or gifts for the curious)
+
+| Book | Author | Level | What it covers |
+|------|--------|-------|---------------|
+| **The Innovators** | Walter Isaacson | Easy | The full story from Babbage to the internet — narrative, not technical |
+| **Alan Turing: The Enigma** | Andrew Hodges | Medium | The definitive Turing biography (the film is based on this) |
+| **Moneyball** | Michael Lewis | Easy | The Oakland A's story in full — reads like a thriller |
+| **The Signal and the Noise** | Nate Silver | Medium | Statistics, prediction, and sports — connects Sessions 1, 2, and 5 |
+| **The Code Book** | Simon Singh | Easy | History of cryptography from Caesar ciphers to RSA — connects to Session 2 |
+| **Zero to One** | Peter Thiel | Easy | Building new things — philosophy of technology and startups |
+
+> 💡 **Start here:** *The Innovators* by Isaacson. It reads like a novel and covers every figure in this session in depth.
+
+---
+
+### 🌐 Articles & Interactive Resources
+
+| Resource | Link | What it covers |
+|----------|------|---------------|
+| Ada Lovelace's original 1843 notes | [fourmilab.ch/babbage](https://www.fourmilab.ch/babbage/sketch.html) | The actual algorithm she wrote, with commentary |
+| Tim Berners-Lee's original web proposal | [info.cern.ch](https://info.cern.ch/hypertext/WWW/Proposal.html) | The 1989 document that created the web — reads in 5 minutes |
+| Moore's Law visualised | [Our World in Data](https://ourworldindata.org/moores-law) | Interactive chart of transistor counts 1971–2023 |
+| The 2017 Transformer paper | [arxiv.org/abs/1706.03762](https://arxiv.org/abs/1706.03762) | "Attention Is All You Need" — don't read it yet, just see what a research paper looks like |
+| NBA 3-point revolution chart | [Basketball Reference](https://www.basketball-reference.com/leagues/NBA_stats_per_game.html) | Pull the 3PA column, sort by year — the hockey stick is right there |
+| Kirk Goldsberry's shot charts | [ESPN analytics section](https://www.espn.com/nba/story/_/id/10984021) | The visualisations that changed how basketball is understood |
+
+---
+
+### 🔗 People to Look Up
+
+These people appear in this session. A 5-minute Wikipedia read on each one is worthwhile:
+
+- **Ada Lovelace** — first programmer, 1843
+- **Alan Turing** — theoretical computer science, Enigma, AI foundations
+- **John von Neumann** — designed the architecture every computer still uses
+- **Grace Hopper** — invented the first compiler; coined the term "debugging" (a literal moth)
+- **Tim Berners-Lee** — invented the World Wide Web; gave it away
+- **Claude Shannon** — invented information theory; defined the "bit"
+- **Billy Beane** — Moneyball GM; changed sports forever
+- **Daryl Morey** — the NBA executive who proved mid-range shots are mathematically bad
+- **Geoffrey Hinton** — "Godfather of deep learning"; won the 2024 Nobel Prize in Physics for neural networks
