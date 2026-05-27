@@ -111,6 +111,27 @@ SESSIONS = [
         "color": "#e1306c",
         "emoji": "📸",
     },
+    {
+        "id": "session_11_fullstack_frontend",
+        "title": "Session 11 — Full Stack: Frontend Layer",
+        "subtitle": "HTML, CSS, JavaScript, React and Responsive Design",
+        "color": "#f59e0b",
+        "emoji": "🖥️",
+    },
+    {
+        "id": "session_12_fullstack_backend",
+        "title": "Session 12 — Full Stack: Backend Layer",
+        "subtitle": "Servers, APIs, SQL, NoSQL, Auth and Deployment",
+        "color": "#10b981",
+        "emoji": "⚙️",
+    },
+    {
+        "id": "session_13_career_paths",
+        "title": "Session 13 — Career Paths in Computing",
+        "subtitle": "8 Tracks, Salary Bands, NITW Strategy and the 10-Year View",
+        "color": "#6366f1",
+        "emoji": "🚀",
+    },
 ]
 
 

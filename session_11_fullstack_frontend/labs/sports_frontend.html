@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA Dashboard — Session 11 Lab</title>
+
+  <!-- ===== STYLES =====
+       The CSS lives here in the <head>.
+       In a real project this would be a separate .css file.
+       Key technique: CSS custom properties (variables) for the colour theme.
+       Key technique: Flexbox for layout — works on mobile automatically.
+  ===== -->
+  <style>
+    /* --- Colour theme: dark navy inspired by the curriculum --- */
+    :root {
+      --bg-deep:    #1a1a2e;
+      --bg-card:    #16213e;
+      --bg-row:     #0f3460;
+      --accent:     #e94560;
+      --accent-dim: #b8334a;
+      --text:       #eaeaea;
+      --text-dim:   #9a9ab0;
+      --green:      #00b894;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-deep);
+      color: var(--text);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* --- Header bar with title and live clock --- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;         /* wraps to two lines on narrow phones */
+      gap: 10px;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    header h1 { font-size: 1.6rem; color: var(--accent); }
+
+    /* --- Live game clock ticker --- */
+    #game-clock {
+      background: var(--bg-row);
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--green);
+      letter-spacing: 1px;
+      min-width: 130px;
+      text-align: center;
+    }
+
+    /* --- Scoreboard strip --- */
+    .scoreboard {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      font-size: 1.2rem;
+    }
+
+    .team-score {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .team-name { color: var(--text-dim); font-size: 0.9rem; letter-spacing: 2px; }
+
+    .score-number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--text);
+    }
+
+    .score-divider { font-size: 2rem; color: var(--text-dim); }
+
+    /* --- Controls row: buttons + search box --- */
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 9px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover  { background: var(--accent-dim); }
+    button:active { transform: scale(0.97); }
+
+    /* --- Player stats table --- */
+    .table-wrapper {
+      overflow-x: auto;           /* lets narrow screens scroll horizontally */
+      border-radius: 12px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--bg-card);
+    }
+
+    thead th {
+      background: var(--bg-row);
+      color: var(--accent);
+      padding: 12px 14px;
+      text-align: left;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid #2a2a4a;
+      transition: background 0.15s;
+    }
+
+    tbody tr:hover { background: #1e2a4a; }
+
+    td {
+      padding: 12px 14px;
+      font-size: 0.95rem;
+    }
+
+    td:first-child { font-weight: 600; color: var(--text); }
+    td:not(:first-child) { color: var(--text-dim); text-align: center; }
+
+    /* Highlight the top scorer */
+    .top-scorer td:first-child { color: var(--accent); }
+
+    /* --- Footer note --- */
+    footer {
+      margin-top: 24px;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER =====
+       The live game clock lives here. JavaScript will update #game-clock
+       every second using setInterval — this is the core "live" demo.
+  ===== -->
+  <header>
+    <h1>NBA Live Dashboard</h1>
+    <div id="game-clock">Q1: 0:00</div>
+  </header>
+
+  <!-- ===== SCOREBOARD =====
+       Static for this lab. In a real app, JavaScript would fetch()
+       live scores from an API and update #home-score / #away-score.
+  ===== -->
+  <div class="scoreboard">
+    <div class="team-score">
+      <span class="team-name">LAL</span>
+      <span class="score-number" id="home-score">108</span>
+    </div>
+    <span class="score-divider">—</span>
+    <div class="team-score">
+      <span class="team-name">BOS</span>
+      <span class="score-number" id="away-score">104</span>
+    </div>
+  </div>
+
+  <!-- ===== CONTROLS =====
+       The Sort button triggers sortByPoints().
+       More buttons can be added in the assignment (sort by assists, etc.)
+  ===== -->
+  <div class="controls">
+    <button id="sort-pts-btn">Sort by Points</button>
+    <!-- Assignment Task 1: add a "Sort by Assists" button here -->
+    <!-- Assignment Task 2: add a search input here -->
+  </div>
+
+  <!-- ===== STATS TABLE =====
+       The <tbody id="stats-body"> is what JavaScript targets.
+       Rows are built from the players array in the <script> below.
+  ===== -->
+  <div class="table-wrapper">
+    <table id="stats-table">
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Pos</th>
+          <th>PTS</th>
+          <th>REB</th>
+          <th>AST</th>
+          <th>FG%</th>
+        </tr>
+      </thead>
+      <tbody id="stats-body">
+        <!-- Rows are injected by renderTable() in the script below -->
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    Session 11 Lab — open in any browser, no server needed &nbsp;|&nbsp; data is fictional
+  </footer>
+
+  <!-- ===== SCRIPT =====
+       Placed at the bottom of <body> so the HTML above is already
+       in the DOM before this code runs — no need to wait for DOMContentLoaded.
+
+       Three things happen here:
+         1. renderTable()  — build the table rows from the players array
+         2. sortByPoints() — re-sort and re-render when the button is clicked
+         3. setInterval()  — tick the game clock every second
+  ===== -->
+  <script>
+    // --- 1. DATA ---
+    // A plain JavaScript array of objects. Each object is one player.
+    // This is "hardcoded" data. In a real app, fetch() would pull this
+    // from an API endpoint like GET /api/players?team=LAL
+    var players = [
+      { name: 'LeBron James',   pos: 'SF', pts: 28, reb: 8,  ast: 7,  fg: 52 },
+      { name: "D'Angelo Russell", pos: 'PG', pts: 14, reb: 3,  ast: 9,  fg: 43 },
+      { name: 'Anthony Davis',  pos: 'C',  pts: 31, reb: 14, ast: 3,  fg: 61 },
+      { name: 'Austin Reaves', pos: 'SG', pts: 18, reb: 4,  ast: 5,  fg: 47 },
+      { name: 'Rui Hachimura',  pos: 'PF', pts: 11, reb: 5,  ast: 1,  fg: 50 },
+      { name: 'Gabe Vincent',   pos: 'PG', pts: 6,  reb: 2,  ast: 4,  fg: 38 }
+    ];
+
+    // --- 2. RENDER FUNCTION ---
+    // Reads the players array and builds <tr> rows in the <tbody>.
+    // Called once on page load, and again after sorting.
+    function renderTable(data) {
+      var tbody = document.querySelector('#stats-body');
+
+      // Clear any existing rows before rebuilding
+      while (tbody.firstChild) {
+        tbody.removeChild(tbody.firstChild);
+      }
+
+      // Find the highest point scorer to highlight them
+      var maxPts = Math.max.apply(null, data.map(function(p) { return p.pts; }));
+
+      // Build one row per player using safe DOM methods (no innerHTML)
+      data.forEach(function(player) {
+        var tr = document.createElement('tr');
+        if (player.pts === maxPts) {
+          tr.className = 'top-scorer';  // CSS highlights this row
+        }
+
+        // Helper: create a <td> with text content
+        function makeCell(text, align) {
+          var td = document.createElement('td');
+          td.textContent = text;
+          if (align === 'center') td.style.textAlign = 'center';
+          return td;
+        }
+
+        tr.appendChild(makeCell(player.name));
+        tr.appendChild(makeCell(player.pos, 'center'));
+        tr.appendChild(makeCell(player.pts, 'center'));
+        tr.appendChild(makeCell(player.reb, 'center'));
+        tr.appendChild(makeCell(player.ast, 'center'));
+        tr.appendChild(makeCell(player.fg + '%', 'center'));
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Initial render on page load
+    renderTable(players);
+
+    // --- 3. SORT BUTTON ---
+    // When clicked: sort the players array by points (highest first),
+    // then call renderTable() to rebuild the table.
+    // The DOM update happens instantly — no page reload.
+    document.querySelector('#sort-pts-btn').addEventListener('click', function() {
+      // .slice() makes a copy so we don't permanently mutate the original order
+      var sorted = players.slice().sort(function(a, b) {
+        return b.pts - a.pts;  // descending: highest points first
+      });
+      renderTable(sorted);
+    });
+
+    // --- 4. LIVE GAME CLOCK ---
+    // setInterval runs a function every 1000ms (1 second).
+    // It increments a counter and updates the #game-clock element's text.
+    // This is the core pattern behind every live scoreboard on the web.
+    var totalSeconds = 0;
+    var maxSecondsPerQuarter = 720;  // 12 minutes x 60 = 720 seconds
+    var currentQuarter = 1;
+
+    setInterval(function() {
+      totalSeconds++;
+
+      // Move to the next quarter after 12 minutes
+      if (totalSeconds > maxSecondsPerQuarter) {
+        totalSeconds = 1;
+        currentQuarter++;
+        if (currentQuarter > 4) currentQuarter = 4;  // cap at Q4
+      }
+
+      var mins = Math.floor(totalSeconds / 60);
+      var secs = totalSeconds % 60;
+
+      // padStart(2, '0') turns '5' into '05' — standard clock format
+      var secsDisplay = secs.toString().padStart(2, '0');
+      var clockText = 'Q' + currentQuarter + ': ' + mins + ':' + secsDisplay;
+
+      document.querySelector('#game-clock').textContent = clockText;
+
+    }, 1000);  // fires every 1 second
+  </script>
+
+</body>
+</html>

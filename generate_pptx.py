@@ -22,6 +22,9 @@ GREEN      = RGBColor(0x05, 0x96, 0x69)
 AMBER      = RGBColor(0xd9, 0x77, 0x06)
 SLATE      = RGBColor(0x6b, 0x72, 0x80)
 INSTA      = RGBColor(0xe1, 0x30, 0x6c)
+AMBER2     = RGBColor(0xf5, 0x9e, 0x0b)
+EMERALD    = RGBColor(0x10, 0xb9, 0x81)
+INDIGO     = RGBColor(0x63, 0x66, 0xf1)
 WHITE      = RGBColor(0xff, 0xff, 0xff)
 LGREY      = RGBColor(0xcc, 0xcc, 0xdd)
 MGREY      = RGBColor(0x88, 0x88, 0x99)
@@ -498,6 +501,9 @@ sessions_map = [
     ("8",   "🏆", "Capstone Project",               C["s8"]),
     ("9",   "🏗️", "Software Engineering Landscape", C["s9"]),
     ("10",  "📸", "How Instagram Works",           C["s10"]),
+    ("11",  "🖥️", "Full Stack — Frontend",          AMBER2),
+    ("12",  "⚙️", "Full Stack — Backend",           EMERALD),
+    ("13",  "🚀", "Career Paths",                   INDIGO),
 ]
 row_h = Inches(0.52)
 cols = 2
@@ -1653,6 +1659,245 @@ make_lab("Session 10", "Build Instagram's Feed Algorithm in Python",
     col=C["s10"],
     sports_note="Kevin Systrom built the first Instagram in 13 days using Python. It sold for $1 billion. Same language you've been learning all month.")
 
+# ── SESSION 11: FULL STACK FRONTEND (slides 88–93) ──────────────
+print("  [Session 11] Slides 88–93")
+
+C["s11"] = AMBER2
+
+make_chapter_break("11", "🖥️", "Full Stack: Frontend Layer",
+    "What the User Sees, Touches, and Feels",
+    '"Every website is three ingredients.\nAll of them are things you already understand."',
+    C["s11"])
+
+make_content("The Three Ingredients",
+    [
+        "🦴  HTML — the skeleton. Defines structure: headings, paragraphs, tables, buttons.",
+        "🎨  CSS — the skin. Controls colour, layout, spacing, fonts, animation.",
+        "💪  JavaScript — the muscles. Makes things move, respond, and fetch live data.",
+        "Together: HTML says WHAT is on the page. CSS says HOW it looks. JS says WHAT it does.",
+        "Analogy: HTML = a football pitch layout. CSS = the grass, lines, lighting. JS = the players moving.",
+    ],
+    C["s11"], sub="Session 11 — Full Stack Frontend")
+
+make_content("How a Page Actually Renders",
+    [
+        "1.  Browser downloads the HTML file — builds the DOM (Document Object Model)",
+        "2.  Browser reads CSS — calculates every element's size, colour, position",
+        "3.  Browser executes JavaScript — modifies the DOM, fetches data from APIs",
+        "4.  Browser paints — composites all layers onto your screen",
+        "5.  Your scroll, click, or keystroke → JS event fires → DOM updates → repaint",
+        "The DevTools 'Elements' tab shows you the live DOM. The 'Network' tab shows every fetch.",
+    ],
+    C["s11"], note="Opening DevTools (F12) during the lab makes the invisible visible.",
+    sub="Session 11 — Full Stack Frontend")
+
+make_content("Why We Need React",
+    [
+        "Problem: a live scoreboard has 5 areas that must update when a goal is scored.",
+        "With plain JS: update element 1, element 2, element 3... lots of code, lots of bugs.",
+        "React's idea: one data object (state) → UI is a pure function of that state.",
+        "Change the state once → React re-renders everything that depends on it. Automatically.",
+        "Component model: a PlayerCard, a ScoreBoard, a Leaderboard — each a reusable function.",
+        "React (Meta/Facebook, 2013) → Vue (2014) → Angular (Google) → Svelte (2019)",
+    ],
+    C["s11"], note="React won. Used by Meta, Airbnb, Netflix, Atlassian. TypeScript is the default.",
+    sub="Session 11 — Full Stack Frontend")
+
+make_two_col("The Modern Frontend Stack (2026)",
+    "The core",
+    [
+        "HTML5 + CSS3 — still the foundation",
+        "JavaScript (ES2024) — modern, powerful",
+        "TypeScript — JS with type safety (Microsoft)",
+        "React 19 — component UI library",
+        "Tailwind CSS — utility-first styling",
+        "Vite — fast build tool (replaced Webpack)",
+    ],
+    "The toolchain",
+    [
+        "Node.js — runs JS outside the browser",
+        "npm / yarn — package managers",
+        "ESLint + Prettier — code quality",
+        "Jest / Vitest — unit testing",
+        "Vercel / Netlify — instant deployment",
+        "Chrome DevTools — your debugger",
+    ],
+    C["s11"], sub="Session 11 — Full Stack Frontend")
+
+make_lab("Session 11", "Build a Live Sports Dashboard (Pure JS)",
+    steps=[
+        "Open labs/sports_frontend.html in VS Code",
+        "Open it in Chrome — see the dark-themed Lakers stats table",
+        "Click 'Sort by Points' — watch the table re-sort via JavaScript",
+        "Watch the live game clock tick in the corner (setInterval)",
+        "Open DevTools → Elements tab — find the table rows in the DOM",
+        "Open DevTools → Sources — read your own JavaScript",
+    ],
+    output_desc="Working NBA dashboard:\n• Sortable stats table\n• Live game clock\n• Responsive layout\n\nNo npm. No build tools.\nJust open in browser.",
+    col=C["s11"],
+    sports_note="The same JS skills that power this dashboard power the official NBA.com stats page — minus 10 years of engineering.")
+
+# ── SESSION 12: FULL STACK BACKEND (slides 94–99) ───────────────
+print("  [Session 12] Slides 94–99")
+
+C["s12"] = EMERALD
+
+make_chapter_break("12", "⚙️", "Full Stack: Backend Layer",
+    "What Happens on the Server",
+    '"When you search Messi career goals on Google,\na server in 50ms retrieves that from billions of facts.\nLet\'s build that."',
+    C["s12"])
+
+make_content("What Is a Server?",
+    [
+        "A server is just a program that listens for requests and sends responses.",
+        "HTTP request arrives → server processes → database query → JSON response sent back.",
+        "The same Python you know runs on servers. Flask, Django, FastAPI — all Python.",
+        "Every API you've used (Instagram, Spotify, the Claude lab) is a server running somewhere.",
+        "In Session 12's lab: python3 sports_api.py → your laptop becomes a server.",
+    ],
+    C["s12"], sub="Session 12 — Full Stack Backend")
+
+make_two_col("SQL — The Language of Data",
+    "What SQL does",
+    [
+        "SELECT — retrieve rows from a table",
+        "WHERE — filter by condition",
+        "ORDER BY — sort results",
+        "JOIN — combine data from two tables",
+        "INSERT / UPDATE / DELETE — modify data",
+        "50 years old. Still the most important query language.",
+    ],
+    "Sports example",
+    [
+        "SELECT name, points FROM players",
+        "WHERE team = 'Lakers'",
+        "AND points > 20",
+        "ORDER BY points DESC;",
+        "",
+        "Oracle built a \\$40B business on this.",
+    ],
+    C["s12"], sub="Session 12 — Full Stack Backend")
+
+make_comparison("SQL vs NoSQL — When to Use Which",
+    "SQL (PostgreSQL, MySQL)",
+    [
+        "Structured data with clear relationships",
+        "Complex queries with JOINs",
+        "Transactions (banking, bookings)",
+        "Medium scale — millions of rows",
+        "Postgres powers Instagram, Shopify, GitHub",
+    ],
+    "NoSQL (MongoDB, Redis, Cassandra)",
+    [
+        "Flexible or unstructured data",
+        "Massive write volume (500M tweets/day)",
+        "Simple access patterns, no JOINs needed",
+        "Billion-row scale (Cassandra at Netflix)",
+        "Redis: in-memory cache for hot data",
+    ],
+    C["s12"], left_col=BLUE, right_col=C["s12"],
+    sub="Session 12 — Full Stack Backend")
+
+make_lab("Session 12", "Build a Sports Stats REST API with Flask",
+    steps=[
+        "pip install flask   (one-time setup)",
+        "python3 labs/sports_api.py — server starts at localhost:5000",
+        "Open browser: http://localhost:5000/players — see all players as JSON",
+        "Try: /players?sport=basketball&min_points=28",
+        "Try: /players/1  — fetch one player by ID",
+        "Try POST with curl or Postman — add a new player",
+    ],
+    output_desc="Live REST API:\nGET /players\nGET /players/<id>\nPOST /players\nGET /stats/top\n\nSame pattern as\nInstagram's API.",
+    col=C["s12"],
+    sports_note="The /stats/top endpoint is exactly what NBA.com's leaderboard calls internally — your API just has fewer players.")
+
+make_content("The Full Stack — All Layers Together",
+    [
+        "Browser (HTML/CSS/JS) → fetch('/players') → Your Flask API",
+        "Flask API → SQL query → PostgreSQL database",
+        "Frequently read data → Redis cache (skip the database)",
+        "Heavy traffic → Load balancer → multiple Flask workers",
+        "All of this → Deploy to AWS / Railway / Render",
+        "Session 11 (frontend) + Session 12 (backend) = a complete web application.",
+    ],
+    C["s12"],
+    note="Assignment Task 4: connect the Session 11 HTML dashboard to the Session 12 API using fetch().",
+    sub="Session 12 — Full Stack Backend")
+
+# ── SESSION 13: CAREER PATHS (slides 100–106) ───────────────────
+print("  [Session 13] Slides 100–106")
+
+C["s13"] = INDIGO
+
+make_chapter_break("13", "🚀", "Career Paths in Computing & AI",
+    "Where Do You Go From Here?",
+    '"In 2010, a software engineer at Google earned ₹15 LPA.\nIn 2025, the same engineer earns ₹80–150 LPA.\nYou\'re entering the most valuable profession in history."',
+    C["s13"])
+
+make_timeline("8 Career Tracks — Pick Your Path", [
+    ("1", "Frontend / UI Engineer",    "HTML/CSS/JS/React  ·  Entry: ₹6–15 LPA India / $90–130k US"),
+    ("2", "Backend Engineer",          "Python/Java/Go + SQL  ·  Entry: ₹8–18 LPA / $100–140k US"),
+    ("3", "Full-Stack Engineer",       "Own a feature end-to-end  ·  Entry: ₹8–20 LPA / $100–150k US"),
+    ("4", "Data Scientist / ML Eng",   "Python + stats + PyTorch  ·  Entry: ₹10–25 LPA / $110–160k US"),
+    ("5", "AI / LLM Engineer",         "Hottest new role (2023)  ·  Entry: ₹15–35 LPA / $130–200k US"),
+    ("6", "DevOps / Platform / SRE",   "Docker + K8s + cloud  ·  Entry: ₹8–20 LPA / $110–160k US"),
+    ("7", "Quant Developer",           "Python/C++ + finance + math  ·  Entry: ₹15–40 LPA / $150–300k US"),
+    ("8", "Engineering Manager / TPM", "Lead teams, not code  ·  Usually 5–7 years IC first"),
+], C["s13"])
+
+make_two_col("Skills That Compound vs Skills That Decay",
+    "Compound (more valuable over time)",
+    [
+        "System design and architecture thinking",
+        "Communication and technical writing",
+        "Debugging and problem decomposition",
+        "Domain depth: finance + code, bio + code",
+        "Understanding how things actually work",
+        "Building original things, not just tutorials",
+    ],
+    "Decay (lose value as tools change)",
+    [
+        "Specific framework syntax (React today...)",
+        "Memorising APIs (AI writes these now)",
+        "Following tutorials without building",
+        "Credentials without demonstrated work",
+        "Skills in a single language ecosystem",
+        "Cargo-culting patterns without understanding",
+    ],
+    C["s13"], left_col=GREEN, right_col=RED,
+    sub="Session 13 — Career Paths")
+
+make_content("The AI Impact — Honest Assessment",
+    [
+        "AI WILL replace: boilerplate code, simple debugging, documentation, routine tests.",
+        "AI WON'T replace: architecture decisions, product judgment, novel problem-solving.",
+        "AI WON'T replace: understanding human context, ethics, managing uncertainty.",
+        "The engineer who uses AI to do 10× more work is not replaced — they replace 9 others.",
+        "The skills that matter more: knowing WHEN the AI is wrong. Judgment. Design.",
+        "You are entering engineering at the exact moment it is being reinvented. No bad habits to unlearn.",
+    ],
+    C["s13"],
+    note="The gap between a great engineer and an average one widens over time. It does not narrow.",
+    sub="Session 13 — Career Paths")
+
+make_content("NITW M&C — First Year Strategy",
+    [
+        "Join one coding club — competitive programming or project club. Both.",
+        "Build one real project per semester that you can demo to a stranger.",
+        "Open-source contribution by semester 3 — one PR to any real project.",
+        "Internship in Year 2 or 3 — the single highest-leverage thing you can do.",
+        "Go to hackathons — meet seniors who are placed well. Ask them what they did differently.",
+        "The curriculum you just completed is 6–18 months ahead of most NITW freshers.",
+    ],
+    C["s13"],
+    note="Placement range: TCS ₹3.5–6 LPA → Goldman/Google ₹25–80 LPA. What separates them: portfolio, not GPA.",
+    sub="Session 13 — Career Paths")
+
+make_big_quote(
+    "The best engineers aren't the ones who know the most frameworks. They're the ones who can look at a complicated system, understand how the pieces fit, and build the thing that isn't there yet.",
+    "What you've been training to become",
+    C["s13"])
+
 # ════════════════════════════════════════════════════════════════
 # SAVE
 # ════════════════════════════════════════════════════════════════
@@ -1666,5 +1911,5 @@ size  = os.path.getsize(out) / 1024
 print(f"\n✅  Saved: {out}")
 print(f"   Slides: {total}")
 print(f"   Size:   {size:.0f} KB")
-if total != 87:
-    print(f"\n⚠️  Expected 87 slides, got {total}")
+if total != 105:
+    print(f"\n⚠️  Expected 105 slides, got {total}")

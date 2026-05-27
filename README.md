@@ -42,6 +42,9 @@ HOMEWORK  → Student continues independently
 | 8 | [Capstone](./session_8_capstone/) | Build something real |
 | 9 | [Software Engineering Landscape](./session_9_software_engineering/) | How the profession evolved: 2010 → 2026 |
 | 10 | [How Instagram Works](./session_10_instagram/) | The billion-dollar engineering inside the app you use every day |
+| 11 | [Full Stack — Frontend](./session_11_fullstack_frontend/) | HTML, CSS, JavaScript, React, responsive design |
+| 12 | [Full Stack — Backend](./session_12_fullstack_backend/) | Servers, APIs, SQL, NoSQL, authentication, deployment |
+| 13 | [Career Paths](./session_13_career_paths/) | Where all of this leads — 8 tracks, salary bands, NITW strategy |
 
 ---
 
@@ -89,5 +92,5 @@ session_X/
 
 ## Python Libraries (install when needed)
 ```bash
-pip install matplotlib numpy pandas yfinance anthropic
+pip install matplotlib numpy pandas yfinance anthropic flask
 ```
